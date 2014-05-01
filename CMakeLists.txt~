@@ -64,7 +64,7 @@ set(LIBS ${LIBS} ${SDL2_LIBRARY} ${OpenGL_LIBRARY} ${GLEW_LIBRARY} ${Vectormath_
 link_libraries(${LIBS})
 
 #Create the executable file 
-add_executable(CubeRacer ${SOURCES})
+add_executable(CubeRacerRun ${SOURCES})
 
 ### LINKER ###
-target_link_libraries(CubeRacerRun GL GLU GLEW SDL2)
+target_link_libraries(CubeRacer GL GLU GLEW SDL2)
