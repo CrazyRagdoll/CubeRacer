@@ -85,7 +85,6 @@ void Enemy::update() {
     if( this->bbox->getCentre()->getZ() < -5) { this->dead(); }
 
   }
-  //else{ };
 }
 
 bool Enemy::collidesWith(Player & a) {

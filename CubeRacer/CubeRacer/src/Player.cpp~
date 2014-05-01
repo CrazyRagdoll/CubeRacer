@@ -59,7 +59,7 @@ void Player::update() {
 }
 
 double Player::getAmmo(){
-  return ammo;
+  return Ammo;
 }
 
 double Player::getAmmoRate(){
