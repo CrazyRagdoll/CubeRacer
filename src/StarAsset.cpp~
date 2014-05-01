@@ -6,6 +6,7 @@ StarAsset::StarAsset()
 	      , string("CubeRacer/shaders/starAsset.f.glsl")
 	      )
 {
+  isAlive = true;
   StarAsset(0, 0, 0);
 }
 

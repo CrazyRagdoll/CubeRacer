@@ -1,6 +1,5 @@
 #include "GameAsset.h"
 #include "Player.h"
-#include "IInterpolator.h"
 
 #ifndef StarASSET_H_
 #define StarASSET_H_
@@ -16,14 +15,16 @@ class StarAsset : public GameAsset {
   virtual void update();
   virtual void draw();
   virtual void clean();
-  void setInterpolator(shared_ptr<IInterpolator> li);
+
+  virtual bool dead(){ isAlive = false; };
+  virtual bool isItAlive(){ return isAlive; };
+
+  static bool isAlive;
 
   enum vertices {
 	  F0, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, 
   };
 
- private:
-  shared_ptr<IInterpolator> li;
 };
 
 #endif // StarASSET_H_

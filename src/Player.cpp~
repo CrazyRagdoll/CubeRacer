@@ -1,16 +1,18 @@
 #include "Player.h"
 
+int Player::Ammo = 3;
+double Player::ammoRespawn = 2.0;
+double Player::score = 0;
+
 Player::Player() 
   : GameAsset(
 	      string("CubeRacer/shaders/hello-gl.v.glsl")
 	      , string("CubeRacer/shaders/hello-gl.f.glsl")
 	      )
 {
+  isAlive = true;
   Player(0, 0, 0);
 }
-
-int Player::Ammo = 3;
-double Player::ammoRespawn = 2.0;
 
 Player::Player(float x, float y, float z) {
 
@@ -57,7 +59,7 @@ void Player::update() {
     cout << "You have died." << endl;
     cout << "Your Score: " << score << endl;
     this->clean();
-    SDL_Quit();
+    //SDL_Quit();
   }
 }
 

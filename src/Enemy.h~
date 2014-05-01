@@ -17,8 +17,14 @@ class Enemy : public GameAsset {
   virtual void clean();
   virtual void setDiff(double diff);
   virtual double getDiff();
+
+  //Killing the enemies
+  virtual bool dead(){ isAlive = false; };
+  virtual bool isItAlive(){ return isAlive; };
   
   double difficulty;
+  static bool isAlive;
+
   enum vertices {
 	F0, F1, F2, F3, B4, B5, B6, B7,
   };

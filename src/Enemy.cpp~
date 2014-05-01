@@ -6,6 +6,7 @@ Enemy::Enemy()
 	      , string("CubeRacer/shaders/enemy-gl.f.glsl")
 	      )
 {
+  isAlive = true;
   Enemy(0, 0, 0);
 }
 

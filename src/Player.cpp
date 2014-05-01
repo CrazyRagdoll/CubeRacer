@@ -9,10 +9,6 @@ Player::Player()
   Player(0, 0, 0);
 }
 
-int Player::Ammo = 3;
-double Player::ammoRespawn = 2.0;
-double Player::score = 0;
-
 Player::Player(float x, float y, float z) {
 
   // A default "unit" cube

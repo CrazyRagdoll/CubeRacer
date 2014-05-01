@@ -1,5 +1,4 @@
 #include "GameAsset.h"
-#include "IInterpolator.h"
 
 #ifndef Bullet_H_
 #define Bullet_H_
@@ -13,10 +12,12 @@ class Bullet : public GameAsset {
   virtual void update();
   virtual void draw();
   virtual void clean();
-  void setInterpolator(shared_ptr<IInterpolator> li);
 
- private:
-  shared_ptr<IInterpolator> li;
+  virtual bool dead(){ isAlive = false; };
+  virtual bool isItAlive(){ return isAlive; };
+
+  static bool isAlive;
+
 };
 
 #endif // Bullet_H_
