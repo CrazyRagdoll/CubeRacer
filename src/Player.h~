@@ -10,6 +10,9 @@ class Player : public GameAsset {
   Player(float x, float y, float z);
     ~Player();;
 
+  //Updateing colour
+  //virtual void updateColour(const string & v_shader, const string & f_shader);
+
   //Score
   virtual void incScore(double points);
 
@@ -23,7 +26,6 @@ class Player : public GameAsset {
 
   //Vunrability
   virtual void playerInvulnerable();
-  virtual bool playerState();
   virtual void playerVulnerable();
 
   virtual void update();

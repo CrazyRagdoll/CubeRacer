@@ -78,10 +78,6 @@ void Player::playerVulnerable(){
   invulnerable = false;
 }
 
-bool Player::playerState(){
-  return invulnerable;
-}
-
 void Player::move(double moving){
   shared_ptr<Point3> move = this->bbox->getCentre();
   *move = Point3(move->getX() + moving, 0.0, 0.0);
