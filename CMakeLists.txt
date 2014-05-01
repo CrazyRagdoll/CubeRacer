@@ -39,7 +39,7 @@ if(NOT VECTORMATH_FOUND)
 endif(NOT VECTORMATH_FOUND)
 
 #Include directories 
-include_directories(${SDL2_INCLUDE_DIRS} ${OpenGL_INCLUDE_DIRS} ${Vectormath_INCLUDE_DIRS ${GLEW_INCLUDE_DIRS}})
+include_directories(${SDL2_INCLUDE_DIRS} ${OpenGL_INCLUDE_DIRS} ${Vectormath_INCLUDE_DIRS ${GLEW_INCLUDE_DIRS})
 #Linker directories
 link_directories(${SDL2_LIBRARY_DIRS} ${OpenGL_LIBRARY_DIRS} ${Vectormath_LIBRARY_DIRS} ${GLEW_LIBRARY_DIRS})
 #Definitions 
