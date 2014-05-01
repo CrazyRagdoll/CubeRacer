@@ -16,6 +16,7 @@
 #include "Bullet.h"
 #include "StarAsset.h"
 #include "Camera.h"
+#include "SDL2_mixer/SDL_mixer.h"
 
 using namespace std;
 
@@ -23,6 +24,9 @@ using namespace std;
 
 //Is the game running?
 bool running = true;
+
+//Mix_Music is used to store the 
+Mix_Music *music = NULL;
 
 //Adding the player to the game
 shared_ptr<Player> player ;
@@ -182,6 +186,11 @@ int main(int argc, char ** argv) {
 	Uint32 height = 480;
 	Uint32 colour_depth = 16; // in bits
 	Uint32 delay = 1000/60; // in milliseconds
+	//Audio variables
+	int audio_rate = 22050;	
+	Uint16 audio_format = Audio_S16; /* 16-bit stereo */
+	int audio_channels = 2;
+	int audio_buffers = 4096;
 
 	// Initialise SDL - when using C/C++ it's common to have to
 	// initialise libraries by calling a function within them.
@@ -213,6 +222,11 @@ int main(int argc, char ** argv) {
 	  cerr<< "OpenGL 2.0 not available" << endl;
 	  return 1;
 	}	
+
+	if(Mix_OpenAudio(audio_rate, audio_format, audio_channels, audio_buffers)) {
+	  printf("Unable to open audio!\n");
+	  SDL_Quit();
+	}
 
 	//Adding the players coordinates into the game
 	player = shared_ptr<Player> (new Player(0, 0, 0));
@@ -248,6 +262,22 @@ int main(int argc, char ** argv) {
 		case SDLK_DOWN:
 		  //Camera::getInstance().setCamera(camera * Matrix4::translation(Vector3(0.0, 0.0, 5.0))); 
 		  break;
+
+		case SDLK_m:
+		  if(key.state == SDL_PRESSED) 
+		  {
+		    if(music == NULL) 
+		    {
+		      Mix_PlayMusic(music, 0);
+		      Mix_HookMusicFinished(musicDone);
+		    } else 
+		    {
+		      Mix_HaltMusic();
+		      Mix_FreeMusic(music);
+		      music = NULL;
+		    }
+		    break;
+		  }
 
 		case SDLK_ESCAPE:
 		  SDL_Quit();
@@ -286,4 +316,11 @@ int main(int argc, char ** argv) {
 	SDL_Delay(16);	
 	display();
 	}
+
+  void musicDone() 
+  {
+    Mix_HaltMusic();
+    Mix_FreeMusic(music);
+    music = NULL;
+  }
 } //NatsuSt

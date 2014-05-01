@@ -12,11 +12,11 @@ Exit       - Escape.
 When adding music to the game I used: http://www.kekkai.org/roger/sdl/mixer/
 
 The libaries that I have inclucded in my games are:
-SDL2 - 
+SDL2
 
-Glew/glu - 
+Glew/glu
 
-Vectormath - 
+Vectormath
 
 When editing cmake to allow it to find different libaries I had to use external sheets of code from different website: FindSDL2.cmake, FindGLEW.cmake, FindVECTORMATH.cmake.
 These websites are where I found the .cmake files from: 
