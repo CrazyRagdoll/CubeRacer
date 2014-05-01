@@ -9,7 +9,7 @@ Player::Player()
   Player(0, 0, 0);
 }
 
-Player::Player(float x, float y, float z) {
+Player::Player(float x, float y, float z): Ammo(3) , ammoRespawn(2.0) , score(0) {
 
   // A default "unit" cube
   num_vertices = 4;
