@@ -12,7 +12,7 @@
 #include <fstream>
 #include <memory>
 
-#include "vectormath/scalar/cpp/vectormath_aos.h"
+#include "vectormath/vectormath_aos.h"
 #include "Camera.h"
 #include "BoundingBox.h"
 
@@ -37,7 +37,7 @@ public:
 	virtual bool isItAlive(){ return isAlive; };
 
 	shared_ptr<BoundingBox> bbox;
- 	bool isAlive = true;
+ 	static bool isAlive = true;
 
 protected:
 	/* functions */

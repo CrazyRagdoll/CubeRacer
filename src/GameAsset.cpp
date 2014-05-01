@@ -7,6 +7,8 @@
 
 #include "GameAsset.h"
 
+bool GameAsset::isAlive = true;
+
 void GameAsset::common_init() {
   bbox = shared_ptr<BoundingBox>(new BoundingBox(Point3(0,0,0), 1.0, 1.0, 1.0)); // unit cube
 }

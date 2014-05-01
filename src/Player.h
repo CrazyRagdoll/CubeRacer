@@ -26,15 +26,15 @@ class Player : public GameAsset {
   virtual void clean();
 
   //Adding ammo to give to the player
-  int Ammo = 3;
-  double ammoRespawn = 2.0;
+  static int Ammo;
+  static double ammoRespawn;
 
   enum vertices {
 	F0, F1, F2, F3, 
   };
  
   private:
-  double score = 0;
+  static double score;
 
 };
 
