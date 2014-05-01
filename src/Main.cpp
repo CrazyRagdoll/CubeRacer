@@ -15,6 +15,7 @@
 #include "Enemy.h"
 #include "Bullet.h"
 #include "StarAsset.h"
+#include "HeartAsset.h"
 #include "Camera.h"
 
 using namespace std;
@@ -39,6 +40,9 @@ vector<shared_ptr<StarAsset>> stars;
 vector<shared_ptr<StarAsset>> tmpStars;
 int StarCount = 0;
 int StarSpawnRate = rand() % 500 + rand () % 200 + 100;
+
+//ADDING A HEART POWER_UP!!!!!!
+vector<shared_ptr<HeartAsset>> hearts;
 
 //Global variable to hold the "difficulty" of the game
 double Diffy = 0.15;
@@ -149,6 +153,7 @@ void display() {
   for(auto it : enemies) { it->update(); }
   for(auto it : bullets) { it->update(); }
   for(auto it : stars)   { it->update(); }
+ // for(auto it : hearts)  { it->update(); }
   player->update();
 
   //adding the enemies, bullets & stars to the temp list 
@@ -160,6 +165,7 @@ void display() {
   for(auto it : enemies) { it->draw(); }
   for(auto it : bullets) { it->draw(); }
   for(auto it : stars)   { it->draw(); }
+  for(auto it : hearts)  { it->draw(); }
   player->draw();
 
   //swapping the enemies, bullets & stars lists with the alive enemies, bullets & stars
@@ -216,6 +222,9 @@ int main(int argc, char ** argv) {
 
 	//Adding the players coordinates into the game
 	player = shared_ptr<Player> (new Player(0, 0, 0));
+
+  //Test adding a heart
+  hearts.push_back(shared_ptr<HeartAsset> (new HeartAsset(0, 3, 5)));
 
 	// Set the camera to be looking down at the player and give them a good field of view
 	Camera::getInstance().setCamera(Camera::getInstance().getCameraM() * Matrix4::translation(Vector3(0.0, -2.0, 5.0)));

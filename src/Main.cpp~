@@ -15,8 +15,8 @@
 #include "Enemy.h"
 #include "Bullet.h"
 #include "StarAsset.h"
+#include "HeartAsset.h"
 #include "Camera.h"
-#include "SDL2_mixer/SDL_mixer.h"
 
 using namespace std;
 
@@ -24,9 +24,6 @@ using namespace std;
 
 //Is the game running?
 bool running = true;
-
-//Mix_Music is used to store the 
-Mix_Music *music = NULL;
 
 //Adding the player to the game
 shared_ptr<Player> player ;
@@ -43,6 +40,9 @@ vector<shared_ptr<StarAsset>> stars;
 vector<shared_ptr<StarAsset>> tmpStars;
 int StarCount = 0;
 int StarSpawnRate = rand() % 500 + rand () % 200 + 100;
+
+//ADDING A HEART POWER_UP!!!!!!
+vector<shared_ptr<HeartAsset>> hearts;
 
 //Global variable to hold the "difficulty" of the game
 double Diffy = 0.15;
@@ -153,6 +153,7 @@ void display() {
   for(auto it : enemies) { it->update(); }
   for(auto it : bullets) { it->update(); }
   for(auto it : stars)   { it->update(); }
+  for(auto it : hearts)  { it->update(); }
   player->update();
 
   //adding the enemies, bullets & stars to the temp list 
@@ -164,6 +165,7 @@ void display() {
   for(auto it : enemies) { it->draw(); }
   for(auto it : bullets) { it->draw(); }
   for(auto it : stars)   { it->draw(); }
+  for(auto it : hearts)  { it->draw(); }
   player->draw();
 
   //swapping the enemies, bullets & stars lists with the alive enemies, bullets & stars
@@ -186,11 +188,6 @@ int main(int argc, char ** argv) {
 	Uint32 height = 480;
 	Uint32 colour_depth = 16; // in bits
 	Uint32 delay = 1000/60; // in milliseconds
-	//Audio variables
-	int audio_rate = 22050;	
-	Uint16 audio_format = Audio_S16; /* 16-bit stereo */
-	int audio_channels = 2;
-	int audio_buffers = 4096;
 
 	// Initialise SDL - when using C/C++ it's common to have to
 	// initialise libraries by calling a function within them.
@@ -223,13 +220,11 @@ int main(int argc, char ** argv) {
 	  return 1;
 	}	
 
-	if(Mix_OpenAudio(audio_rate, audio_format, audio_channels, audio_buffers)) {
-	  printf("Unable to open audio!\n");
-	  SDL_Quit();
-	}
-
 	//Adding the players coordinates into the game
 	player = shared_ptr<Player> (new Player(0, 0, 0));
+
+  //Test adding a heart
+  hearts.push_back(shared_ptr<HeartAsset> (new HeartAsset(0, 3, 5)));
 
 	// Set the camera to be looking down at the player and give them a good field of view
 	Camera::getInstance().setCamera(Camera::getInstance().getCameraM() * Matrix4::translation(Vector3(0.0, -2.0, 5.0)));
@@ -262,22 +257,6 @@ int main(int argc, char ** argv) {
 		case SDLK_DOWN:
 		  //Camera::getInstance().setCamera(camera * Matrix4::translation(Vector3(0.0, 0.0, 5.0))); 
 		  break;
-
-		case SDLK_m:
-		  if(key.state == SDL_PRESSED) 
-		  {
-		    if(music == NULL) 
-		    {
-		      Mix_PlayMusic(music, 0);
-		      Mix_HookMusicFinished(musicDone);
-		    } else 
-		    {
-		      Mix_HaltMusic();
-		      Mix_FreeMusic(music);
-		      music = NULL;
-		    }
-		    break;
-		  }
 
 		case SDLK_ESCAPE:
 		  SDL_Quit();
@@ -316,11 +295,4 @@ int main(int argc, char ** argv) {
 	SDL_Delay(16);	
 	display();
 	}
-
-  void musicDone() 
-  {
-    Mix_HaltMusic();
-    Mix_FreeMusic(music);
-    music = NULL;
-  }
 } //NatsuSt
