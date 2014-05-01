@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
 project("CubeRacer")
 
 #set the source files and path 
-set(SOURCES src/Main.cpp src/GameAsset.cpp src/GameAsset.h src/Camera.cpp src/Camera.h src/BoundingBox.cpp src/BoundingBox.h src/CubeAsset.cpp src/CubeAsset.h src/Player.cpp src/Player.h src/Enemy.cpp src/Enemy.h src/Bullet.cpp src/Bullet.h src/StarAsset.cpp src/StarAsset.h)
+set(SOURCES CubeRacer/src/Main.cpp CubeRacer/src/GameAsset.cpp CubeRacer/src/GameAsset.h CubeRacer/src/Camera.cpp CubeRacer/src/Camera.h CubeRacer/src/BoundingBox.cpp CubeRacer/CubeRacer/src/BoundingBox.h CubeRacer/src/CubeAsset.cpp CubeRacer/src/CubeAsset.h CubeRacer/src/Player.cpp CubeRacer/src/Player.h CubeRacer/src/Enemy.cpp CubeRacer/src/Enemy.h CubeRacer/src/Bullet.cpp CubeRacer/src/Bullet.h CubeRacer/src/StarAsset.cpp CubeRacer/src/StarAsset.h)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/Modules)
 
 #Checking all packages are installed
@@ -64,7 +64,7 @@ set(LIBS ${LIBS} ${SDL2_LIBRARY} ${OpenGL_LIBRARY} ${GLEW_LIBRARY} ${Vectormath_
 link_libraries(${LIBS})
 
 #Create the executable file 
-add_executable(CubeRacer ${SOURCES})
+add_executable(CubeRacerRun ${SOURCES})
 
 ### LINKER ###
-target_link_libraries(CubeRacer GL GLU GLEW SDL2)
+target_link_libraries(CubeRacerRun GL GLU GLEW SDL2)
