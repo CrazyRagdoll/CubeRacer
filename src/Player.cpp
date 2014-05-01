@@ -9,7 +9,7 @@ Player::Player()
   Player(0, 0, 0);
 }
 
-Player::Player(float x, float y, float z): Ammo(3) , ammoRespawn(2.0) , score(0) {
+Player::Player(float x, float y, float z): Ammo(3) , ammoRespawn(2.0) , score(0) , invulnerable(false) {
 
   // A default "unit" cube
   num_vertices = 4;
@@ -68,6 +68,14 @@ double Player::getAmmoRate(){
 
 void Player::changeAmmo(int ammoVal){
   Ammo = Ammo + ammoVal;
+}
+
+void Player::playerInvulnerable(){
+  invulnerable = true;
+}
+
+void Player::playerVulnerable(){
+  invulnerable = false;
 }
 
 void Player::move(double moving){

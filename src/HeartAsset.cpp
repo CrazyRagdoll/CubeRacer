@@ -56,7 +56,7 @@ HeartAsset::~HeartAsset() {
 
 void HeartAsset::update() {
   if (isAlive) {
-    shared_ptr<Point3> p = shared_ptr<Point3>(new Point3(this->bbox->getCentre()->getX(), -0.3, this->bbox->getCentre()->getZ()-0.2));
+    shared_ptr<Point3> p = shared_ptr<Point3>(new Point3(this->bbox->getCentre()->getX(), -0.3, this->bbox->getCentre()->getZ()-0.3));
 
     bbox.reset();
     bbox = shared_ptr<BoundingBox>(new BoundingBox(*p, 1.0, 1.0, 1.0));

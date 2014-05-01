@@ -39,7 +39,7 @@ HeartAsset::HeartAsset(float x, float y, float z)
 	F0, F1, F2,	//Bottom left point
 	F4, F3, F0,
 	F2, F5, F0,
-	F0, F5, F3
+	F0, F5, F4
 
 
 }; // three vertices per triangle
@@ -56,7 +56,7 @@ HeartAsset::~HeartAsset() {
 
 void HeartAsset::update() {
   if (isAlive) {
-    shared_ptr<Point3> p = shared_ptr<Point3>(new Point3(this->bbox->getCentre()->getX(), -0.3, this->bbox->getCentre()->getZ()-0.2));
+    shared_ptr<Point3> p = shared_ptr<Point3>(new Point3(this->bbox->getCentre()->getX(), -0.3, this->bbox->getCentre()->getZ()-0.35));
 
     bbox.reset();
     bbox = shared_ptr<BoundingBox>(new BoundingBox(*p, 1.0, 1.0, 1.0));

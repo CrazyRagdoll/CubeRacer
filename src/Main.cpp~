@@ -43,6 +43,11 @@ int StarSpawnRate = rand() % 500 + rand () % 200 + 100;
 
 //ADDING A HEART POWER_UP!!!!!!
 vector<shared_ptr<HeartAsset>> hearts;
+vector<shared_ptr<HeartAsset>> tmpHearts;
+int HeartCount = 0;
+int HeartSpawnRate = rand() % 1000 + rand () % 500 + 200;
+int invulnerableDuration = 0;
+int invulnerableEnd = 250;
 
 //Global variable to hold the "difficulty" of the game
 double Diffy = 0.15;
@@ -78,16 +83,17 @@ void display() {
   glClearColor(0.0f, 0.0f, 0.0f, 0.5f);
   glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
   
-  //Increase EnemyCount & StarCount by 1
+  //Increase EnemyCount, HeartCount & StarCount by 1
   EnemyCount++;
   StarCount++;
+  HeartCount++;
 
   //Calculating the time to deal with difficulty 
   t = clock();
   double time = ((float)t/CLOCKS_PER_SEC) * 1.5;
 	
   //Giving the player an extra bullet every 5 seconds
-  if((fmod(time, player->getAmmoRate()) < 0.002) && (fmod(time, 2.5) > 0)){ 
+  if((fmod(time, player->getAmmoRate()) < 0.002) && (fmod(time, player->getAmmoRate()) > 0)){ 
     player->changeAmmo(1); 
   }
 
@@ -98,6 +104,14 @@ void display() {
       stars.push_back(shared_ptr<StarAsset> (new StarAsset(player->bbox->getCentre()->getX() + rnd, -0.3, 50)));
     }
   }    
+
+  //Spawning some hearts!
+  if(player->isAlive){
+    if(fmod(HeartCount, HeartSpawnRate) == 0 ){
+      int rnd = rand() % 30 - 15;
+      hearts.push_back(shared_ptr<HeartAsset> (new HeartAsset(player->bbox->getCentre()->getX() + rnd, 0.0, 35)));
+    }
+  }
 
   //If the player is alive spawn enemies every time the count increments by 20.
   if(player->isAlive){
@@ -112,17 +126,36 @@ void display() {
   }
 
   //Collision detection between the player and enemies.
-  for(auto i : enemies) { 
-    if( i->collidesWith(*player)){
-      player->dead();
+  if(!player->invulnerable) {
+    for(auto i : enemies) { 
+      if( i->collidesWith(*player)){
+	player->dead();
+      }else { /*i->dead();*/ } //if the players invulnerable kill the enemy asset
     }
   }
 
-  //Collision detection between the stars and players
+  //
+  if(player->invulnerable) {
+    for(auto i : enemies) {
+      if( i->collidesWith(*player)){
+	i->dead();
+      }
+    }
+  }
+
+  //Collision detection between the stars and player
   for(auto i : stars) {
     if( i->collidesWith(*player)){
       i->dead();
       player->incScore(50);
+    }
+  }
+
+  //Collision detection between the hearts and player
+  for(auto i : hearts) {
+    if( i->collidesWith(*player)){
+      i->dead();
+      player->playerInvulnerable();
     }
   }
 
@@ -135,6 +168,16 @@ void display() {
       }
     }
   } 
+
+  if(player->invulnerable)
+  {
+     invulnerableDuration++;
+  } else { invulnerableDuration = 0; }
+
+  if(fmod(invulnerableDuration, invulnerableEnd) == 0)
+  {
+    player->playerVulnerable();
+  }
   
   //Setting different difficulty values over time to make the game harder the longer you 	play.
   for(auto it : enemies){
@@ -148,6 +191,7 @@ void display() {
   tmpEnemies.clear();
   tmpBullets.clear();
   tmpStars.clear();
+  tmpHearts.clear();
   
   //Updating the assets
   for(auto it : enemies) { it->update(); }
@@ -160,6 +204,7 @@ void display() {
   for(auto it : enemies) { if(it->isAlive) { tmpEnemies.push_back(it); }}
   for(auto it : bullets) { if(it->isAlive) { tmpBullets.push_back(it); }}
   for(auto it : stars)   { if(it->isAlive) { tmpStars.push_back(it);   }}
+  for(auto it : hearts)  { if(it->isAlive) { tmpHearts.push_back(it);  }}
 
   //Drawing the assets onto the game
   for(auto it : enemies) { it->draw(); }
@@ -172,9 +217,7 @@ void display() {
   enemies.swap(tmpEnemies);
   bullets.swap(tmpBullets);
   stars.swap(tmpStars);
-  
-  //Clearing dead enemies
-  for(auto it : enemies) { if(!it->isAlive) { it.reset(); }}
+  hearts.swap(tmpHearts);
 
   if(!player->isAlive){ running = false; SDL_Quit(); }
 
@@ -224,7 +267,7 @@ int main(int argc, char ** argv) {
 	player = shared_ptr<Player> (new Player(0, 0, 0));
 
   //Test adding a heart
-  hearts.push_back(shared_ptr<HeartAsset> (new HeartAsset(0, 3, 5)));
+  hearts.push_back(shared_ptr<HeartAsset> (new HeartAsset(0, 0, 10)));
 
 	// Set the camera to be looking down at the player and give them a good field of view
 	Camera::getInstance().setCamera(Camera::getInstance().getCameraM() * Matrix4::translation(Vector3(0.0, -2.0, 5.0)));

@@ -21,6 +21,10 @@ class Player : public GameAsset {
   virtual double getAmmoRate();
   virtual void changeAmmo(int ammoVal);
 
+  //Vunrability
+  virtual void playerInvulnerable();
+  virtual void playerVulnerable();
+
   virtual void update();
   virtual void draw();
   virtual void clean();
@@ -28,6 +32,7 @@ class Player : public GameAsset {
   //Adding ammo to give to the player
   int Ammo;
   double ammoRespawn;
+  bool invulnerable;
 
   enum vertices {
 	F0, F1, F2, F3, 
