@@ -17,7 +17,7 @@ GameAsset::GameAsset() {
   this->f_shader = "CubeRacer/shaders/hello-gl.f.glsl";
 }
 
-GameAsset::GameAsset(const string & v_shader, const string & f_shader): isAlive(true) {
+GameAsset::GameAsset(const string & v_shader, const string & f_shader) {
   common_init();
   this->v_shader = v_shader;
   this->f_shader = f_shader;
