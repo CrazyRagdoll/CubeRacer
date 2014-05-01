@@ -39,11 +39,11 @@ if(NOT VECTORMATH_FOUND)
 endif(NOT VECTORMATH_FOUND)
 
 #Include directories 
-include_directories(${SDL2_INCLUDE_DIRS} ${OpenGL_INCLUDE_DIRS} ${Vectormath_INCLUDE_DIRS})
+include_directories(${SDL2_INCLUDE_DIRS} ${OpenGL_INCLUDE_DIRS} ${Vectormath_INCLUDE_DIRS ${GLEW_INCLUDE_DIRS}})
 #Linker directories
-link_directories(${SDL2_LIBRARY_DIRS} ${OpenGL_LIBRARY_DIRS} ${Vectormath_LIBRARY_DIRS})
+link_directories(${SDL2_LIBRARY_DIRS} ${OpenGL_LIBRARY_DIRS} ${Vectormath_LIBRARY_DIRS} ${GLEW_LIBRARY_DIRS})
 #Definitions 
-add_definitions(${SDL_DEFINITIONS} ${OpenGL_DEFINITIONS} ${Vectormath_DEFINITIONS})
+add_definitions(${SDL_DEFINITIONS} ${OpenGL_DEFINITIONS} ${Vectormath_DEFINITIONS} ${GLEW_DEFINITIONS})
 
 #Compiler flags depending on the OS 
 if (UNIX)
@@ -64,7 +64,7 @@ set(LIBS ${LIBS} ${SDL2_LIBRARY} ${OpenGL_LIBRARY} ${GLEW_LIBRARY} ${Vectormath_
 link_libraries(${LIBS})
 
 #Create the executable file 
-add_executable(CubeRacerRun ${SOURCES})
+add_executable(CubeRacer ${SOURCES})
 
 ### LINKER ###
 target_link_libraries(CubeRacerRun GL GLU GLEW SDL2)
