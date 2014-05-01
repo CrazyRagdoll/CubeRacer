@@ -2,8 +2,8 @@
 
 StarAsset::StarAsset() 
   : GameAsset(
-	      string("shaders/hello-gl.v.glsl")
-	      , string("shaders/starAsset.f.glsl")
+	      string("CubeRacer/shaders/hello-gl.v.glsl")
+	      , string("CubeRacer/shaders/starAsset.f.glsl")
 	      )
 {
   StarAsset(0, 0, 0);
@@ -11,8 +11,8 @@ StarAsset::StarAsset()
 
 StarAsset::StarAsset(float x, float y, float z) 
   : GameAsset(
-      string("shaders/hello-gl.v.glsl"), 
-      string("shaders/starAsset-gl.f.glsl")
+      string("CubeRacer/shaders/hello-gl.v.glsl"), 
+      string("CubeRacer/shaders/starAsset-gl.f.glsl")
 ){
 
   // A default "unit" Star

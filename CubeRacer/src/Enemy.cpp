@@ -2,8 +2,8 @@
 
 Enemy::Enemy() 
   : GameAsset(
-	      string("shaders/hello-gl.v.glsl")
-	      , string("shaders/enemy-gl.f.glsl")
+	      string("CubeRacer/shaders/hello-gl.v.glsl")
+	      , string("CubeRacer/shaders/enemy-gl.f.glsl")
 	      )
 {
   Enemy(0, 0, 0);
@@ -11,8 +11,8 @@ Enemy::Enemy()
 
 Enemy::Enemy(float x, float y, float z)
   : GameAsset(
-      string("shaders/hello-gl.v.glsl"), 
-      string("shaders/enemy-gl.f.glsl")
+      string("CubeRacer/shaders/hello-gl.v.glsl"), 
+      string("CubeRacer/shaders/enemy-gl.f.glsl")
 ) {
 
   // A default "unit" cube

@@ -2,8 +2,8 @@
 
 Player::Player() 
   : GameAsset(
-	      string("shaders/hello-gl.v.glsl")
-	      , string("shaders/hello-gl.f.glsl")
+	      string("CubeRacer/shaders/hello-gl.v.glsl")
+	      , string("CubeRacer/shaders/hello-gl.f.glsl")
 	      )
 {
   Player(0, 0, 0);
