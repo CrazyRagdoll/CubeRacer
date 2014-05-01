@@ -1,0 +1,106 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/sam/CubeRacer/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1059018598/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1059018598.dir/build.make CMakeFiles/cmTryCompileExec1059018598.dir/build
+make[1]: Entering directory `/home/sam/CubeRacer/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/sam/CubeRacer/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1059018598.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1059018598.dir/CheckSymbolExists.c.o   -c /home/sam/CubeRacer/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1059018598
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1059018598.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1059018598.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1059018598 -rdynamic 
+CMakeFiles/cmTryCompileExec1059018598.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1059018598] Error 1
+make[1]: Leaving directory `/home/sam/CubeRacer/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1059018598/fast] Error 2
+
+File /home/sam/CubeRacer/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/sam/CubeRacer/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2401595462/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2401595462.dir/build.make CMakeFiles/cmTryCompileExec2401595462.dir/build
+make[1]: Entering directory `/home/sam/CubeRacer/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/sam/CubeRacer/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2401595462.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2401595462.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2401595462
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2401595462.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2401595462.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2401595462 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2401595462] Error 1
+make[1]: Leaving directory `/home/sam/CubeRacer/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2401595462/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/sam/CubeRacer/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1776615498/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1776615498.dir/build.make CMakeFiles/cmTryCompileExec1776615498.dir/build
+make[1]: Entering directory `/home/sam/CubeRacer/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/sam/CubeRacer/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1776615498.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1776615498.dir/CheckSymbolExists.c.o   -c /home/sam/CubeRacer/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1776615498
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1776615498.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1776615498.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1776615498 -rdynamic 
+CMakeFiles/cmTryCompileExec1776615498.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/sam/CubeRacer/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1776615498] Error 1
+make: *** [cmTryCompileExec1776615498/fast] Error 2
+
+File /home/sam/CubeRacer/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/sam/CubeRacer/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec967499911/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec967499911.dir/build.make CMakeFiles/cmTryCompileExec967499911.dir/build
+make[1]: Entering directory `/home/sam/CubeRacer/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/sam/CubeRacer/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec967499911.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec967499911.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec967499911
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec967499911.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec967499911.dir/CheckFunctionExists.c.o  -o cmTryCompileExec967499911 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/sam/CubeRacer/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec967499911] Error 1
+make: *** [cmTryCompileExec967499911/fast] Error 2
+
+
