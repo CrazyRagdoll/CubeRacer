@@ -1,22 +1,38 @@
-Hello_World!
+Hello_Planet!
 
 My name is Sam, and this is my game, it is a simple game made by a simple man. It does not require much smarts to play. 
 
+The aim of the game is to survive for as long as possible; the longer you live the more points you get.
+There are 4 objects within the game world:
+The Player - A 3D Triangular Pyramid, controlled by you!
+The Enemy - Multiple 3D Cubes which will constantly move towards you when the game starts, watch out they'll kill you.
+The Star - 3D Stars which will occasionally spawn, grab 'em for extra points!
+The Heart - 2D Cartoon Heart, this bad boy will give you invunrability for a few seconds!
+
+How to Play:
+
 Here are the keys:
 
+Function:     Key:
 Move Right - Right key.
 Move Left  - Left key.
-Fire       - Spacebar.
+Shoot      - Spacebar.
 Exit       - Escape.
 
-When adding music to the game I used: http://www.kekkai.org/roger/sdl/mixer/
-
 The libaries that I have inclucded in my games are:
-SDL2 - 
+SDL2 - http://www.libsdl.org/
 
-Glew/glu - 
+Glew/glu - http://glew.sourceforge.net/
 
-Vectormath - 
+Vectormath - http://bullet.svn.sourceforge.net/viewvc/bullet/trunk/Extras/vectormathlibrary/
 
-When editing cmake to allow it to find different libaries I had to use external sheets of code from different website: FindSDL2.cmake, FindGLEW.cmake, FindVECTORMATH.cmake.
-These websites are where I found the .cmake files from: 
+The buildtools that I have used:
+
+CMake - http://www.cmake.org/
+
+When editing CMake to allow it to find different libaries I had to use external sheets of code from different website: FindSDL2.cmake, FindGLEW.cmake, FindVECTORMATH.cmake.
+These websites are where I found the .cmake files: 
+
+FindSDL2.cmake: http://code.google.com/p/dolphin-emu/source/browse/CMakeTests/FindSDL2.cmake?name=async-dvd
+FindGLEW.cmake: 
+FindVECTORMATH.cmake:
