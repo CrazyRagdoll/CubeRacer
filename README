@@ -24,7 +24,15 @@ SDL2 - http://www.libsdl.org/
 
 Glew/glu - http://glew.sourceforge.net/
 
-Vectormath - 
+Vectormath - http://bullet.svn.sourceforge.net/viewvc/bullet/trunk/Extras/vectormathlibrary/
 
-When editing cmake to allow it to find different libaries I had to use external sheets of code from different website: FindSDL2.cmake, FindGLEW.cmake, FindVECTORMATH.cmake.
+The buildtools that I have used:
+
+CMake - http://www.cmake.org/
+
+When editing CMake to allow it to find different libaries I had to use external sheets of code from different website: FindSDL2.cmake, FindGLEW.cmake, FindVECTORMATH.cmake.
 These websites are where I found the .cmake files: 
+
+FindSDL2.cmake: http://code.google.com/p/dolphin-emu/source/browse/CMakeTests/FindSDL2.cmake?name=async-dvd
+FindGLEW.cmake: 
+FindVECTORMATH.cmake:
