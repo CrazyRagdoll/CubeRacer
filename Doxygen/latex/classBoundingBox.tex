@@ -1,0 +1,143 @@
+\hypertarget{classBoundingBox}{\section{Bounding\-Box Class Reference}
+\label{classBoundingBox}\index{Bounding\-Box@{Bounding\-Box}}
+}
+
+
+{\ttfamily \#include $<$Bounding\-Box.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBoundingBox_af06000fc84c707ac6fc5451c63de3480}{Bounding\-Box} (const \hyperlink{classVectormath_1_1Aos_1_1Point3}{Point3} \&c, const float extent\-\_\-x, const float extent\-\_\-y, const float extent\-\_\-z)
+\item 
+bool \hyperlink{classBoundingBox_a90418b763701826c706178845903dd7c}{collides\-With} (const \hyperlink{classBoundingBox}{Bounding\-Box} \&b)
+\item 
+pair$<$ float, float $>$ \hyperlink{classBoundingBox_a20a8d578fbfd1702e183921f9ec0a0d2}{project\-Onto\-Axis} (const \hyperlink{classBoundingBox}{Bounding\-Box} \&b, enum \hyperlink{BoundingBox_8h_ac79c9040b19c90137f1ae7604877f1d8}{A\-X\-I\-S})
+\item 
+shared\-\_\-ptr$<$ \hyperlink{classVectormath_1_1Aos_1_1Point3}{Point3} $>$ \hyperlink{classBoundingBox_aceef7769498825680d34638bccc6f490}{get\-Centre} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file Bounding\-Box.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBoundingBox_af06000fc84c707ac6fc5451c63de3480}{\index{Bounding\-Box@{Bounding\-Box}!Bounding\-Box@{Bounding\-Box}}
+\index{Bounding\-Box@{Bounding\-Box}!BoundingBox@{Bounding\-Box}}
+\subsubsection[{Bounding\-Box}]{\setlength{\rightskip}{0pt plus 5cm}Bounding\-Box\-::\-Bounding\-Box (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point3} \&}]{c, }
+\item[{const float}]{extent\-\_\-x, }
+\item[{const float}]{extent\-\_\-y, }
+\item[{const float}]{extent\-\_\-z}
+\end{DoxyParamCaption}
+)}}\label{classBoundingBox_af06000fc84c707ac6fc5451c63de3480}
+
+
+Definition at line 3 of file Bounding\-Box.\-cpp.
+
+
+\begin{DoxyCode}
+3                                                                                                            
+      :
+4     c(make\_shared<Point3>(c)), 
+5     h\_x(\hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3}(extent\_x/2.0, 0.0, 0.0)), 
+6     h\_y(\hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3}(0.0, extent\_y/2.0, 0.0)), 
+7     h\_z(\hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3}(0.0, 0.0, extent\_z/2.0)) \{
+8 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBoundingBox_a90418b763701826c706178845903dd7c}{\index{Bounding\-Box@{Bounding\-Box}!collides\-With@{collides\-With}}
+\index{collides\-With@{collides\-With}!BoundingBox@{Bounding\-Box}}
+\subsubsection[{collides\-With}]{\setlength{\rightskip}{0pt plus 5cm}bool Bounding\-Box\-::collides\-With (
+\begin{DoxyParamCaption}
+\item[{const {\bf Bounding\-Box} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{classBoundingBox_a90418b763701826c706178845903dd7c}
+
+
+Definition at line 19 of file Bounding\-Box.\-cpp.
+
+
+\begin{DoxyCode}
+19                                                     \{
+20 
+21   \textcolor{keywordflow}{if}(\hyperlink{BoundingBox_8cpp_a96f9743709dae2a20b698728b5e95dc8}{between}(\hyperlink{classBoundingBox_a20a8d578fbfd1702e183921f9ec0a0d2}{projectOntoAxis}(*\textcolor{keyword}{this}, \hyperlink{BoundingBox_8h_ac79c9040b19c90137f1ae7604877f1d8a58833a3110c570fb05130d40c365d1e4}{X}), \hyperlink{classBoundingBox_a20a8d578fbfd1702e183921f9ec0a0d2}{projectOntoAxis}(b, 
+      \hyperlink{BoundingBox_8h_ac79c9040b19c90137f1ae7604877f1d8a58833a3110c570fb05130d40c365d1e4}{X}))
+22      && \hyperlink{BoundingBox_8cpp_a96f9743709dae2a20b698728b5e95dc8}{between}(\hyperlink{classBoundingBox_a20a8d578fbfd1702e183921f9ec0a0d2}{projectOntoAxis}(*\textcolor{keyword}{this}, \hyperlink{BoundingBox_8h_ac79c9040b19c90137f1ae7604877f1d8a5596231eabd6cf29050967d5ac83ad84}{Y}), 
+      \hyperlink{classBoundingBox_a20a8d578fbfd1702e183921f9ec0a0d2}{projectOntoAxis}(b, \hyperlink{BoundingBox_8h_ac79c9040b19c90137f1ae7604877f1d8a5596231eabd6cf29050967d5ac83ad84}{Y}))
+23      && \hyperlink{BoundingBox_8cpp_a96f9743709dae2a20b698728b5e95dc8}{between}(\hyperlink{classBoundingBox_a20a8d578fbfd1702e183921f9ec0a0d2}{projectOntoAxis}(*\textcolor{keyword}{this}, \hyperlink{BoundingBox_8h_ac79c9040b19c90137f1ae7604877f1d8aa70478ce277ffc322f8e1e3418e07355}{Z}), 
+      \hyperlink{classBoundingBox_a20a8d578fbfd1702e183921f9ec0a0d2}{projectOntoAxis}(b, \hyperlink{BoundingBox_8h_ac79c9040b19c90137f1ae7604877f1d8aa70478ce277ffc322f8e1e3418e07355}{Z}))
+24      )
+25     \{
+26       \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+27     \}
+28 
+29   \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+30 \}
+\end{DoxyCode}
+\hypertarget{classBoundingBox_aceef7769498825680d34638bccc6f490}{\index{Bounding\-Box@{Bounding\-Box}!get\-Centre@{get\-Centre}}
+\index{get\-Centre@{get\-Centre}!BoundingBox@{Bounding\-Box}}
+\subsubsection[{get\-Centre}]{\setlength{\rightskip}{0pt plus 5cm}shared\-\_\-ptr$<$ {\bf Point3} $>$ Bounding\-Box\-::get\-Centre (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBoundingBox_aceef7769498825680d34638bccc6f490}
+
+
+Definition at line 54 of file Bounding\-Box.\-cpp.
+
+
+\begin{DoxyCode}
+54                                           \{
+55   \textcolor{keywordflow}{return} c;
+56 \}
+\end{DoxyCode}
+\hypertarget{classBoundingBox_a20a8d578fbfd1702e183921f9ec0a0d2}{\index{Bounding\-Box@{Bounding\-Box}!project\-Onto\-Axis@{project\-Onto\-Axis}}
+\index{project\-Onto\-Axis@{project\-Onto\-Axis}!BoundingBox@{Bounding\-Box}}
+\subsubsection[{project\-Onto\-Axis}]{\setlength{\rightskip}{0pt plus 5cm}pair$<$ float, float $>$ Bounding\-Box\-::project\-Onto\-Axis (
+\begin{DoxyParamCaption}
+\item[{const {\bf Bounding\-Box} \&}]{b, }
+\item[{enum {\bf A\-X\-I\-S}}]{axis}
+\end{DoxyParamCaption}
+)}}\label{classBoundingBox_a20a8d578fbfd1702e183921f9ec0a0d2}
+
+
+Definition at line 32 of file Bounding\-Box.\-cpp.
+
+
+\begin{DoxyCode}
+32                                                                                     \{
+33 
+34   \textcolor{keywordtype}{float} lo, hi;
+35 
+36   \textcolor{keywordflow}{switch} (axis) \{
+37   \textcolor{keywordflow}{case} \hyperlink{BoundingBox_8h_ac79c9040b19c90137f1ae7604877f1d8a58833a3110c570fb05130d40c365d1e4}{X}:
+38     lo  = \hyperlink{namespaceVectormath_1_1Aos_a936875ce20a59d623f0010b431581d98}{projection}( \hyperlink{classVectormath_1_1Aos_1_1Point3}{Point3}(\hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3}(*(b.c)) + (-1 * b.h\_x)), UNIT\_X\_AXIS);
+39     hi  = \hyperlink{namespaceVectormath_1_1Aos_a936875ce20a59d623f0010b431581d98}{projection}( \hyperlink{classVectormath_1_1Aos_1_1Point3}{Point3}(\hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3}(*(b.c)) + b.h\_x), UNIT\_X\_AXIS);
+40     \textcolor{keywordflow}{break};
+41   \textcolor{keywordflow}{case} \hyperlink{BoundingBox_8h_ac79c9040b19c90137f1ae7604877f1d8a5596231eabd6cf29050967d5ac83ad84}{Y}:
+42     lo  = \hyperlink{namespaceVectormath_1_1Aos_a936875ce20a59d623f0010b431581d98}{projection}( \hyperlink{classVectormath_1_1Aos_1_1Point3}{Point3}(\hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3}(*(b.c)) + (-1 * b.h\_y)), UNIT\_Y\_AXIS);
+43     hi  = \hyperlink{namespaceVectormath_1_1Aos_a936875ce20a59d623f0010b431581d98}{projection}( \hyperlink{classVectormath_1_1Aos_1_1Point3}{Point3}(\hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3}(*(b.c)) + b.h\_y), UNIT\_Y\_AXIS);
+44     \textcolor{keywordflow}{break};
+45   \textcolor{keywordflow}{case} \hyperlink{BoundingBox_8h_ac79c9040b19c90137f1ae7604877f1d8aa70478ce277ffc322f8e1e3418e07355}{Z}:
+46     lo  = \hyperlink{namespaceVectormath_1_1Aos_a936875ce20a59d623f0010b431581d98}{projection}( \hyperlink{classVectormath_1_1Aos_1_1Point3}{Point3}(\hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3}(*(b.c)) + (-1 * b.h\_z)), UNIT\_Z\_AXIS);
+47     hi  = \hyperlink{namespaceVectormath_1_1Aos_a936875ce20a59d623f0010b431581d98}{projection}( \hyperlink{classVectormath_1_1Aos_1_1Point3}{Point3}(\hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3}(*(b.c)) + b.h\_z), UNIT\_Z\_AXIS);
+48     \textcolor{keywordflow}{break};
+49   \}
+50 
+51   \textcolor{keywordflow}{return} make\_pair(lo, hi);
+52 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/sam/\-Cube\-Racer/src/\hyperlink{BoundingBox_8h}{Bounding\-Box.\-h}\item 
+/home/sam/\-Cube\-Racer/src/\hyperlink{BoundingBox_8cpp}{Bounding\-Box.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,35 @@
+\hypertarget{BoundingBox_8cpp}{\section{/home/sam/\-Cube\-Racer/src/\-Bounding\-Box.cpp File Reference}
+\label{BoundingBox_8cpp}\index{/home/sam/\-Cube\-Racer/src/\-Bounding\-Box.\-cpp@{/home/sam/\-Cube\-Racer/src/\-Bounding\-Box.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}Bounding\-Box.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{BoundingBox_8cpp_a96f9743709dae2a20b698728b5e95dc8}{between} (const pair$<$ float, float $>$ \&a, const pair$<$ float, float $>$ \&b)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{BoundingBox_8cpp_a96f9743709dae2a20b698728b5e95dc8}{\index{Bounding\-Box.\-cpp@{Bounding\-Box.\-cpp}!between@{between}}
+\index{between@{between}!BoundingBox.cpp@{Bounding\-Box.\-cpp}}
+\subsubsection[{between}]{\setlength{\rightskip}{0pt plus 5cm}bool between (
+\begin{DoxyParamCaption}
+\item[{const pair$<$ float, float $>$ \&}]{a, }
+\item[{const pair$<$ float, float $>$ \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{BoundingBox_8cpp_a96f9743709dae2a20b698728b5e95dc8}
+
+
+Definition at line 10 of file Bounding\-Box.\-cpp.
+
+
+\begin{DoxyCode}
+10                                                                           \{
+11   \textcolor{keywordflow}{if}((a.first >= b.first && a.first <= b.second)
+12      || (a.second >= b.first && a.second <= b.second))
+13     \{
+14       \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+15     \}
+16   \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+17 \}
+\end{DoxyCode}

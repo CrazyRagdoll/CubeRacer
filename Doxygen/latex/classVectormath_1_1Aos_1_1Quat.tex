@@ -1,0 +1,932 @@
+\hypertarget{classVectormath_1_1Aos_1_1Quat}{\section{Vectormath\-:\-:Aos\-:\-:Quat Class Reference}
+\label{classVectormath_1_1Aos_1_1Quat}\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+}
+
+
+{\ttfamily \#include $<$vectormath\-\_\-aos.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Quat_add864d8b2993555c949c27708da98492}{Quat} ()
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Quat_a9dcf3e36798a1d72e898dce8d0693858}{Quat} (const \hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \&quat)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Quat_af6d1f2dbba730b5dd155c24400873161}{Quat} (float x, float y, float z, float w)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Quat_a3c4ef0ffb3cc139c06340426d90e84b5}{Quat} (const \hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3} \&xyz, float w)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Quat_af61eecf13838a8cb72b0c694beae971b}{Quat} (const \hyperlink{classVectormath_1_1Aos_1_1Vector4}{Vector4} \&vec)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Quat_a9df4aeb15a7af04f4ba446059a099a71}{Quat} (const \hyperlink{classVectormath_1_1Aos_1_1Matrix3}{Matrix3} \&rot\-Mat)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Quat_a5cc6e6d27580904b9cc4d023134763e2}{Quat} (float scalar)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \& \hyperlink{classVectormath_1_1Aos_1_1Quat_a0d7baa5238b7bce21ef27629b62e349b}{operator=} (const \hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \&quat)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \& \hyperlink{classVectormath_1_1Aos_1_1Quat_a1ee991d2930ce1b3bdab9e012c27f130}{set\-X\-Y\-Z} (const \hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3} \&vec)
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3} \hyperlink{classVectormath_1_1Aos_1_1Quat_a8796319c36689f614f7ac703894d60f3}{get\-X\-Y\-Z} () const 
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \& \hyperlink{classVectormath_1_1Aos_1_1Quat_aaf8b9f42391c700a3fb3f3fc7a4279dd}{set\-X} (float x)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \& \hyperlink{classVectormath_1_1Aos_1_1Quat_a94831b10a0835a3520bf0c0dd05b22e4}{set\-Y} (float y)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \& \hyperlink{classVectormath_1_1Aos_1_1Quat_a7459f097a95f2b6452a9b92fcc7fcc2f}{set\-Z} (float z)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \& \hyperlink{classVectormath_1_1Aos_1_1Quat_a2c199fb1c797feb886666429486d6ea6}{set\-W} (float w)
+\item 
+float \hyperlink{classVectormath_1_1Aos_1_1Quat_aa83c97df393beb816c3b1ea8765ae91b}{get\-X} () const 
+\item 
+float \hyperlink{classVectormath_1_1Aos_1_1Quat_a68d167ff6d94e04da2958d786c0abd1c}{get\-Y} () const 
+\item 
+float \hyperlink{classVectormath_1_1Aos_1_1Quat_abc93cb2e4127c67facb3381993f0a5b3}{get\-Z} () const 
+\item 
+float \hyperlink{classVectormath_1_1Aos_1_1Quat_af3454e9af522029ab78c9194fdf596ec}{get\-W} () const 
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \& \hyperlink{classVectormath_1_1Aos_1_1Quat_a6f1771cc66b41eb720c07c99ca0ade2b}{set\-Elem} (int idx, float value)
+\item 
+float \hyperlink{classVectormath_1_1Aos_1_1Quat_ac78d925ad28ec0b1603e78d4401ff130}{get\-Elem} (int idx) const 
+\item 
+float \& \hyperlink{classVectormath_1_1Aos_1_1Quat_a5eff7e127f055a218122e1d9b610af22}{operator\mbox{[}$\,$\mbox{]}} (int idx)
+\item 
+float \hyperlink{classVectormath_1_1Aos_1_1Quat_ae961280298e1e79b72746c896afef57a}{operator\mbox{[}$\,$\mbox{]}} (int idx) const 
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \hyperlink{classVectormath_1_1Aos_1_1Quat_af77154deb297f50456f0191eb04555f2}{operator+} (const \hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \&quat) const 
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \hyperlink{classVectormath_1_1Aos_1_1Quat_a5dc40414292561084f7a013248b31c82}{operator-\/} (const \hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \&quat) const 
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \hyperlink{classVectormath_1_1Aos_1_1Quat_af70bf3713a385bccbfd0e02d5033f50f}{operator$\ast$} (const \hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \&quat) const 
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \hyperlink{classVectormath_1_1Aos_1_1Quat_adadc8d0019d4323e6bf39298090cdca3}{operator$\ast$} (float scalar) const 
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \hyperlink{classVectormath_1_1Aos_1_1Quat_ab42b4340a23dfb2660a513bf42c16a0e}{operator/} (float scalar) const 
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \& \hyperlink{classVectormath_1_1Aos_1_1Quat_acada50f52962864a653ab62e22f79191}{operator+=} (const \hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \&quat)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \& \hyperlink{classVectormath_1_1Aos_1_1Quat_abba2bc95bac997e9d643e99d7e170466}{operator-\/=} (const \hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \&quat)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \& \hyperlink{classVectormath_1_1Aos_1_1Quat_a21c31c4bf5cce9a8266a02d168b7eedf}{operator$\ast$=} (const \hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \&quat)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \& \hyperlink{classVectormath_1_1Aos_1_1Quat_a529954f9867e8949f2ff5fb46b36d14c}{operator$\ast$=} (float scalar)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \& \hyperlink{classVectormath_1_1Aos_1_1Quat_a9aca527ac1565fca86151d9e1b5921f0}{operator/=} (float scalar)
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \hyperlink{classVectormath_1_1Aos_1_1Quat_ac98a921fa0caecefd842fef175f84f9b}{operator-\/} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \hyperlink{classVectormath_1_1Aos_1_1Quat_a6dcd060694c3580ec7ef8abaf5e0a5f3}{identity} ()
+\item 
+static const \hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \hyperlink{classVectormath_1_1Aos_1_1Quat_a43f3ab0bdb1662a1062f3736aed7edf6}{rotation} (const \hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3} \&unit\-Vec0, const \hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3} \&unit\-Vec1)
+\item 
+static const \hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \hyperlink{classVectormath_1_1Aos_1_1Quat_aa491e8907ba8b28d99c13f89f8a73f1e}{rotation} (float radians, const \hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3} \&unit\-Vec)
+\item 
+static const \hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \hyperlink{classVectormath_1_1Aos_1_1Quat_af05b417afdd3d20c6f3a115b4f637322}{rotation\-X} (float radians)
+\item 
+static const \hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \hyperlink{classVectormath_1_1Aos_1_1Quat_ae70be84c4a769a4d01efe4384c8136fd}{rotation\-Y} (float radians)
+\item 
+static const \hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \hyperlink{classVectormath_1_1Aos_1_1Quat_a9cf1f17b2b296f94d3ae2058429f702c}{rotation\-Z} (float radians)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 879 of file vectormath\-\_\-aos.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_add864d8b2993555c949c27708da98492}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!Quat@{Quat}}
+\index{Quat@{Quat}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{Quat}]{\setlength{\rightskip}{0pt plus 5cm}Vectormath\-::\-Aos\-::\-Quat\-::\-Quat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_add864d8b2993555c949c27708da98492}
+
+
+Definition at line 889 of file vectormath\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+889 \{ \};
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_a9dcf3e36798a1d72e898dce8d0693858}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!Quat@{Quat}}
+\index{Quat@{Quat}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{Quat}]{\setlength{\rightskip}{0pt plus 5cm}Vectormath\-::\-Aos\-::\-Quat\-::\-Quat (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quat} \&}]{quat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_a9dcf3e36798a1d72e898dce8d0693858}
+
+
+Definition at line 44 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+45 \{
+46     mX = quat.mX;
+47     mY = quat.mY;
+48     mZ = quat.mZ;
+49     mW = quat.mW;
+50 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_af6d1f2dbba730b5dd155c24400873161}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!Quat@{Quat}}
+\index{Quat@{Quat}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{Quat}]{\setlength{\rightskip}{0pt plus 5cm}Vectormath\-::\-Aos\-::\-Quat\-::\-Quat (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z, }
+\item[{float}]{w}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_af6d1f2dbba730b5dd155c24400873161}
+
+
+Definition at line 52 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+53 \{
+54     mX = \_x;
+55     mY = \_y;
+56     mZ = \_z;
+57     mW = \_w;
+58 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_a3c4ef0ffb3cc139c06340426d90e84b5}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!Quat@{Quat}}
+\index{Quat@{Quat}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{Quat}]{\setlength{\rightskip}{0pt plus 5cm}Vectormath\-::\-Aos\-::\-Quat\-::\-Quat (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3} \&}]{xyz, }
+\item[{float}]{w}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_a3c4ef0ffb3cc139c06340426d90e84b5}
+
+
+Definition at line 60 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+61 \{
+62     this->\hyperlink{classVectormath_1_1Aos_1_1Quat_a1ee991d2930ce1b3bdab9e012c27f130}{setXYZ}( xyz );
+63     this->\hyperlink{classVectormath_1_1Aos_1_1Quat_a2c199fb1c797feb886666429486d6ea6}{setW}( \_w );
+64 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_af61eecf13838a8cb72b0c694beae971b}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!Quat@{Quat}}
+\index{Quat@{Quat}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{Quat}]{\setlength{\rightskip}{0pt plus 5cm}Vectormath\-::\-Aos\-::\-Quat\-::\-Quat (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector4} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classVectormath_1_1Aos_1_1Quat_af61eecf13838a8cb72b0c694beae971b}
+
+
+Definition at line 66 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+67 \{
+68     mX = vec.getX();
+69     mY = vec.getY();
+70     mZ = vec.getZ();
+71     mW = vec.getW();
+72 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_a9df4aeb15a7af04f4ba446059a099a71}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!Quat@{Quat}}
+\index{Quat@{Quat}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{Quat}]{\setlength{\rightskip}{0pt plus 5cm}Vectormath\-::\-Aos\-::\-Quat\-::\-Quat (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix3} \&}]{rot\-Mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classVectormath_1_1Aos_1_1Quat_a9df4aeb15a7af04f4ba446059a099a71}
+
+
+Definition at line 1521 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+1522 \{
+1523     \textcolor{keywordtype}{float} trace, radicand, \hyperlink{namespaceVectormath_1_1Aos_a6410ede725d953578af2c271eba5b2b0}{scale}, xx, yx, zx, xy, yy, zy, xz, yz, zz, tmpx, tmpy, tmpz, tmpw, qx, qy, 
+      qz, qw;
+1524     \textcolor{keywordtype}{int} negTrace, ZgtX, ZgtY, YgtX;
+1525     \textcolor{keywordtype}{int} largestXorY, largestYorZ, largestZorX;
+1526 
+1527     xx = tfrm.getCol0().\hyperlink{classVectormath_1_1Aos_1_1Point3_aae02e04a14cd7d4194ca681df958e08f}{getX}();
+1528     yx = tfrm.getCol0().getY();
+1529     zx = tfrm.getCol0().getZ();
+1530     xy = tfrm.getCol1().getX();
+1531     yy = tfrm.getCol1().getY();
+1532     zy = tfrm.getCol1().getZ();
+1533     xz = tfrm.getCol2().getX();
+1534     yz = tfrm.getCol2().getY();
+1535     zz = tfrm.getCol2().getZ();
+1536 
+1537     trace = ( ( xx + yy ) + zz );
+1538 
+1539     negTrace = ( trace < 0.0f );
+1540     ZgtX = zz > xx;
+1541     ZgtY = zz > yy;
+1542     YgtX = yy > xx;
+1543     largestXorY = ( !ZgtX || !ZgtY ) && negTrace;
+1544     largestYorZ = ( YgtX || ZgtX ) && negTrace;
+1545     largestZorX = ( ZgtY || !YgtX ) && negTrace;
+1546     
+1547     \textcolor{keywordflow}{if} ( largestXorY )
+1548     \{
+1549         zz = -zz;
+1550         xy = -xy;
+1551     \}
+1552     \textcolor{keywordflow}{if} ( largestYorZ )
+1553     \{
+1554         xx = -xx;
+1555         yz = -yz;
+1556     \}
+1557     \textcolor{keywordflow}{if} ( largestZorX )
+1558     \{
+1559         yy = -yy;
+1560         zx = -zx;
+1561     \}
+1562 
+1563     radicand = ( ( ( xx + yy ) + zz ) + 1.0f );
+1564     scale = ( 0.5f * ( 1.0f / sqrtf( radicand ) ) );
+1565 
+1566     tmpx = ( ( zy - yz ) * scale );
+1567     tmpy = ( ( xz - zx ) * scale );
+1568     tmpz = ( ( yx - xy ) * scale );
+1569     tmpw = ( radicand * \hyperlink{namespaceVectormath_1_1Aos_a6410ede725d953578af2c271eba5b2b0}{scale} );
+1570     qx = tmpx;
+1571     qy = tmpy;
+1572     qz = tmpz;
+1573     qw = tmpw;
+1574 
+1575     \textcolor{keywordflow}{if} ( largestXorY )
+1576     \{
+1577         qx = tmpw;
+1578         qy = tmpz;
+1579         qz = tmpy;
+1580         qw = tmpx;
+1581     \}
+1582     \textcolor{keywordflow}{if} ( largestYorZ )
+1583     \{
+1584         tmpx = qx;
+1585         tmpz = qz;
+1586         qx = qy;
+1587         qy = tmpx;
+1588         qz = qw;
+1589         qw = tmpz;
+1590     \}
+1591 
+1592     mX = qx;
+1593     mY = qy;
+1594     mZ = qz;
+1595     mW = qw;
+1596 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_a5cc6e6d27580904b9cc4d023134763e2}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!Quat@{Quat}}
+\index{Quat@{Quat}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{Quat}]{\setlength{\rightskip}{0pt plus 5cm}Vectormath\-::\-Aos\-::\-Quat\-::\-Quat (
+\begin{DoxyParamCaption}
+\item[{float}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classVectormath_1_1Aos_1_1Quat_a5cc6e6d27580904b9cc4d023134763e2}
+
+
+Definition at line 74 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+75 \{
+76     mX = scalar;
+77     mY = scalar;
+78     mZ = scalar;
+79     mW = scalar;
+80 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_ac78d925ad28ec0b1603e78d4401ff130}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!get\-Elem@{get\-Elem}}
+\index{get\-Elem@{get\-Elem}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{get\-Elem}]{\setlength{\rightskip}{0pt plus 5cm}float Vectormath\-::\-Aos\-::\-Quat\-::get\-Elem (
+\begin{DoxyParamCaption}
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_ac78d925ad28ec0b1603e78d4401ff130}
+
+
+Definition at line 208 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+209 \{
+210     \textcolor{keywordflow}{return} *(&mX + idx);
+211 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_af3454e9af522029ab78c9194fdf596ec}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!get\-W@{get\-W}}
+\index{get\-W@{get\-W}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{get\-W}]{\setlength{\rightskip}{0pt plus 5cm}float Vectormath\-::\-Aos\-::\-Quat\-::get\-W (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_af3454e9af522029ab78c9194fdf596ec}
+
+
+Definition at line 197 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+198 \{
+199     \textcolor{keywordflow}{return} mW;
+200 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_aa83c97df393beb816c3b1ea8765ae91b}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!get\-X@{get\-X}}
+\index{get\-X@{get\-X}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{get\-X}]{\setlength{\rightskip}{0pt plus 5cm}float Vectormath\-::\-Aos\-::\-Quat\-::get\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_aa83c97df393beb816c3b1ea8765ae91b}
+
+
+Definition at line 164 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+165 \{
+166     \textcolor{keywordflow}{return} mX;
+167 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_a8796319c36689f614f7ac703894d60f3}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!get\-X\-Y\-Z@{get\-X\-Y\-Z}}
+\index{get\-X\-Y\-Z@{get\-X\-Y\-Z}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{get\-X\-Y\-Z}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector3} Vectormath\-::\-Aos\-::\-Quat\-::get\-X\-Y\-Z (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_a8796319c36689f614f7ac703894d60f3}
+
+
+Definition at line 153 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+154 \{
+155     \textcolor{keywordflow}{return} Vector3( mX, mY, mZ );
+156 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_a68d167ff6d94e04da2958d786c0abd1c}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!get\-Y@{get\-Y}}
+\index{get\-Y@{get\-Y}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{get\-Y}]{\setlength{\rightskip}{0pt plus 5cm}float Vectormath\-::\-Aos\-::\-Quat\-::get\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_a68d167ff6d94e04da2958d786c0abd1c}
+
+
+Definition at line 175 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+176 \{
+177     \textcolor{keywordflow}{return} mY;
+178 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_abc93cb2e4127c67facb3381993f0a5b3}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!get\-Z@{get\-Z}}
+\index{get\-Z@{get\-Z}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{get\-Z}]{\setlength{\rightskip}{0pt plus 5cm}float Vectormath\-::\-Aos\-::\-Quat\-::get\-Z (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_abc93cb2e4127c67facb3381993f0a5b3}
+
+
+Definition at line 186 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+187 \{
+188     \textcolor{keywordflow}{return} mZ;
+189 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_a6dcd060694c3580ec7ef8abaf5e0a5f3}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!identity@{identity}}
+\index{identity@{identity}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{identity}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Quat} Vectormath\-::\-Aos\-::\-Quat\-::identity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classVectormath_1_1Aos_1_1Quat_a6dcd060694c3580ec7ef8abaf5e0a5f3}
+
+
+Definition at line 82 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+83 \{
+84     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Quat_add864d8b2993555c949c27708da98492}{Quat}( 0.0f, 0.0f, 0.0f, 1.0f );
+85 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_af70bf3713a385bccbfd0e02d5033f50f}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Quat} Vectormath\-::\-Aos\-::\-Quat\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quat} \&}]{quat}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_af70bf3713a385bccbfd0e02d5033f50f}
+
+
+Definition at line 384 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+385 \{
+386     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Quat_add864d8b2993555c949c27708da98492}{Quat}(
+387         ( ( ( ( mW * quat.mX ) + ( mX * quat.mW ) ) + ( mY * quat.mZ ) ) - ( mZ * quat.mY ) ),
+388         ( ( ( ( mW * quat.mY ) + ( mY * quat.mW ) ) + ( mZ * quat.mX ) ) - ( mX * quat.mZ ) ),
+389         ( ( ( ( mW * quat.mZ ) + ( mZ * quat.mW ) ) + ( mX * quat.mY ) ) - ( mY * quat.mX ) ),
+390         ( ( ( ( mW * quat.mW ) - ( mX * quat.mX ) ) - ( mY * quat.mY ) ) - ( mZ * quat.mZ ) )
+391     );
+392 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_adadc8d0019d4323e6bf39298090cdca3}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Quat} Vectormath\-::\-Aos\-::\-Quat\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{float}]{scalar}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_adadc8d0019d4323e6bf39298090cdca3}
+
+
+Definition at line 243 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+244 \{
+245     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Quat_add864d8b2993555c949c27708da98492}{Quat}(
+246         ( mX * scalar ),
+247         ( mY * scalar ),
+248         ( mZ * scalar ),
+249         ( mW * scalar )
+250     );
+251 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_a21c31c4bf5cce9a8266a02d168b7eedf}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quat} \& Vectormath\-::\-Aos\-::\-Quat\-::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quat} \&}]{quat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_a21c31c4bf5cce9a8266a02d168b7eedf}
+
+
+Definition at line 394 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+395 \{
+396     *\textcolor{keyword}{this} = *\textcolor{keyword}{this} * quat;
+397     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+398 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_a529954f9867e8949f2ff5fb46b36d14c}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quat} \& Vectormath\-::\-Aos\-::\-Quat\-::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{float}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_a529954f9867e8949f2ff5fb46b36d14c}
+
+
+Definition at line 265 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+266 \{
+267     *\textcolor{keyword}{this} = *\textcolor{keyword}{this} * scalar;
+268     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+269 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_af77154deb297f50456f0191eb04555f2}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!operator+@{operator+}}
+\index{operator+@{operator+}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Quat} Vectormath\-::\-Aos\-::\-Quat\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quat} \&}]{quat}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_af77154deb297f50456f0191eb04555f2}
+
+
+Definition at line 223 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+224 \{
+225     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Quat_add864d8b2993555c949c27708da98492}{Quat}(
+226         ( mX + quat.mX ),
+227         ( mY + quat.mY ),
+228         ( mZ + quat.mZ ),
+229         ( mW + quat.mW )
+230     );
+231 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_acada50f52962864a653ab62e22f79191}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quat} \& Vectormath\-::\-Aos\-::\-Quat\-::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quat} \&}]{quat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_acada50f52962864a653ab62e22f79191}
+
+
+Definition at line 253 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+254 \{
+255     *\textcolor{keyword}{this} = *\textcolor{keyword}{this} + quat;
+256     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+257 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_a5dc40414292561084f7a013248b31c82}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Quat} Vectormath\-::\-Aos\-::\-Quat\-::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quat} \&}]{quat}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_a5dc40414292561084f7a013248b31c82}
+
+
+Definition at line 233 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+234 \{
+235     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Quat_add864d8b2993555c949c27708da98492}{Quat}(
+236         ( mX - quat.mX ),
+237         ( mY - quat.mY ),
+238         ( mZ - quat.mZ ),
+239         ( mW - quat.mW )
+240     );
+241 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_ac98a921fa0caecefd842fef175f84f9b}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Quat} Vectormath\-::\-Aos\-::\-Quat\-::operator-\/ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_ac98a921fa0caecefd842fef175f84f9b}
+
+
+Definition at line 287 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+288 \{
+289     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Quat_add864d8b2993555c949c27708da98492}{Quat}(
+290         -mX,
+291         -mY,
+292         -mZ,
+293         -mW
+294     );
+295 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_abba2bc95bac997e9d643e99d7e170466}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quat} \& Vectormath\-::\-Aos\-::\-Quat\-::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quat} \&}]{quat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_abba2bc95bac997e9d643e99d7e170466}
+
+
+Definition at line 259 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+260 \{
+261     *\textcolor{keyword}{this} = *\textcolor{keyword}{this} - quat;
+262     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+263 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_ab42b4340a23dfb2660a513bf42c16a0e}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!operator/@{operator/}}
+\index{operator/@{operator/}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Quat} Vectormath\-::\-Aos\-::\-Quat\-::operator/ (
+\begin{DoxyParamCaption}
+\item[{float}]{scalar}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_ab42b4340a23dfb2660a513bf42c16a0e}
+
+
+Definition at line 271 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+272 \{
+273     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Quat_add864d8b2993555c949c27708da98492}{Quat}(
+274         ( mX / scalar ),
+275         ( mY / scalar ),
+276         ( mZ / scalar ),
+277         ( mW / scalar )
+278     );
+279 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_a9aca527ac1565fca86151d9e1b5921f0}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{operator/=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quat} \& Vectormath\-::\-Aos\-::\-Quat\-::operator/= (
+\begin{DoxyParamCaption}
+\item[{float}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_a9aca527ac1565fca86151d9e1b5921f0}
+
+
+Definition at line 281 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+282 \{
+283     *\textcolor{keyword}{this} = *\textcolor{keyword}{this} / scalar;
+284     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+285 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_a0d7baa5238b7bce21ef27629b62e349b}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!operator=@{operator=}}
+\index{operator=@{operator=}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quat} \& Vectormath\-::\-Aos\-::\-Quat\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quat} \&}]{quat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_a0d7baa5238b7bce21ef27629b62e349b}
+
+
+Definition at line 136 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+137 \{
+138     mX = quat.mX;
+139     mY = quat.mY;
+140     mZ = quat.mZ;
+141     mW = quat.mW;
+142     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+143 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_a5eff7e127f055a218122e1d9b610af22}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}float \& Vectormath\-::\-Aos\-::\-Quat\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_a5eff7e127f055a218122e1d9b610af22}
+
+
+Definition at line 213 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+214 \{
+215     \textcolor{keywordflow}{return} *(&mX + idx);
+216 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_ae961280298e1e79b72746c896afef57a}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}float Vectormath\-::\-Aos\-::\-Quat\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_ae961280298e1e79b72746c896afef57a}
+
+
+Definition at line 218 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+219 \{
+220     \textcolor{keywordflow}{return} *(&mX + idx);
+221 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_a43f3ab0bdb1662a1062f3736aed7edf6}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!rotation@{rotation}}
+\index{rotation@{rotation}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{rotation}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Quat} Vectormath\-::\-Aos\-::\-Quat\-::rotation (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3} \&}]{unit\-Vec0, }
+\item[{const {\bf Vector3} \&}]{unit\-Vec1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classVectormath_1_1Aos_1_1Quat_a43f3ab0bdb1662a1062f3736aed7edf6}
+
+
+Definition at line 340 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+341 \{
+342     \textcolor{keywordtype}{float} cosHalfAngleX2, recipCosHalfAngleX2;
+343     cosHalfAngleX2 = sqrtf( ( 2.0f * ( 1.0f + \hyperlink{namespaceVectormath_1_1Aos_ab29ffde5ae29fc1c6ef2022900656def}{dot}( unitVec0, unitVec1 ) ) ) );
+344     recipCosHalfAngleX2 = ( 1.0f / cosHalfAngleX2 );
+345     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Quat_add864d8b2993555c949c27708da98492}{Quat}( ( \hyperlink{namespaceVectormath_1_1Aos_a1fd2b64c21e5517a060ff05160234ff7}{cross}( unitVec0, unitVec1 ) * recipCosHalfAngleX2 ), ( cosHalfAngleX2 * 0.5f ) 
+      );
+346 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_aa491e8907ba8b28d99c13f89f8a73f1e}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!rotation@{rotation}}
+\index{rotation@{rotation}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{rotation}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Quat} Vectormath\-::\-Aos\-::\-Quat\-::rotation (
+\begin{DoxyParamCaption}
+\item[{float}]{radians, }
+\item[{const {\bf Vector3} \&}]{unit\-Vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classVectormath_1_1Aos_1_1Quat_aa491e8907ba8b28d99c13f89f8a73f1e}
+
+
+Definition at line 348 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+349 \{
+350     \textcolor{keywordtype}{float} s, c, angle;
+351     angle = ( radians * 0.5f );
+352     s = sinf( angle );
+353     c = cosf( angle );
+354     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Quat_add864d8b2993555c949c27708da98492}{Quat}( ( unitVec * s ), c );
+355 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_af05b417afdd3d20c6f3a115b4f637322}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!rotation\-X@{rotation\-X}}
+\index{rotation\-X@{rotation\-X}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{rotation\-X}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Quat} Vectormath\-::\-Aos\-::\-Quat\-::rotation\-X (
+\begin{DoxyParamCaption}
+\item[{float}]{radians}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classVectormath_1_1Aos_1_1Quat_af05b417afdd3d20c6f3a115b4f637322}
+
+
+Definition at line 357 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+358 \{
+359     \textcolor{keywordtype}{float} s, c, angle;
+360     angle = ( radians * 0.5f );
+361     s = sinf( angle );
+362     c = cosf( angle );
+363     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Quat_add864d8b2993555c949c27708da98492}{Quat}( s, 0.0f, 0.0f, c );
+364 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_ae70be84c4a769a4d01efe4384c8136fd}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!rotation\-Y@{rotation\-Y}}
+\index{rotation\-Y@{rotation\-Y}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{rotation\-Y}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Quat} Vectormath\-::\-Aos\-::\-Quat\-::rotation\-Y (
+\begin{DoxyParamCaption}
+\item[{float}]{radians}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classVectormath_1_1Aos_1_1Quat_ae70be84c4a769a4d01efe4384c8136fd}
+
+
+Definition at line 366 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+367 \{
+368     \textcolor{keywordtype}{float} s, c, angle;
+369     angle = ( radians * 0.5f );
+370     s = sinf( angle );
+371     c = cosf( angle );
+372     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Quat_add864d8b2993555c949c27708da98492}{Quat}( 0.0f, s, 0.0f, c );
+373 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_a9cf1f17b2b296f94d3ae2058429f702c}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!rotation\-Z@{rotation\-Z}}
+\index{rotation\-Z@{rotation\-Z}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{rotation\-Z}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Quat} Vectormath\-::\-Aos\-::\-Quat\-::rotation\-Z (
+\begin{DoxyParamCaption}
+\item[{float}]{radians}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classVectormath_1_1Aos_1_1Quat_a9cf1f17b2b296f94d3ae2058429f702c}
+
+
+Definition at line 375 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+376 \{
+377     \textcolor{keywordtype}{float} s, c, angle;
+378     angle = ( radians * 0.5f );
+379     s = sinf( angle );
+380     c = cosf( angle );
+381     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Quat_add864d8b2993555c949c27708da98492}{Quat}( 0.0f, 0.0f, s, c );
+382 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_a6f1771cc66b41eb720c07c99ca0ade2b}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!set\-Elem@{set\-Elem}}
+\index{set\-Elem@{set\-Elem}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{set\-Elem}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quat} \& Vectormath\-::\-Aos\-::\-Quat\-::set\-Elem (
+\begin{DoxyParamCaption}
+\item[{int}]{idx, }
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_a6f1771cc66b41eb720c07c99ca0ade2b}
+
+
+Definition at line 202 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+203 \{
+204     *(&mX + idx) = value;
+205     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+206 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_a2c199fb1c797feb886666429486d6ea6}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!set\-W@{set\-W}}
+\index{set\-W@{set\-W}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{set\-W}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quat} \& Vectormath\-::\-Aos\-::\-Quat\-::set\-W (
+\begin{DoxyParamCaption}
+\item[{float}]{w}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_a2c199fb1c797feb886666429486d6ea6}
+
+
+Definition at line 191 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+192 \{
+193     mW = \_w;
+194     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+195 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_aaf8b9f42391c700a3fb3f3fc7a4279dd}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!set\-X@{set\-X}}
+\index{set\-X@{set\-X}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{set\-X}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quat} \& Vectormath\-::\-Aos\-::\-Quat\-::set\-X (
+\begin{DoxyParamCaption}
+\item[{float}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_aaf8b9f42391c700a3fb3f3fc7a4279dd}
+
+
+Definition at line 158 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+159 \{
+160     mX = \_x;
+161     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+162 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_a1ee991d2930ce1b3bdab9e012c27f130}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!set\-X\-Y\-Z@{set\-X\-Y\-Z}}
+\index{set\-X\-Y\-Z@{set\-X\-Y\-Z}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{set\-X\-Y\-Z}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quat} \& Vectormath\-::\-Aos\-::\-Quat\-::set\-X\-Y\-Z (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_a1ee991d2930ce1b3bdab9e012c27f130}
+
+
+Definition at line 145 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+146 \{
+147     mX = vec.getX();
+148     mY = vec.getY();
+149     mZ = vec.getZ();
+150     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+151 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_a94831b10a0835a3520bf0c0dd05b22e4}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!set\-Y@{set\-Y}}
+\index{set\-Y@{set\-Y}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{set\-Y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quat} \& Vectormath\-::\-Aos\-::\-Quat\-::set\-Y (
+\begin{DoxyParamCaption}
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_a94831b10a0835a3520bf0c0dd05b22e4}
+
+
+Definition at line 169 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+170 \{
+171     mY = \_y;
+172     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+173 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Quat_a7459f097a95f2b6452a9b92fcc7fcc2f}{\index{Vectormath\-::\-Aos\-::\-Quat@{Vectormath\-::\-Aos\-::\-Quat}!set\-Z@{set\-Z}}
+\index{set\-Z@{set\-Z}!Vectormath::Aos::Quat@{Vectormath\-::\-Aos\-::\-Quat}}
+\subsubsection[{set\-Z}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quat} \& Vectormath\-::\-Aos\-::\-Quat\-::set\-Z (
+\begin{DoxyParamCaption}
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Quat_a7459f097a95f2b6452a9b92fcc7fcc2f}
+
+
+Definition at line 180 of file quat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+181 \{
+182     mZ = \_z;
+183     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+184 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/sam/\-Cube\-Racer/src/vectormath/\hyperlink{vectormath__aos_8h}{vectormath\-\_\-aos.\-h}\item 
+/home/sam/\-Cube\-Racer/src/vectormath/\hyperlink{mat__aos_8h}{mat\-\_\-aos.\-h}\item 
+/home/sam/\-Cube\-Racer/src/vectormath/\hyperlink{quat__aos_8h}{quat\-\_\-aos.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,276 @@
+\hypertarget{classHeartAsset}{\section{Heart\-Asset Class Reference}
+\label{classHeartAsset}\index{Heart\-Asset@{Heart\-Asset}}
+}
+
+
+{\ttfamily \#include $<$Heart\-Asset.\-h$>$}
+
+Inheritance diagram for Heart\-Asset\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classHeartAsset}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0}{vertices} \{ \\*
+\hyperlink{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0a3b7c6d42e96cb2f900f179d223236f11}{F0}, 
+\hyperlink{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0af6d5902a14c48e5f35f74c16afafbe9a}{F1}, 
+\hyperlink{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0a9da21cb8da0427c073dc2260b549e761}{F2}, 
+\hyperlink{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0a0280f1f7097bf67d876440c3cf2e361c}{F3}, 
+\\*
+\hyperlink{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0a37d27782c67bdb394c66fde29473ddf3}{F4}, 
+\hyperlink{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0ac5e53a8bb99468ed9401d0067cf96eb8}{F5}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHeartAsset_a68370016b5184e3e541070eac1ebaed4}{Heart\-Asset} ()
+\item 
+\hyperlink{classHeartAsset_ac9be59ddbf1799b9523b94b224c2ebdd}{Heart\-Asset} (float x, float y, float z)
+\item 
+\hyperlink{classHeartAsset_a188438e39a1e5242ab9da9b3574cf1e5}{$\sim$\-Heart\-Asset} ()
+\item 
+bool \hyperlink{classHeartAsset_aeeea2e4cebcb2e238544607ab8fcb7b7}{collides\-With} (\hyperlink{classPlayer}{Player} \&a)
+\item 
+virtual void \hyperlink{classHeartAsset_aa4fb245ae438223980f781cb070e0050}{update} ()
+\item 
+virtual void \hyperlink{classHeartAsset_a12139c94af340272cfcb726a5665bede}{draw} ()
+\item 
+virtual void \hyperlink{classHeartAsset_a33b4a41bfc915fc95d23d9b1fbf68dad}{clean} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file Heart\-Asset.\-h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0}{\index{Heart\-Asset@{Heart\-Asset}!vertices@{vertices}}
+\index{vertices@{vertices}!HeartAsset@{Heart\-Asset}}
+\subsubsection[{vertices}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Heart\-Asset\-::vertices}}}\label{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{F0@{F0}!Heart\-Asset@{Heart\-Asset}}\index{Heart\-Asset@{Heart\-Asset}!F0@{F0}}\item[{\em 
+\hypertarget{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0a3b7c6d42e96cb2f900f179d223236f11}{F0}\label{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0a3b7c6d42e96cb2f900f179d223236f11}
+}]\index{F1@{F1}!Heart\-Asset@{Heart\-Asset}}\index{Heart\-Asset@{Heart\-Asset}!F1@{F1}}\item[{\em 
+\hypertarget{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0af6d5902a14c48e5f35f74c16afafbe9a}{F1}\label{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0af6d5902a14c48e5f35f74c16afafbe9a}
+}]\index{F2@{F2}!Heart\-Asset@{Heart\-Asset}}\index{Heart\-Asset@{Heart\-Asset}!F2@{F2}}\item[{\em 
+\hypertarget{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0a9da21cb8da0427c073dc2260b549e761}{F2}\label{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0a9da21cb8da0427c073dc2260b549e761}
+}]\index{F3@{F3}!Heart\-Asset@{Heart\-Asset}}\index{Heart\-Asset@{Heart\-Asset}!F3@{F3}}\item[{\em 
+\hypertarget{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0a0280f1f7097bf67d876440c3cf2e361c}{F3}\label{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0a0280f1f7097bf67d876440c3cf2e361c}
+}]\index{F4@{F4}!Heart\-Asset@{Heart\-Asset}}\index{Heart\-Asset@{Heart\-Asset}!F4@{F4}}\item[{\em 
+\hypertarget{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0a37d27782c67bdb394c66fde29473ddf3}{F4}\label{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0a37d27782c67bdb394c66fde29473ddf3}
+}]\index{F5@{F5}!Heart\-Asset@{Heart\-Asset}}\index{Heart\-Asset@{Heart\-Asset}!F5@{F5}}\item[{\em 
+\hypertarget{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0ac5e53a8bb99468ed9401d0067cf96eb8}{F5}\label{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0ac5e53a8bb99468ed9401d0067cf96eb8}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 19 of file Heart\-Asset.\-h.
+
+
+\begin{DoxyCode}
+19                 \{
+20       \hyperlink{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0a3b7c6d42e96cb2f900f179d223236f11}{F0}, \hyperlink{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0af6d5902a14c48e5f35f74c16afafbe9a}{F1}, \hyperlink{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0a9da21cb8da0427c073dc2260b549e761}{F2}, \hyperlink{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0a0280f1f7097bf67d876440c3cf2e361c}{F3}, \hyperlink{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0a37d27782c67bdb394c66fde29473ddf3}{F4}, \hyperlink{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0ac5e53a8bb99468ed9401d0067cf96eb8}{F5},
+21   \};
+\end{DoxyCode}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHeartAsset_a68370016b5184e3e541070eac1ebaed4}{\index{Heart\-Asset@{Heart\-Asset}!Heart\-Asset@{Heart\-Asset}}
+\index{Heart\-Asset@{Heart\-Asset}!HeartAsset@{Heart\-Asset}}
+\subsubsection[{Heart\-Asset}]{\setlength{\rightskip}{0pt plus 5cm}Heart\-Asset\-::\-Heart\-Asset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHeartAsset_a68370016b5184e3e541070eac1ebaed4}
+
+
+Definition at line 3 of file Heart\-Asset.\-cpp.
+
+
+\begin{DoxyCode}
+4   : \hyperlink{classGameAsset_a9c96b0bafa2b6973a2e8c09bf51c52ec}{GameAsset}(
+5           \textcolor{keywordtype}{string}(\textcolor{stringliteral}{"CubeRacer/shaders/hello-gl.v.glsl"})
+6           , \textcolor{keywordtype}{string}(\textcolor{stringliteral}{"CubeRacer/shaders/heartAsset.f.glsl"})
+7           )
+8 \{
+9   \hyperlink{classHeartAsset_a68370016b5184e3e541070eac1ebaed4}{HeartAsset}(0, 0, 0);
+10 \}
+\end{DoxyCode}
+\hypertarget{classHeartAsset_ac9be59ddbf1799b9523b94b224c2ebdd}{\index{Heart\-Asset@{Heart\-Asset}!Heart\-Asset@{Heart\-Asset}}
+\index{Heart\-Asset@{Heart\-Asset}!HeartAsset@{Heart\-Asset}}
+\subsubsection[{Heart\-Asset}]{\setlength{\rightskip}{0pt plus 5cm}Heart\-Asset\-::\-Heart\-Asset (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}}\label{classHeartAsset_ac9be59ddbf1799b9523b94b224c2ebdd}
+
+
+Definition at line 12 of file Heart\-Asset.\-cpp.
+
+
+\begin{DoxyCode}
+13   : \hyperlink{classGameAsset_a9c96b0bafa2b6973a2e8c09bf51c52ec}{GameAsset}(
+14       \textcolor{keywordtype}{string}(\textcolor{stringliteral}{"CubeRacer/shaders/hello-gl.v.glsl"}), 
+15       \textcolor{keywordtype}{string}(\textcolor{stringliteral}{"CubeRacer/shaders/heartAsset-gl.f.glsl"})
+16 )\{
+17 
+18   \textcolor{comment}{// A default "unit" Heart}
+19   \hyperlink{classGameAsset_a3e8d7dc58d3d4efafbbce1536b78dbc7}{num\_vertices} = 6;
+20   \hyperlink{classGameAsset_aae4d864335c2eca685cc86602881cd18}{num\_triangles} = 4;
+21   \hyperlink{classGameAsset_ae1d682ecf84d9cd3f91a8c870acf2777}{g\_vertex\_buffer\_data} = \textcolor{keyword}{new} GLfloat[\hyperlink{classGameAsset_a3e8d7dc58d3d4efafbbce1536b78dbc7}{num\_vertices} * 3]\{
+22 
+23   \textcolor{comment}{//     x      y     z    
+       //http://www.google.co.uk/imgres?imgurl=&imgrefurl=http%3A%2F%2Fcollectionphotos
+      .com%2Fnice-love-hearts%2F&h=0&w=0&tbnid=KXbXdSvz8eslGM&zoom=1&tbnh=180&tbnw=200&docid=USx2IhSCYzdRuM&tbm=isch&ei=cV1iU5SwK6fC0QXj3IDICg&ved=0CBEQsCUoBQ}
+24 
+25     0.0,    0.4,    0.0,    \textcolor{comment}{//Middle Top        F0}
+26     0.4,    0.8,    0.0,
+27     0.8,    0.4,    0.0,
+28     
+29     -0.4,   0.8,    0.0,
+30     -0.8,   0.4,    0.0,
+31     
+32     0.0,    -0.8,   0.0
+33     
+34     
+35 \}; \textcolor{comment}{// three points per vertex}
+36 
+37   \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\_element\_buffer\_data} = \textcolor{keyword}{new} GLushort[\hyperlink{classGameAsset_aae4d864335c2eca685cc86602881cd18}{num\_triangles} * 3]\{
+38 
+39     \hyperlink{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0a3b7c6d42e96cb2f900f179d223236f11}{F0}, \hyperlink{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0af6d5902a14c48e5f35f74c16afafbe9a}{F1}, \hyperlink{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0a9da21cb8da0427c073dc2260b549e761}{F2},   \textcolor{comment}{//Bottom left point}
+40     \hyperlink{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0a37d27782c67bdb394c66fde29473ddf3}{F4}, \hyperlink{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0a0280f1f7097bf67d876440c3cf2e361c}{F3}, \hyperlink{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0a3b7c6d42e96cb2f900f179d223236f11}{F0},
+41     \hyperlink{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0a9da21cb8da0427c073dc2260b549e761}{F2}, \hyperlink{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0ac5e53a8bb99468ed9401d0067cf96eb8}{F5}, \hyperlink{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0a3b7c6d42e96cb2f900f179d223236f11}{F0},
+42     \hyperlink{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0a3b7c6d42e96cb2f900f179d223236f11}{F0}, \hyperlink{classHeartAsset_ab2382a6a68d870ea588f3e993a1451d0ac5e53a8bb99468ed9401d0067cf96eb8}{F5}, F4
+43 
+44 
+45 \}; \textcolor{comment}{// three vertices per triangle}
+46 
+47   \hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}.reset();
+48   \hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox} = shared\_ptr<BoundingBox>(\textcolor{keyword}{new} \hyperlink{classBoundingBox}{BoundingBox}(\hyperlink{classVectormath_1_1Aos_1_1Point3}{Point3}(x, y, z), 1.0, 1.0, 1.0));
+49 
+50   \hyperlink{classGameAsset_aa26d85233ece476d599adf90074e9568}{make\_resources}();
+51 \}
+\end{DoxyCode}
+\hypertarget{classHeartAsset_a188438e39a1e5242ab9da9b3574cf1e5}{\index{Heart\-Asset@{Heart\-Asset}!$\sim$\-Heart\-Asset@{$\sim$\-Heart\-Asset}}
+\index{$\sim$\-Heart\-Asset@{$\sim$\-Heart\-Asset}!HeartAsset@{Heart\-Asset}}
+\subsubsection[{$\sim$\-Heart\-Asset}]{\setlength{\rightskip}{0pt plus 5cm}Heart\-Asset\-::$\sim$\-Heart\-Asset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHeartAsset_a188438e39a1e5242ab9da9b3574cf1e5}
+
+
+Definition at line 53 of file Heart\-Asset.\-cpp.
+
+
+\begin{DoxyCode}
+53                         \{
+54   \textcolor{comment}{// TODO: do something nice and fun here.}
+55 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHeartAsset_a33b4a41bfc915fc95d23d9b1fbf68dad}{\index{Heart\-Asset@{Heart\-Asset}!clean@{clean}}
+\index{clean@{clean}!HeartAsset@{Heart\-Asset}}
+\subsubsection[{clean}]{\setlength{\rightskip}{0pt plus 5cm}void Heart\-Asset\-::clean (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classHeartAsset_a33b4a41bfc915fc95d23d9b1fbf68dad}
+
+
+Implements \hyperlink{classGameAsset_abbea962eaa63a813949b834778b7483e}{Game\-Asset}.
+
+
+
+Definition at line 75 of file Heart\-Asset.\-cpp.
+
+
+\begin{DoxyCode}
+75 \{ \} 
+\end{DoxyCode}
+\hypertarget{classHeartAsset_aeeea2e4cebcb2e238544607ab8fcb7b7}{\index{Heart\-Asset@{Heart\-Asset}!collides\-With@{collides\-With}}
+\index{collides\-With@{collides\-With}!HeartAsset@{Heart\-Asset}}
+\subsubsection[{collides\-With}]{\setlength{\rightskip}{0pt plus 5cm}bool Heart\-Asset\-::collides\-With (
+\begin{DoxyParamCaption}
+\item[{{\bf Player} \&}]{a}
+\end{DoxyParamCaption}
+)}}\label{classHeartAsset_aeeea2e4cebcb2e238544607ab8fcb7b7}
+
+
+Definition at line 67 of file Heart\-Asset.\-cpp.
+
+
+\begin{DoxyCode}
+67                                         \{
+68   \textcolor{keywordflow}{return} \hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}->collidesWith((*a.\hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}));
+69 \}
+\end{DoxyCode}
+\hypertarget{classHeartAsset_a12139c94af340272cfcb726a5665bede}{\index{Heart\-Asset@{Heart\-Asset}!draw@{draw}}
+\index{draw@{draw}!HeartAsset@{Heart\-Asset}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Heart\-Asset\-::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classHeartAsset_a12139c94af340272cfcb726a5665bede}
+
+
+Reimplemented from \hyperlink{classGameAsset_a2d7e18a8f1dd8ba89ed1bd14f2affeab}{Game\-Asset}.
+
+
+
+Definition at line 71 of file Heart\-Asset.\-cpp.
+
+
+\begin{DoxyCode}
+71                       \{
+72   \hyperlink{classGameAsset_a2d7e18a8f1dd8ba89ed1bd14f2affeab}{GameAsset::draw}();
+73 \}
+\end{DoxyCode}
+\hypertarget{classHeartAsset_aa4fb245ae438223980f781cb070e0050}{\index{Heart\-Asset@{Heart\-Asset}!update@{update}}
+\index{update@{update}!HeartAsset@{Heart\-Asset}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Heart\-Asset\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classHeartAsset_aa4fb245ae438223980f781cb070e0050}
+
+
+Implements \hyperlink{classGameAsset_a42688ec8f02e201eaaa01e74a112083f}{Game\-Asset}.
+
+
+
+Definition at line 57 of file Heart\-Asset.\-cpp.
+
+
+\begin{DoxyCode}
+57                         \{
+58   \textcolor{keywordflow}{if} (\hyperlink{classGameAsset_aebf93ae52dc7fabbb6ec7edaadf915d0}{isAlive}) \{
+59     shared\_ptr<Point3> p = shared\_ptr<Point3>(\textcolor{keyword}{new} \hyperlink{classVectormath_1_1Aos_1_1Point3}{Point3}(this->\hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}->getCentre()->getX(), -0.3, 
+      this->\hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}->getCentre()->getZ()-0.3));
+60 
+61     \hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}.reset();
+62     \hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox} = shared\_ptr<BoundingBox>(\textcolor{keyword}{new} \hyperlink{classBoundingBox}{BoundingBox}(*p, 1.0, 1.0, 1.0));
+63     \textcolor{keywordflow}{if}( this->\hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}->getCentre()->getZ() < -5) \{ this->\hyperlink{classGameAsset_a631982e6d36061c08c7e8981ce0fd308}{dead}(); \}
+64   \} 
+65 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/sam/\-Cube\-Racer/src/\hyperlink{HeartAsset_8h}{Heart\-Asset.\-h}\item 
+/home/sam/\-Cube\-Racer/src/\hyperlink{HeartAsset_8cpp}{Heart\-Asset.\-cpp}\end{DoxyCompactItemize}

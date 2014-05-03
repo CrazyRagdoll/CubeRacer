@@ -1,0 +1,591 @@
+\hypertarget{Main_8cpp}{\section{/home/sam/\-Cube\-Racer/src/\-Main.cpp File Reference}
+\label{Main_8cpp}\index{/home/sam/\-Cube\-Racer/src/\-Main.\-cpp@{/home/sam/\-Cube\-Racer/src/\-Main.\-cpp}}
+}
+{\ttfamily \#include $<$G\-L/glew.\-h$>$}\\*
+{\ttfamily \#include $<$G\-L/gl.\-h$>$}\\*
+{\ttfamily \#include $<$S\-D\-L2/\-S\-D\-L.\-h$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include $<$list$>$}\\*
+{\ttfamily \#include $<$time.\-h$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}Game\-Asset.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Player.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Enemy.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Bullet.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Star\-Asset.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Heart\-Asset.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Camera.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{Main_8cpp_abcde84ea0ef5f934384e4620f092c85a}{G\-L\-E\-W\-\_\-\-S\-T\-A\-T\-I\-C}
+\item 
+\#define \hyperlink{Main_8cpp_a6ff0ea1b288e03115f981ba31f96fade}{R\-U\-N\-\_\-\-G\-R\-A\-P\-H\-I\-C\-S\-\_\-\-D\-I\-S\-P\-L\-A\-Y}~0x00;
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Uint32 \hyperlink{Main_8cpp_ae15ee0e79a9dbc186042f54896d9dd90}{display} (Uint32 interval, void $\ast$param)
+\item 
+void \hyperlink{Main_8cpp_a1e5b20fed15743656bb6d2e6a6ea6269}{display} ()
+\item 
+int \hyperlink{Main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{Main_8cpp_a36f7b6be7108281af77939ceaec42fd6}{running} = true
+\item 
+shared\-\_\-ptr$<$ \hyperlink{classPlayer}{Player} $>$ \hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}
+\item 
+vector$<$ shared\-\_\-ptr$<$ \hyperlink{classGameAsset}{Game\-Asset} $>$ $>$ \hyperlink{Main_8cpp_a823a53c0257aff90f5def8d1f8ce8aa9}{assets}
+\item 
+vector$<$ shared\-\_\-ptr$<$ \hyperlink{classEnemy}{Enemy} $>$ $>$ \hyperlink{Main_8cpp_a70f4392954036fdc4b30b68107adafb0}{enemies}
+\item 
+vector$<$ shared\-\_\-ptr$<$ \hyperlink{classEnemy}{Enemy} $>$ $>$ \hyperlink{Main_8cpp_a791a74482f7a9abc7c4d7cf5d5e69d27}{tmp\-Enemies}
+\item 
+vector$<$ shared\-\_\-ptr$<$ \hyperlink{classBullet}{Bullet} $>$ $>$ \hyperlink{Main_8cpp_a56e3f3057d507438a9c8e582ff3ee620}{bullets}
+\item 
+vector$<$ shared\-\_\-ptr$<$ \hyperlink{classBullet}{Bullet} $>$ $>$ \hyperlink{Main_8cpp_ae73a56a09bd30e52efbe987f39f5bcf2}{tmp\-Bullets}
+\item 
+vector$<$ shared\-\_\-ptr$<$ \hyperlink{classStarAsset}{Star\-Asset} $>$ $>$ \hyperlink{Main_8cpp_a1959c3e7f1bed938247565dcc74ee665}{stars}
+\item 
+vector$<$ shared\-\_\-ptr$<$ \hyperlink{classStarAsset}{Star\-Asset} $>$ $>$ \hyperlink{Main_8cpp_a272f1059597b9b6f4cdf7d8b85e3450e}{tmp\-Stars}
+\item 
+int \hyperlink{Main_8cpp_a0adb87cdf3feaf4a8a3306f406116467}{Star\-Count} = 0
+\item 
+int \hyperlink{Main_8cpp_aa7d6fcef582e7e6bc7123616e287cb82}{Star\-Spawn\-Rate} = rand() \% 500 + rand () \% 200 + 100
+\item 
+vector$<$ shared\-\_\-ptr$<$ \hyperlink{classHeartAsset}{Heart\-Asset} $>$ $>$ \hyperlink{Main_8cpp_aa9377fbd3f7aa5caeba55b00b05a5079}{hearts}
+\item 
+vector$<$ shared\-\_\-ptr$<$ \hyperlink{classHeartAsset}{Heart\-Asset} $>$ $>$ \hyperlink{Main_8cpp_a0a6395a2ea6e433807b49ac8f8475c59}{tmp\-Hearts}
+\item 
+int \hyperlink{Main_8cpp_ad3ab311a839c8baa2d3d5e6025efd2b6}{Heart\-Count} = 0
+\item 
+int \hyperlink{Main_8cpp_aba6c720dad32a6998742d08265e15300}{Heart\-Spawn\-Rate} = rand() \% 1000 + rand () \% 500 + 200
+\item 
+int \hyperlink{Main_8cpp_a51bf4b5f6c638f3053f2b4419adf40a7}{invulnerable\-Duration} = 0
+\item 
+int \hyperlink{Main_8cpp_af146ac071b1091a1fd3d5717b16aaf13}{invulnerable\-End} = 250
+\item 
+double \hyperlink{Main_8cpp_afd7f0144d450ae5b8cf60e29a83cb705}{Diffy} = 0.\-15
+\item 
+int \hyperlink{Main_8cpp_a8b3b9828ddb948c93f0a00d04d822f9b}{Enemy\-Count} = 0
+\item 
+int \hyperlink{Main_8cpp_aba618dee0681376e09140065eadda20e}{Enemy\-Spawn\-Rate} = 40
+\item 
+int \hyperlink{Main_8cpp_ace58e97592bb7c19ee35fd712ab68253}{Enemies\-Per\-Spawn} = 8
+\item 
+clock\-\_\-t \hyperlink{Main_8cpp_a0c8806dd40fb0525e1a3a2a5f78ef88d}{t}
+\item 
+S\-D\-L\-\_\-\-Window $\ast$ \hyperlink{Main_8cpp_aaa8e409e04dcf575ef63fd5fb3db06f9}{window} = nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{Main_8cpp_abcde84ea0ef5f934384e4620f092c85a}{\index{Main.\-cpp@{Main.\-cpp}!G\-L\-E\-W\-\_\-\-S\-T\-A\-T\-I\-C@{G\-L\-E\-W\-\_\-\-S\-T\-A\-T\-I\-C}}
+\index{G\-L\-E\-W\-\_\-\-S\-T\-A\-T\-I\-C@{G\-L\-E\-W\-\_\-\-S\-T\-A\-T\-I\-C}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{G\-L\-E\-W\-\_\-\-S\-T\-A\-T\-I\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-E\-W\-\_\-\-S\-T\-A\-T\-I\-C}}\label{Main_8cpp_abcde84ea0ef5f934384e4620f092c85a}
+
+
+Definition at line 1 of file Main.\-cpp.
+
+\hypertarget{Main_8cpp_a6ff0ea1b288e03115f981ba31f96fade}{\index{Main.\-cpp@{Main.\-cpp}!R\-U\-N\-\_\-\-G\-R\-A\-P\-H\-I\-C\-S\-\_\-\-D\-I\-S\-P\-L\-A\-Y@{R\-U\-N\-\_\-\-G\-R\-A\-P\-H\-I\-C\-S\-\_\-\-D\-I\-S\-P\-L\-A\-Y}}
+\index{R\-U\-N\-\_\-\-G\-R\-A\-P\-H\-I\-C\-S\-\_\-\-D\-I\-S\-P\-L\-A\-Y@{R\-U\-N\-\_\-\-G\-R\-A\-P\-H\-I\-C\-S\-\_\-\-D\-I\-S\-P\-L\-A\-Y}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{R\-U\-N\-\_\-\-G\-R\-A\-P\-H\-I\-C\-S\-\_\-\-D\-I\-S\-P\-L\-A\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-U\-N\-\_\-\-G\-R\-A\-P\-H\-I\-C\-S\-\_\-\-D\-I\-S\-P\-L\-A\-Y~0x00;}}\label{Main_8cpp_a6ff0ea1b288e03115f981ba31f96fade}
+
+
+Definition at line 23 of file Main.\-cpp.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{Main_8cpp_ae15ee0e79a9dbc186042f54896d9dd90}{\index{Main.\-cpp@{Main.\-cpp}!display@{display}}
+\index{display@{display}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}Uint32 display (
+\begin{DoxyParamCaption}
+\item[{Uint32}]{interval, }
+\item[{void $\ast$}]{param}
+\end{DoxyParamCaption}
+)}}\label{Main_8cpp_ae15ee0e79a9dbc186042f54896d9dd90}
+
+
+Definition at line 71 of file Main.\-cpp.
+
+
+\begin{DoxyCode}
+71                                              \{
+72     SDL\_Event event;
+73     \textcolor{keyword}{event}.type = SDL\_USEREVENT;
+74     \textcolor{keyword}{event}.user.code = \hyperlink{Main_8cpp_a6ff0ea1b288e03115f981ba31f96fade}{RUN\_GRAPHICS\_DISPLAY};
+75     \textcolor{keyword}{event}.user.data1 = 0;
+76     \textcolor{keyword}{event}.user.data2 = 0;
+77     SDL\_PushEvent(&event);
+78     \textcolor{keywordflow}{return} interval;
+79 \}
+\end{DoxyCode}
+\hypertarget{Main_8cpp_a1e5b20fed15743656bb6d2e6a6ea6269}{\index{Main.\-cpp@{Main.\-cpp}!display@{display}}
+\index{display@{display}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{Main_8cpp_a1e5b20fed15743656bb6d2e6a6ea6269}
+
+
+Definition at line 81 of file Main.\-cpp.
+
+
+\begin{DoxyCode}
+81                \{
+82 
+83   glClearColor(0.0f, 0.0f, 0.0f, 0.5f);
+84   glClear(GL\_COLOR\_BUFFER\_BIT|GL\_DEPTH\_BUFFER\_BIT);
+85   
+86   \textcolor{comment}{//Increase EnemyCount, HeartCount & StarCount by 1}
+87   \hyperlink{Main_8cpp_a8b3b9828ddb948c93f0a00d04d822f9b}{EnemyCount}++;
+88   \hyperlink{Main_8cpp_a0adb87cdf3feaf4a8a3306f406116467}{StarCount}++;
+89   \hyperlink{Main_8cpp_ad3ab311a839c8baa2d3d5e6025efd2b6}{HeartCount}++;
+90 
+91   \textcolor{comment}{//Calculating the time to deal with difficulty }
+92   \hyperlink{Main_8cpp_a0c8806dd40fb0525e1a3a2a5f78ef88d}{t} = clock();
+93   \textcolor{keywordtype}{double} time = ((float)\hyperlink{Main_8cpp_a0c8806dd40fb0525e1a3a2a5f78ef88d}{t}/CLOCKS\_PER\_SEC) * 1.5;
+94     
+95   \textcolor{comment}{//Giving the player an extra bullet every 5 seconds}
+96   \textcolor{keywordflow}{if}((fmod(time, \hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}->getAmmoRate()) < 0.002) && (fmod(time, \hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}->getAmmoRate()) > 0))\{ 
+97     \hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}->changeAmmo(1); 
+98   \}
+99 
+100   \textcolor{comment}{//Spawning some stars!}
+101   \textcolor{keywordflow}{if}(\hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}->isAlive)\{
+102     \textcolor{keywordflow}{if}(fmod(\hyperlink{Main_8cpp_a0adb87cdf3feaf4a8a3306f406116467}{StarCount}, \hyperlink{Main_8cpp_aa7d6fcef582e7e6bc7123616e287cb82}{StarSpawnRate}) == 0 )\{
+103       \textcolor{keywordtype}{int} rnd = rand() % 20 - 10;
+104       \hyperlink{Main_8cpp_a1959c3e7f1bed938247565dcc74ee665}{stars}.push\_back(shared\_ptr<StarAsset> (\textcolor{keyword}{new} \hyperlink{classStarAsset}{StarAsset}(\hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}->bbox->getCentre()->
+      getX() + rnd, -0.3, 50)));
+105     \}
+106   \}    
+107 
+108   \textcolor{comment}{//Spawning some hearts!}
+109   \textcolor{keywordflow}{if}(\hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}->isAlive)\{
+110     \textcolor{keywordflow}{if}(fmod(\hyperlink{Main_8cpp_ad3ab311a839c8baa2d3d5e6025efd2b6}{HeartCount}, \hyperlink{Main_8cpp_aba6c720dad32a6998742d08265e15300}{HeartSpawnRate}) == 0 )\{
+111       \textcolor{keywordtype}{int} rnd = rand() % 30 - 15;
+112       \hyperlink{Main_8cpp_aa9377fbd3f7aa5caeba55b00b05a5079}{hearts}.push\_back(shared\_ptr<HeartAsset> (\textcolor{keyword}{new} \hyperlink{classHeartAsset}{HeartAsset}(
+      \hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}->bbox->getCentre()->getX() + rnd, 0.0, 50)));
+113     \}
+114   \}
+115 
+116   \textcolor{comment}{//If the player is alive spawn enemies every time the count increments by 20.}
+117   \textcolor{keywordflow}{if}(\hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}->isAlive)\{
+118     \textcolor{keywordflow}{if}(fmod(\hyperlink{Main_8cpp_a8b3b9828ddb948c93f0a00d04d822f9b}{EnemyCount}, \hyperlink{Main_8cpp_aba618dee0681376e09140065eadda20e}{EnemySpawnRate}) == 0 )\{
+119       \textcolor{comment}{//get the position of the player to spawn the enemies infront of him but 25         blocks back.}
+120       \textcolor{keywordtype}{int} pos  = int(\hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}->bbox->getCentre()->getX());
+121       \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} n\_2 = 0; n\_2 <= \hyperlink{Main_8cpp_ace58e97592bb7c19ee35fd712ab68253}{EnemiesPerSpawn}; n\_2++ )\{
+122     \textcolor{keywordtype}{int} rnd = rand() % 60 - 30;
+123     \hyperlink{Main_8cpp_a70f4392954036fdc4b30b68107adafb0}{enemies}.push\_back(shared\_ptr<Enemy> (\textcolor{keyword}{new} \hyperlink{classEnemy}{Enemy}(pos + rnd, 0, 25)));
+124       \}
+125     \}
+126   \}
+127 
+128   \textcolor{comment}{//Collision detection between the player and enemies.}
+129   \textcolor{keywordflow}{if}(!\hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}->invulnerable) \{
+130     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} i : \hyperlink{Main_8cpp_a70f4392954036fdc4b30b68107adafb0}{enemies}) \{ 
+131       \textcolor{keywordflow}{if}( i->collidesWith(*\hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}))\{
+132     \hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}->dead();
+133       \}\textcolor{keywordflow}{else} \{ \textcolor{comment}{/*i->dead();*/} \} \textcolor{comment}{//if the players invulnerable kill the enemy asset}
+134     \}
+135   \}
+136 
+137   \textcolor{comment}{//}
+138   \textcolor{keywordflow}{if}(\hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}->invulnerable) \{
+139     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} i : enemies) \{
+140       \textcolor{keywordflow}{if}( i->collidesWith(*\hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}))\{
+141     i->dead();
+142       \}
+143     \}
+144   \}
+145 
+146   \textcolor{comment}{//Collision detection between the stars and player}
+147   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} i : \hyperlink{Main_8cpp_a1959c3e7f1bed938247565dcc74ee665}{stars}) \{
+148     \textcolor{keywordflow}{if}( i->collidesWith(*\hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}))\{
+149       i->dead();
+150       \hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}->incScore(50);
+151     \}
+152   \}
+153 
+154   \textcolor{comment}{//Collision detection between the hearts and player}
+155   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} i : \hyperlink{Main_8cpp_aa9377fbd3f7aa5caeba55b00b05a5079}{hearts}) \{
+156     \textcolor{keywordflow}{if}( i->collidesWith(*\hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}))\{
+157       i->dead();
+158       \hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}->playerInvulnerable();
+159     \}
+160   \}
+161 
+162   \textcolor{comment}{//Collision detection between the enemies and bullets}
+163   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} j : \hyperlink{Main_8cpp_a56e3f3057d507438a9c8e582ff3ee620}{bullets}) \{
+164     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} i : enemies) \{
+165       \textcolor{keywordflow}{if}( j->collidesWith(*i))\{
+166     i->dead();
+167     j->dead();
+168       \}
+169     \}
+170   \} 
+171 
+172   \textcolor{keywordflow}{if}(\hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}->invulnerable)
+173   \{
+174      \hyperlink{Main_8cpp_a51bf4b5f6c638f3053f2b4419adf40a7}{invulnerableDuration}++;
+175   \} \textcolor{keywordflow}{else} \{ \hyperlink{Main_8cpp_a51bf4b5f6c638f3053f2b4419adf40a7}{invulnerableDuration} = 0; \}
+176 
+177   \textcolor{keywordflow}{if}(fmod(\hyperlink{Main_8cpp_a51bf4b5f6c638f3053f2b4419adf40a7}{invulnerableDuration}, \hyperlink{Main_8cpp_af146ac071b1091a1fd3d5717b16aaf13}{invulnerableEnd}) == 0)
+178   \{
+179     \hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}->playerVulnerable();
+180   \}
+181   
+182   \textcolor{comment}{//Setting different difficulty values over time to make the game harder the longer you    play.}
+183   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it : enemies)\{
+184     it->setDiff(\hyperlink{Main_8cpp_afd7f0144d450ae5b8cf60e29a83cb705}{Diffy});
+185     \}
+186   \textcolor{keywordflow}{if}((fmod(time, 0.5) < 0.002) && (fmod(time, 0.5) > 0.0))\{ 
+187       \hyperlink{Main_8cpp_afd7f0144d450ae5b8cf60e29a83cb705}{Diffy} += 0.01; 
+188     \} 
+189 
+190   \textcolor{comment}{//clearing the temp list of enemies, bullets and stars}
+191   \hyperlink{Main_8cpp_a791a74482f7a9abc7c4d7cf5d5e69d27}{tmpEnemies}.clear();
+192   \hyperlink{Main_8cpp_ae73a56a09bd30e52efbe987f39f5bcf2}{tmpBullets}.clear();
+193   \hyperlink{Main_8cpp_a272f1059597b9b6f4cdf7d8b85e3450e}{tmpStars}.clear();
+194   \hyperlink{Main_8cpp_a0a6395a2ea6e433807b49ac8f8475c59}{tmpHearts}.clear();
+195   
+196   \textcolor{comment}{//Updating the assets}
+197   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it : enemies) \{ it->update(); \}
+198   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it : bullets) \{ it->update(); \}
+199   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it : stars)   \{ it->update(); \}
+200   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it : hearts)  \{ it->update(); \}
+201   \hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}->update();
+202 
+203   \textcolor{comment}{//adding the enemies, bullets & stars to the temp list }
+204   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it : enemies) \{ \textcolor{keywordflow}{if}(it->isAlive) \{ \hyperlink{Main_8cpp_a791a74482f7a9abc7c4d7cf5d5e69d27}{tmpEnemies}.push\_back(it); \}\}
+205   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it : bullets) \{ \textcolor{keywordflow}{if}(it->isAlive) \{ \hyperlink{Main_8cpp_ae73a56a09bd30e52efbe987f39f5bcf2}{tmpBullets}.push\_back(it); \}\}
+206   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it : stars)   \{ \textcolor{keywordflow}{if}(it->isAlive) \{ \hyperlink{Main_8cpp_a272f1059597b9b6f4cdf7d8b85e3450e}{tmpStars}.push\_back(it);   \}\}
+207   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it : hearts)  \{ \textcolor{keywordflow}{if}(it->isAlive) \{ \hyperlink{Main_8cpp_a0a6395a2ea6e433807b49ac8f8475c59}{tmpHearts}.push\_back(it);  \}\}
+208 
+209   \textcolor{comment}{//Drawing the assets onto the game}
+210   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it : enemies) \{ it->draw(); \}
+211   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it : bullets) \{ it->draw(); \}
+212   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it : stars)   \{ it->draw(); \}
+213   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it : hearts)  \{ it->draw(); \}
+214   \hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}->draw();
+215 
+216   \textcolor{comment}{//swapping the enemies, bullets & stars lists with the alive enemies, bullets & stars}
+217   enemies.swap(\hyperlink{Main_8cpp_a791a74482f7a9abc7c4d7cf5d5e69d27}{tmpEnemies});
+218   bullets.swap(\hyperlink{Main_8cpp_ae73a56a09bd30e52efbe987f39f5bcf2}{tmpBullets});
+219   stars.swap(\hyperlink{Main_8cpp_a272f1059597b9b6f4cdf7d8b85e3450e}{tmpStars});
+220   hearts.swap(\hyperlink{Main_8cpp_a0a6395a2ea6e433807b49ac8f8475c59}{tmpHearts});
+221 
+222   \textcolor{keywordflow}{if}(!\hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}->isAlive)\{ \hyperlink{Main_8cpp_a36f7b6be7108281af77939ceaec42fd6}{running} = \textcolor{keyword}{false}; SDL\_Quit(); \}
+223 
+224   \textcolor{comment}{// Don't forget to swap the buffers}
+225   SDL\_GL\_SwapWindow(\hyperlink{Main_8cpp_aaa8e409e04dcf575ef63fd5fb3db06f9}{window});
+226 \}
+\end{DoxyCode}
+\hypertarget{Main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{\index{Main.\-cpp@{Main.\-cpp}!main@{main}}
+\index{main@{main}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}}\label{Main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Definition at line 228 of file Main.\-cpp.
+
+
+\begin{DoxyCode}
+228                                  \{
+229     SDL\_Surface * surf;
+230     Uint32 width = 640;
+231     Uint32 height = 480;
+232     Uint32 colour\_depth = 16; \textcolor{comment}{// in bits}
+233     Uint32 delay = 1000/60; \textcolor{comment}{// in milliseconds}
+234 
+235     \textcolor{comment}{// Initialise SDL - when using C/C++ it's common to have to}
+236     \textcolor{comment}{// initialise libraries by calling a function within them.}
+237     \textcolor{keywordflow}{if} (SDL\_Init(SDL\_INIT\_VIDEO|SDL\_INIT\_AUDIO|SDL\_INIT\_TIMER)<0) \{
+238             cout << \textcolor{stringliteral}{"Failed to initialise SDL: "} << SDL\_GetError() << endl;
+239             SDL\_Quit();
+240     \}
+241 
+242     \textcolor{comment}{// When we close a window quit the SDL application}
+243     atexit(SDL\_Quit);
+244 
+245     \textcolor{comment}{// Create a new window with an OpenGL surface}
+246     \hyperlink{Main_8cpp_aaa8e409e04dcf575ef63fd5fb3db06f9}{window} = SDL\_CreateWindow(\textcolor{stringliteral}{"CI224 - Game ~~ CubeRunner LITE!"}, SDL\_WINDOWPOS\_CENTERED, 
+      SDL\_WINDOWPOS\_CENTERED, width, height, SDL\_WINDOW\_OPENGL);
+247     \textcolor{keywordflow}{if} (\textcolor{keyword}{nullptr} == \hyperlink{Main_8cpp_aaa8e409e04dcf575ef63fd5fb3db06f9}{window}) \{
+248         cout << \textcolor{stringliteral}{"Failed to create SDL window: "} << SDL\_GetError() << endl;
+249         SDL\_Quit();
+250     \}
+251 
+252     SDL\_GLContext glContext = SDL\_GL\_CreateContext(\hyperlink{Main_8cpp_aaa8e409e04dcf575ef63fd5fb3db06f9}{window});
+253     \textcolor{keywordflow}{if} (\textcolor{keyword}{nullptr} == glContext) \{
+254         cout << \textcolor{stringliteral}{"Failed to create OpenGL context: "} << SDL\_GetError() << endl;
+255         SDL\_Quit();
+256     \}
+257 
+258     \textcolor{comment}{// Initialise GLEW - an easy way to ensure OpenGl 2.0+}
+259     \textcolor{comment}{// The *must* be done after we have set the video mode - otherwise we have no OpenGL context.}
+260     glewInit();
+261     \textcolor{keywordflow}{if} (!glewIsSupported(\textcolor{stringliteral}{"GL\_VERSION\_2\_0"})) \{
+262       cerr<< \textcolor{stringliteral}{"OpenGL 2.0 not available"} << endl;
+263       \textcolor{keywordflow}{return} 1;
+264     \}   
+265 
+266     \textcolor{comment}{//Adding the players coordinates into the game}
+267     \hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player} = shared\_ptr<Player> (\textcolor{keyword}{new} \hyperlink{classPlayer}{Player}(0, 0, 0));
+268 
+269   \textcolor{comment}{//Test adding a heart}
+270   \hyperlink{Main_8cpp_aa9377fbd3f7aa5caeba55b00b05a5079}{hearts}.push\_back(shared\_ptr<HeartAsset> (\textcolor{keyword}{new} \hyperlink{classHeartAsset}{HeartAsset}(0, 0, 10)));
+271 
+272     \textcolor{comment}{// Set the camera to be looking down at the player and give them a good field of view}
+273     \hyperlink{classCamera_aa84baebe5d771ddfd82a5b55bd3fde39}{Camera::getInstance}().\hyperlink{classCamera_a16c5e6f7b2eed95a78675f55c4a435e6}{setCamera}(
+      \hyperlink{classCamera_aa84baebe5d771ddfd82a5b55bd3fde39}{Camera::getInstance}().getCameraM() * Matrix4::translation(
+      \hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3}(0.0, -2.0, 5.0)));
+274     \hyperlink{Main_8cpp_ae15ee0e79a9dbc186042f54896d9dd90}{display}();
+275 
+276     \textcolor{comment}{// Add the main event loop}
+277     SDL\_Event event;
+278 
+279     \textcolor{keywordflow}{while} (\hyperlink{Main_8cpp_a36f7b6be7108281af77939ceaec42fd6}{running}) \{
+280       \textcolor{keywordflow}{while} (SDL\_PollEvent(&event)) \{
+281         \textcolor{keywordflow}{switch} (event.type) \{
+282 
+283           \textcolor{keywordflow}{case} SDL\_QUIT:
+284         \hyperlink{Main_8cpp_a36f7b6be7108281af77939ceaec42fd6}{running} = \textcolor{keyword}{false};
+285         SDL\_Quit();
+286         \textcolor{keywordflow}{break};
+287 
+288           \textcolor{keywordflow}{case} SDL\_USEREVENT:
+289         \hyperlink{Main_8cpp_ae15ee0e79a9dbc186042f54896d9dd90}{display}();
+290         \textcolor{keywordflow}{break};
+291 
+292           \textcolor{keywordflow}{case} SDL\_KEYDOWN:
+293         \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} camera = \hyperlink{classCamera_aa84baebe5d771ddfd82a5b55bd3fde39}{Camera::getInstance}().
+      \hyperlink{classCamera_a156b6aba4309cde6f0252ff325663e2f}{getCameraM}();
+294           
+295           \textcolor{keywordflow}{switch}(event.key.keysym.sym)\{
+296         \textcolor{keywordflow}{case} SDLK\_UP:
+297           \textcolor{comment}{//Camera::getInstance().setCamera(camera * Matrix4::translation(Vector3(0.0, 0.0, -5.0)));}
+298           \textcolor{keywordflow}{break}; 
+299 
+300         \textcolor{keywordflow}{case} SDLK\_DOWN:
+301           \textcolor{comment}{//Camera::getInstance().setCamera(camera * Matrix4::translation(Vector3(0.0, 0.0, 5.0))); }
+302           \textcolor{keywordflow}{break};
+303 
+304         \textcolor{keywordflow}{case} SDLK\_ESCAPE:
+305           SDL\_Quit();
+306           \hyperlink{Main_8cpp_a36f7b6be7108281af77939ceaec42fd6}{running} = \textcolor{keyword}{false};
+307           \textcolor{keywordflow}{break};
+308         
+309         \textcolor{keywordflow}{case} SDLK\_LEFT:
+310         \{
+311           \textcolor{comment}{//Introducing similtanious player and camera movement.}
+312           \hyperlink{classCamera_aa84baebe5d771ddfd82a5b55bd3fde39}{Camera::getInstance}().\hyperlink{classCamera_a16c5e6f7b2eed95a78675f55c4a435e6}{setCamera}(camera * Matrix4::translation(
+      \hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3}(0.5, 0.0, 0.0)) ); 
+313           \hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}->move(-0.5);
+314         \}        
+315         \textcolor{keywordflow}{break};
+316               
+317         \textcolor{keywordflow}{case} SDLK\_RIGHT:
+318         \{ \textcolor{comment}{//Introducing similtanious player and camera movement.}
+319           \hyperlink{classCamera_aa84baebe5d771ddfd82a5b55bd3fde39}{Camera::getInstance}().\hyperlink{classCamera_a16c5e6f7b2eed95a78675f55c4a435e6}{setCamera}(camera * Matrix4::translation(
+      \hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3}(-0.5, 0.0, 0.0)) );
+320           \hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}->move(0.5);
+321         \}   
+322         \textcolor{keywordflow}{break};
+323 
+324         \textcolor{keywordflow}{case} SDLK\_SPACE:
+325         \{ \textcolor{comment}{//Adding player controlled bullets into the game.}
+326           \textcolor{keywordflow}{if}(\hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}->Ammo >= 1)
+327           \{     
+328             \hyperlink{Main_8cpp_a56e3f3057d507438a9c8e582ff3ee620}{bullets}.push\_back(shared\_ptr<Bullet> (\textcolor{keyword}{new} \hyperlink{classBullet}{Bullet}(\textcolor{keywordtype}{double}(
+      \hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}->bbox->getCentre()->getX()),0,0)));
+329             \hyperlink{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{player}->changeAmmo(-1);
+330           \}
+331         \}
+332         \textcolor{keywordflow}{default}:
+333             \textcolor{keywordflow}{break};
+334           \}
+335           \textcolor{keywordflow}{break};
+336         \}
+337       \}
+338     SDL\_Delay(16);  
+339     \hyperlink{Main_8cpp_ae15ee0e79a9dbc186042f54896d9dd90}{display}();
+340     \}
+341 \} \textcolor{comment}{//NatsuSt}
+\end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\hypertarget{Main_8cpp_a823a53c0257aff90f5def8d1f8ce8aa9}{\index{Main.\-cpp@{Main.\-cpp}!assets@{assets}}
+\index{assets@{assets}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{assets}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$shared\-\_\-ptr$<${\bf Game\-Asset}$>$ $>$ assets}}\label{Main_8cpp_a823a53c0257aff90f5def8d1f8ce8aa9}
+
+
+Definition at line 32 of file Main.\-cpp.
+
+\hypertarget{Main_8cpp_a56e3f3057d507438a9c8e582ff3ee620}{\index{Main.\-cpp@{Main.\-cpp}!bullets@{bullets}}
+\index{bullets@{bullets}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{bullets}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$shared\-\_\-ptr$<${\bf Bullet}$>$ $>$ bullets}}\label{Main_8cpp_a56e3f3057d507438a9c8e582ff3ee620}
+
+
+Definition at line 35 of file Main.\-cpp.
+
+\hypertarget{Main_8cpp_afd7f0144d450ae5b8cf60e29a83cb705}{\index{Main.\-cpp@{Main.\-cpp}!Diffy@{Diffy}}
+\index{Diffy@{Diffy}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{Diffy}]{\setlength{\rightskip}{0pt plus 5cm}double Diffy = 0.\-15}}\label{Main_8cpp_afd7f0144d450ae5b8cf60e29a83cb705}
+
+
+Definition at line 53 of file Main.\-cpp.
+
+\hypertarget{Main_8cpp_a70f4392954036fdc4b30b68107adafb0}{\index{Main.\-cpp@{Main.\-cpp}!enemies@{enemies}}
+\index{enemies@{enemies}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{enemies}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$shared\-\_\-ptr$<${\bf Enemy}$>$ $>$ enemies}}\label{Main_8cpp_a70f4392954036fdc4b30b68107adafb0}
+
+
+Definition at line 33 of file Main.\-cpp.
+
+\hypertarget{Main_8cpp_ace58e97592bb7c19ee35fd712ab68253}{\index{Main.\-cpp@{Main.\-cpp}!Enemies\-Per\-Spawn@{Enemies\-Per\-Spawn}}
+\index{Enemies\-Per\-Spawn@{Enemies\-Per\-Spawn}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{Enemies\-Per\-Spawn}]{\setlength{\rightskip}{0pt plus 5cm}int Enemies\-Per\-Spawn = 8}}\label{Main_8cpp_ace58e97592bb7c19ee35fd712ab68253}
+
+
+Definition at line 58 of file Main.\-cpp.
+
+\hypertarget{Main_8cpp_a8b3b9828ddb948c93f0a00d04d822f9b}{\index{Main.\-cpp@{Main.\-cpp}!Enemy\-Count@{Enemy\-Count}}
+\index{Enemy\-Count@{Enemy\-Count}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{Enemy\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int Enemy\-Count = 0}}\label{Main_8cpp_a8b3b9828ddb948c93f0a00d04d822f9b}
+
+
+Definition at line 56 of file Main.\-cpp.
+
+\hypertarget{Main_8cpp_aba618dee0681376e09140065eadda20e}{\index{Main.\-cpp@{Main.\-cpp}!Enemy\-Spawn\-Rate@{Enemy\-Spawn\-Rate}}
+\index{Enemy\-Spawn\-Rate@{Enemy\-Spawn\-Rate}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{Enemy\-Spawn\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}int Enemy\-Spawn\-Rate = 40}}\label{Main_8cpp_aba618dee0681376e09140065eadda20e}
+
+
+Definition at line 57 of file Main.\-cpp.
+
+\hypertarget{Main_8cpp_ad3ab311a839c8baa2d3d5e6025efd2b6}{\index{Main.\-cpp@{Main.\-cpp}!Heart\-Count@{Heart\-Count}}
+\index{Heart\-Count@{Heart\-Count}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{Heart\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int Heart\-Count = 0}}\label{Main_8cpp_ad3ab311a839c8baa2d3d5e6025efd2b6}
+
+
+Definition at line 47 of file Main.\-cpp.
+
+\hypertarget{Main_8cpp_aa9377fbd3f7aa5caeba55b00b05a5079}{\index{Main.\-cpp@{Main.\-cpp}!hearts@{hearts}}
+\index{hearts@{hearts}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{hearts}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$shared\-\_\-ptr$<${\bf Heart\-Asset}$>$ $>$ hearts}}\label{Main_8cpp_aa9377fbd3f7aa5caeba55b00b05a5079}
+
+
+Definition at line 45 of file Main.\-cpp.
+
+\hypertarget{Main_8cpp_aba6c720dad32a6998742d08265e15300}{\index{Main.\-cpp@{Main.\-cpp}!Heart\-Spawn\-Rate@{Heart\-Spawn\-Rate}}
+\index{Heart\-Spawn\-Rate@{Heart\-Spawn\-Rate}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{Heart\-Spawn\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}int Heart\-Spawn\-Rate = rand() \% 1000 + rand () \% 500 + 200}}\label{Main_8cpp_aba6c720dad32a6998742d08265e15300}
+
+
+Definition at line 48 of file Main.\-cpp.
+
+\hypertarget{Main_8cpp_a51bf4b5f6c638f3053f2b4419adf40a7}{\index{Main.\-cpp@{Main.\-cpp}!invulnerable\-Duration@{invulnerable\-Duration}}
+\index{invulnerable\-Duration@{invulnerable\-Duration}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{invulnerable\-Duration}]{\setlength{\rightskip}{0pt plus 5cm}int invulnerable\-Duration = 0}}\label{Main_8cpp_a51bf4b5f6c638f3053f2b4419adf40a7}
+
+
+Definition at line 49 of file Main.\-cpp.
+
+\hypertarget{Main_8cpp_af146ac071b1091a1fd3d5717b16aaf13}{\index{Main.\-cpp@{Main.\-cpp}!invulnerable\-End@{invulnerable\-End}}
+\index{invulnerable\-End@{invulnerable\-End}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{invulnerable\-End}]{\setlength{\rightskip}{0pt plus 5cm}int invulnerable\-End = 250}}\label{Main_8cpp_af146ac071b1091a1fd3d5717b16aaf13}
+
+
+Definition at line 50 of file Main.\-cpp.
+
+\hypertarget{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}{\index{Main.\-cpp@{Main.\-cpp}!player@{player}}
+\index{player@{player}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{player}]{\setlength{\rightskip}{0pt plus 5cm}shared\-\_\-ptr$<${\bf Player}$>$ player}}\label{Main_8cpp_a8a31ff149c22ab37d340d82870c54b7e}
+
+
+Definition at line 29 of file Main.\-cpp.
+
+\hypertarget{Main_8cpp_a36f7b6be7108281af77939ceaec42fd6}{\index{Main.\-cpp@{Main.\-cpp}!running@{running}}
+\index{running@{running}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{running}]{\setlength{\rightskip}{0pt plus 5cm}bool running = true}}\label{Main_8cpp_a36f7b6be7108281af77939ceaec42fd6}
+
+
+Definition at line 26 of file Main.\-cpp.
+
+\hypertarget{Main_8cpp_a0adb87cdf3feaf4a8a3306f406116467}{\index{Main.\-cpp@{Main.\-cpp}!Star\-Count@{Star\-Count}}
+\index{Star\-Count@{Star\-Count}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{Star\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int Star\-Count = 0}}\label{Main_8cpp_a0adb87cdf3feaf4a8a3306f406116467}
+
+
+Definition at line 41 of file Main.\-cpp.
+
+\hypertarget{Main_8cpp_a1959c3e7f1bed938247565dcc74ee665}{\index{Main.\-cpp@{Main.\-cpp}!stars@{stars}}
+\index{stars@{stars}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{stars}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$shared\-\_\-ptr$<${\bf Star\-Asset}$>$ $>$ stars}}\label{Main_8cpp_a1959c3e7f1bed938247565dcc74ee665}
+
+
+Definition at line 39 of file Main.\-cpp.
+
+\hypertarget{Main_8cpp_aa7d6fcef582e7e6bc7123616e287cb82}{\index{Main.\-cpp@{Main.\-cpp}!Star\-Spawn\-Rate@{Star\-Spawn\-Rate}}
+\index{Star\-Spawn\-Rate@{Star\-Spawn\-Rate}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{Star\-Spawn\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}int Star\-Spawn\-Rate = rand() \% 500 + rand () \% 200 + 100}}\label{Main_8cpp_aa7d6fcef582e7e6bc7123616e287cb82}
+
+
+Definition at line 42 of file Main.\-cpp.
+
+\hypertarget{Main_8cpp_a0c8806dd40fb0525e1a3a2a5f78ef88d}{\index{Main.\-cpp@{Main.\-cpp}!t@{t}}
+\index{t@{t}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{t}]{\setlength{\rightskip}{0pt plus 5cm}clock\-\_\-t t}}\label{Main_8cpp_a0c8806dd40fb0525e1a3a2a5f78ef88d}
+
+
+Definition at line 61 of file Main.\-cpp.
+
+\hypertarget{Main_8cpp_ae73a56a09bd30e52efbe987f39f5bcf2}{\index{Main.\-cpp@{Main.\-cpp}!tmp\-Bullets@{tmp\-Bullets}}
+\index{tmp\-Bullets@{tmp\-Bullets}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{tmp\-Bullets}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$shared\-\_\-ptr$<${\bf Bullet}$>$ $>$ tmp\-Bullets}}\label{Main_8cpp_ae73a56a09bd30e52efbe987f39f5bcf2}
+
+
+Definition at line 36 of file Main.\-cpp.
+
+\hypertarget{Main_8cpp_a791a74482f7a9abc7c4d7cf5d5e69d27}{\index{Main.\-cpp@{Main.\-cpp}!tmp\-Enemies@{tmp\-Enemies}}
+\index{tmp\-Enemies@{tmp\-Enemies}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{tmp\-Enemies}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$shared\-\_\-ptr$<${\bf Enemy}$>$ $>$ tmp\-Enemies}}\label{Main_8cpp_a791a74482f7a9abc7c4d7cf5d5e69d27}
+
+
+Definition at line 34 of file Main.\-cpp.
+
+\hypertarget{Main_8cpp_a0a6395a2ea6e433807b49ac8f8475c59}{\index{Main.\-cpp@{Main.\-cpp}!tmp\-Hearts@{tmp\-Hearts}}
+\index{tmp\-Hearts@{tmp\-Hearts}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{tmp\-Hearts}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$shared\-\_\-ptr$<${\bf Heart\-Asset}$>$ $>$ tmp\-Hearts}}\label{Main_8cpp_a0a6395a2ea6e433807b49ac8f8475c59}
+
+
+Definition at line 46 of file Main.\-cpp.
+
+\hypertarget{Main_8cpp_a272f1059597b9b6f4cdf7d8b85e3450e}{\index{Main.\-cpp@{Main.\-cpp}!tmp\-Stars@{tmp\-Stars}}
+\index{tmp\-Stars@{tmp\-Stars}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{tmp\-Stars}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$shared\-\_\-ptr$<${\bf Star\-Asset}$>$ $>$ tmp\-Stars}}\label{Main_8cpp_a272f1059597b9b6f4cdf7d8b85e3450e}
+
+
+Definition at line 40 of file Main.\-cpp.
+
+\hypertarget{Main_8cpp_aaa8e409e04dcf575ef63fd5fb3db06f9}{\index{Main.\-cpp@{Main.\-cpp}!window@{window}}
+\index{window@{window}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{window}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Window$\ast$ window = nullptr}}\label{Main_8cpp_aaa8e409e04dcf575ef63fd5fb3db06f9}
+
+
+Definition at line 63 of file Main.\-cpp.
+

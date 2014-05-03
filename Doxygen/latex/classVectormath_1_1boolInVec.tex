@@ -1,0 +1,220 @@
+\hypertarget{classVectormath_1_1boolInVec}{\section{Vectormath\-:\-:bool\-In\-Vec Class Reference}
+\label{classVectormath_1_1boolInVec}\index{Vectormath\-::bool\-In\-Vec@{Vectormath\-::bool\-In\-Vec}}
+}
+
+
+{\ttfamily \#include $<$bool\-In\-Vec.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVectormath_1_1boolInVec_a846273f80c565698980f5840f73e61d3}{bool\-In\-Vec} ()
+\item 
+\hyperlink{classVectormath_1_1boolInVec_aa21ebe5fd4b82622482071def03bf027}{bool\-In\-Vec} (\hyperlink{classVectormath_1_1floatInVec}{float\-In\-Vec} vec)
+\item 
+\hyperlink{classVectormath_1_1boolInVec_a4f28ddfcc232b287446eb659b2c5f326}{bool\-In\-Vec} (bool scalar)
+\item 
+bool \hyperlink{classVectormath_1_1boolInVec_a817030f4550f00989173939aaafb5958}{get\-As\-Bool} () const 
+\item 
+\hyperlink{classVectormath_1_1boolInVec_a258f20bcd56f284843a5e4a0964af02a}{operator bool} () const 
+\item 
+const \hyperlink{classVectormath_1_1boolInVec}{bool\-In\-Vec} \hyperlink{classVectormath_1_1boolInVec_aba21c8c76cb386b1d6b2c38cdabd2336}{operator!} () const 
+\item 
+\hyperlink{classVectormath_1_1boolInVec}{bool\-In\-Vec} \& \hyperlink{classVectormath_1_1boolInVec_a2c50cda65cc64eb8a72ccab7fc4ad88d}{operator=} (\hyperlink{classVectormath_1_1boolInVec}{bool\-In\-Vec} vec)
+\item 
+\hyperlink{classVectormath_1_1boolInVec}{bool\-In\-Vec} \& \hyperlink{classVectormath_1_1boolInVec_a2a14f17fa25b360c5984c491d121f446}{operator\&=} (\hyperlink{classVectormath_1_1boolInVec}{bool\-In\-Vec} vec)
+\item 
+\hyperlink{classVectormath_1_1boolInVec}{bool\-In\-Vec} \& \hyperlink{classVectormath_1_1boolInVec_ac053a8e6fee07110c9b1e963b145d47c}{operator$^\wedge$=} (\hyperlink{classVectormath_1_1boolInVec}{bool\-In\-Vec} vec)
+\item 
+\hyperlink{classVectormath_1_1boolInVec}{bool\-In\-Vec} \& \hyperlink{classVectormath_1_1boolInVec_ae47bc0c7ee817a201a9006b3ca99102f}{operator$\vert$=} (\hyperlink{classVectormath_1_1boolInVec}{bool\-In\-Vec} vec)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 42 of file bool\-In\-Vec.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classVectormath_1_1boolInVec_a846273f80c565698980f5840f73e61d3}{\index{Vectormath\-::bool\-In\-Vec@{Vectormath\-::bool\-In\-Vec}!bool\-In\-Vec@{bool\-In\-Vec}}
+\index{bool\-In\-Vec@{bool\-In\-Vec}!Vectormath::boolInVec@{Vectormath\-::bool\-In\-Vec}}
+\subsubsection[{bool\-In\-Vec}]{\setlength{\rightskip}{0pt plus 5cm}Vectormath\-::bool\-In\-Vec\-::bool\-In\-Vec (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1boolInVec_a846273f80c565698980f5840f73e61d3}
+
+
+Definition at line 50 of file bool\-In\-Vec.\-h.
+
+
+\begin{DoxyCode}
+50 \{ \};
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1boolInVec_aa21ebe5fd4b82622482071def03bf027}{\index{Vectormath\-::bool\-In\-Vec@{Vectormath\-::bool\-In\-Vec}!bool\-In\-Vec@{bool\-In\-Vec}}
+\index{bool\-In\-Vec@{bool\-In\-Vec}!Vectormath::boolInVec@{Vectormath\-::bool\-In\-Vec}}
+\subsubsection[{bool\-In\-Vec}]{\setlength{\rightskip}{0pt plus 5cm}Vectormath\-::bool\-In\-Vec\-::bool\-In\-Vec (
+\begin{DoxyParamCaption}
+\item[{{\bf float\-In\-Vec}}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1boolInVec_aa21ebe5fd4b82622482071def03bf027}
+
+
+Definition at line 129 of file bool\-In\-Vec.\-h.
+
+
+\begin{DoxyCode}
+130 \{
+131     *\textcolor{keyword}{this} = (vec != floatInVec(0.0f));
+132 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1boolInVec_a4f28ddfcc232b287446eb659b2c5f326}{\index{Vectormath\-::bool\-In\-Vec@{Vectormath\-::bool\-In\-Vec}!bool\-In\-Vec@{bool\-In\-Vec}}
+\index{bool\-In\-Vec@{bool\-In\-Vec}!Vectormath::boolInVec@{Vectormath\-::bool\-In\-Vec}}
+\subsubsection[{bool\-In\-Vec}]{\setlength{\rightskip}{0pt plus 5cm}Vectormath\-::bool\-In\-Vec\-::bool\-In\-Vec (
+\begin{DoxyParamCaption}
+\item[{bool}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classVectormath_1_1boolInVec_a4f28ddfcc232b287446eb659b2c5f326}
+
+
+Definition at line 135 of file bool\-In\-Vec.\-h.
+
+
+\begin{DoxyCode}
+136 \{
+137     mData = -(int)scalar;
+138 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classVectormath_1_1boolInVec_a817030f4550f00989173939aaafb5958}{\index{Vectormath\-::bool\-In\-Vec@{Vectormath\-::bool\-In\-Vec}!get\-As\-Bool@{get\-As\-Bool}}
+\index{get\-As\-Bool@{get\-As\-Bool}!Vectormath::boolInVec@{Vectormath\-::bool\-In\-Vec}}
+\subsubsection[{get\-As\-Bool}]{\setlength{\rightskip}{0pt plus 5cm}bool Vectormath\-::bool\-In\-Vec\-::get\-As\-Bool (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1boolInVec_a817030f4550f00989173939aaafb5958}
+
+
+Definition at line 142 of file bool\-In\-Vec.\-h.
+
+
+\begin{DoxyCode}
+143 \{
+144     \textcolor{keywordflow}{return} (mData > 0);
+145 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1boolInVec_a258f20bcd56f284843a5e4a0964af02a}{\index{Vectormath\-::bool\-In\-Vec@{Vectormath\-::bool\-In\-Vec}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!Vectormath::boolInVec@{Vectormath\-::bool\-In\-Vec}}
+\subsubsection[{operator bool}]{\setlength{\rightskip}{0pt plus 5cm}Vectormath\-::bool\-In\-Vec\-::operator bool (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1boolInVec_a258f20bcd56f284843a5e4a0964af02a}
+
+
+Definition at line 149 of file bool\-In\-Vec.\-h.
+
+
+\begin{DoxyCode}
+150 \{
+151     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1boolInVec_a817030f4550f00989173939aaafb5958}{getAsBool}();
+152 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1boolInVec_aba21c8c76cb386b1d6b2c38cdabd2336}{\index{Vectormath\-::bool\-In\-Vec@{Vectormath\-::bool\-In\-Vec}!operator!@{operator!}}
+\index{operator!@{operator!}!Vectormath::boolInVec@{Vectormath\-::bool\-In\-Vec}}
+\subsubsection[{operator!}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf bool\-In\-Vec} Vectormath\-::bool\-In\-Vec\-::operator! (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1boolInVec_aba21c8c76cb386b1d6b2c38cdabd2336}
+
+
+Definition at line 157 of file bool\-In\-Vec.\-h.
+
+
+\begin{DoxyCode}
+158 \{
+159     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1boolInVec_a846273f80c565698980f5840f73e61d3}{boolInVec}(!mData);
+160 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1boolInVec_a2a14f17fa25b360c5984c491d121f446}{\index{Vectormath\-::bool\-In\-Vec@{Vectormath\-::bool\-In\-Vec}!operator\&=@{operator\&=}}
+\index{operator\&=@{operator\&=}!Vectormath::boolInVec@{Vectormath\-::bool\-In\-Vec}}
+\subsubsection[{operator\&=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool\-In\-Vec} \& Vectormath\-::bool\-In\-Vec\-::operator\&= (
+\begin{DoxyParamCaption}
+\item[{{\bf bool\-In\-Vec}}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1boolInVec_a2a14f17fa25b360c5984c491d121f446}
+
+
+Definition at line 172 of file bool\-In\-Vec.\-h.
+
+
+\begin{DoxyCode}
+173 \{
+174     *\textcolor{keyword}{this} = *\textcolor{keyword}{this} & vec;
+175     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+176 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1boolInVec_a2c50cda65cc64eb8a72ccab7fc4ad88d}{\index{Vectormath\-::bool\-In\-Vec@{Vectormath\-::bool\-In\-Vec}!operator=@{operator=}}
+\index{operator=@{operator=}!Vectormath::boolInVec@{Vectormath\-::bool\-In\-Vec}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool\-In\-Vec} \& Vectormath\-::bool\-In\-Vec\-::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf bool\-In\-Vec}}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1boolInVec_a2c50cda65cc64eb8a72ccab7fc4ad88d}
+
+
+Definition at line 164 of file bool\-In\-Vec.\-h.
+
+
+\begin{DoxyCode}
+165 \{
+166     mData = vec.mData;
+167     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+168 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1boolInVec_ac053a8e6fee07110c9b1e963b145d47c}{\index{Vectormath\-::bool\-In\-Vec@{Vectormath\-::bool\-In\-Vec}!operator$^\wedge$=@{operator$^\wedge$=}}
+\index{operator$^\wedge$=@{operator$^\wedge$=}!Vectormath::boolInVec@{Vectormath\-::bool\-In\-Vec}}
+\subsubsection[{operator$^\wedge$=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool\-In\-Vec} \& Vectormath\-::bool\-In\-Vec\-::operator$^\wedge$= (
+\begin{DoxyParamCaption}
+\item[{{\bf bool\-In\-Vec}}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1boolInVec_ac053a8e6fee07110c9b1e963b145d47c}
+
+
+Definition at line 180 of file bool\-In\-Vec.\-h.
+
+
+\begin{DoxyCode}
+181 \{
+182     *\textcolor{keyword}{this} = *\textcolor{keyword}{this} ^ vec;
+183     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+184 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1boolInVec_ae47bc0c7ee817a201a9006b3ca99102f}{\index{Vectormath\-::bool\-In\-Vec@{Vectormath\-::bool\-In\-Vec}!operator$\vert$=@{operator$\vert$=}}
+\index{operator$\vert$=@{operator$\vert$=}!Vectormath::boolInVec@{Vectormath\-::bool\-In\-Vec}}
+\subsubsection[{operator$\vert$=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool\-In\-Vec} \& Vectormath\-::bool\-In\-Vec\-::operator$\vert$= (
+\begin{DoxyParamCaption}
+\item[{{\bf bool\-In\-Vec}}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1boolInVec_ae47bc0c7ee817a201a9006b3ca99102f}
+
+
+Definition at line 188 of file bool\-In\-Vec.\-h.
+
+
+\begin{DoxyCode}
+189 \{
+190     *\textcolor{keyword}{this} = *\textcolor{keyword}{this} | vec;
+191     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+192 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/sam/\-Cube\-Racer/src/vectormath/\hyperlink{boolInVec_8h}{bool\-In\-Vec.\-h}\end{DoxyCompactItemize}

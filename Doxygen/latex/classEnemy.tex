@@ -1,0 +1,347 @@
+\hypertarget{classEnemy}{\section{Enemy Class Reference}
+\label{classEnemy}\index{Enemy@{Enemy}}
+}
+
+
+{\ttfamily \#include $<$Enemy.\-h$>$}
+
+Inheritance diagram for Enemy\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEnemy}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1}{vertices} \{ \\*
+\hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a27984980bad3e49e3a78994281d6949b}{F0}, 
+\hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1ab95fca6d288fdaa674e85ae46e366e2d}{F1}, 
+\hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1abef72d551f5d130fd850384d075a27d2}{F2}, 
+\hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a28b74a906d078973f1d59203d964c045}{F3}, 
+\\*
+\hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a32ab5408a61c9a05baada047eaceb025}{B4}, 
+\hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a00ceaccae0110cd22f3d466348cda9e0}{B5}, 
+\hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a0822565cdeeb34f9027775bab8f9ae0a}{B6}, 
+\hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a5ab58c1a775f2759b6bd7fc6f97515df}{B7}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEnemy_a94f30d348b6d2840fd71675472ba38dd}{Enemy} ()
+\item 
+\hyperlink{classEnemy_a53db9778244c976f711f25463982cad2}{Enemy} (float x, float y, float z)
+\item 
+\hyperlink{classEnemy_ac0eec4755e28c02688065f9657150ac3}{$\sim$\-Enemy} ()
+\item 
+bool \hyperlink{classEnemy_a0fd40f508e31be597eab5840df775749}{collides\-With} (\hyperlink{classPlayer}{Player} \&a)
+\item 
+virtual void \hyperlink{classEnemy_ad55ee71b5a8c23fbd00b3c368b90cc64}{update} ()
+\item 
+virtual void \hyperlink{classEnemy_a7dcf45915f6288ef9264ec60af621b6c}{draw} ()
+\item 
+virtual void \hyperlink{classEnemy_a12e87c9cb633fed1d846a61cfe7f91c7}{clean} ()
+\item 
+virtual void \hyperlink{classEnemy_a9a0377be732b07f337206077c1f1acf7}{set\-Diff} (double diff)
+\item 
+virtual double \hyperlink{classEnemy_ac9934ae427de817275472e64cf617c39}{get\-Diff} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classEnemy_acca04a63f878d07a3db3285f5f8fbbed}{difficulty}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file Enemy.\-h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classEnemy_a60fed95ba2edb2a005487c91711fe7d1}{\index{Enemy@{Enemy}!vertices@{vertices}}
+\index{vertices@{vertices}!Enemy@{Enemy}}
+\subsubsection[{vertices}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Enemy\-::vertices}}}\label{classEnemy_a60fed95ba2edb2a005487c91711fe7d1}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{F0@{F0}!Enemy@{Enemy}}\index{Enemy@{Enemy}!F0@{F0}}\item[{\em 
+\hypertarget{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a27984980bad3e49e3a78994281d6949b}{F0}\label{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a27984980bad3e49e3a78994281d6949b}
+}]\index{F1@{F1}!Enemy@{Enemy}}\index{Enemy@{Enemy}!F1@{F1}}\item[{\em 
+\hypertarget{classEnemy_a60fed95ba2edb2a005487c91711fe7d1ab95fca6d288fdaa674e85ae46e366e2d}{F1}\label{classEnemy_a60fed95ba2edb2a005487c91711fe7d1ab95fca6d288fdaa674e85ae46e366e2d}
+}]\index{F2@{F2}!Enemy@{Enemy}}\index{Enemy@{Enemy}!F2@{F2}}\item[{\em 
+\hypertarget{classEnemy_a60fed95ba2edb2a005487c91711fe7d1abef72d551f5d130fd850384d075a27d2}{F2}\label{classEnemy_a60fed95ba2edb2a005487c91711fe7d1abef72d551f5d130fd850384d075a27d2}
+}]\index{F3@{F3}!Enemy@{Enemy}}\index{Enemy@{Enemy}!F3@{F3}}\item[{\em 
+\hypertarget{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a28b74a906d078973f1d59203d964c045}{F3}\label{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a28b74a906d078973f1d59203d964c045}
+}]\index{B4@{B4}!Enemy@{Enemy}}\index{Enemy@{Enemy}!B4@{B4}}\item[{\em 
+\hypertarget{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a32ab5408a61c9a05baada047eaceb025}{B4}\label{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a32ab5408a61c9a05baada047eaceb025}
+}]\index{B5@{B5}!Enemy@{Enemy}}\index{Enemy@{Enemy}!B5@{B5}}\item[{\em 
+\hypertarget{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a00ceaccae0110cd22f3d466348cda9e0}{B5}\label{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a00ceaccae0110cd22f3d466348cda9e0}
+}]\index{B6@{B6}!Enemy@{Enemy}}\index{Enemy@{Enemy}!B6@{B6}}\item[{\em 
+\hypertarget{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a0822565cdeeb34f9027775bab8f9ae0a}{B6}\label{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a0822565cdeeb34f9027775bab8f9ae0a}
+}]\index{B7@{B7}!Enemy@{Enemy}}\index{Enemy@{Enemy}!B7@{B7}}\item[{\em 
+\hypertarget{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a5ab58c1a775f2759b6bd7fc6f97515df}{B7}\label{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a5ab58c1a775f2759b6bd7fc6f97515df}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 23 of file Enemy.\-h.
+
+
+\begin{DoxyCode}
+23                 \{
+24     \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a27984980bad3e49e3a78994281d6949b}{F0}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1ab95fca6d288fdaa674e85ae46e366e2d}{F1}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1abef72d551f5d130fd850384d075a27d2}{F2}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a28b74a906d078973f1d59203d964c045}{F3}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a32ab5408a61c9a05baada047eaceb025}{B4}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a00ceaccae0110cd22f3d466348cda9e0}{B5}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a0822565cdeeb34f9027775bab8f9ae0a}{B6}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a5ab58c1a775f2759b6bd7fc6f97515df}{B7},
+25   \};
+\end{DoxyCode}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classEnemy_a94f30d348b6d2840fd71675472ba38dd}{\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\subsubsection[{Enemy}]{\setlength{\rightskip}{0pt plus 5cm}Enemy\-::\-Enemy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classEnemy_a94f30d348b6d2840fd71675472ba38dd}
+
+
+Definition at line 3 of file Enemy.\-cpp.
+
+
+\begin{DoxyCode}
+4   : \hyperlink{classGameAsset_a9c96b0bafa2b6973a2e8c09bf51c52ec}{GameAsset}(
+5           \textcolor{keywordtype}{string}(\textcolor{stringliteral}{"CubeRacer/shaders/hello-gl.v.glsl"})
+6           , \textcolor{keywordtype}{string}(\textcolor{stringliteral}{"CubeRacer/shaders/enemy-gl.f.glsl"})
+7           )
+8 \{
+9   \hyperlink{classEnemy_a94f30d348b6d2840fd71675472ba38dd}{Enemy}(0, 0, 0);
+10 \}
+\end{DoxyCode}
+\hypertarget{classEnemy_a53db9778244c976f711f25463982cad2}{\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\subsubsection[{Enemy}]{\setlength{\rightskip}{0pt plus 5cm}Enemy\-::\-Enemy (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}}\label{classEnemy_a53db9778244c976f711f25463982cad2}
+
+
+Definition at line 12 of file Enemy.\-cpp.
+
+
+\begin{DoxyCode}
+13   : \hyperlink{classGameAsset_a9c96b0bafa2b6973a2e8c09bf51c52ec}{GameAsset}(
+14       \textcolor{keywordtype}{string}(\textcolor{stringliteral}{"CubeRacer/shaders/hello-gl.v.glsl"}), 
+15       \textcolor{keywordtype}{string}(\textcolor{stringliteral}{"CubeRacer/shaders/enemy-gl.f.glsl"})
+16 ) \{
+17 
+18   \textcolor{comment}{// A default "unit" cube}
+19   \hyperlink{classGameAsset_a3e8d7dc58d3d4efafbbce1536b78dbc7}{num\_vertices} = 8;
+20   \hyperlink{classGameAsset_aae4d864335c2eca685cc86602881cd18}{num\_triangles} = 12;
+21   \hyperlink{classGameAsset_ae1d682ecf84d9cd3f91a8c870acf2777}{g\_vertex\_buffer\_data} = \textcolor{keyword}{new} GLfloat[\hyperlink{classGameAsset_a3e8d7dc58d3d4efafbbce1536b78dbc7}{num\_vertices} * 3]\{
+22 
+23   \textcolor{comment}{//     x      y     z}
+24     -0.5, -0.5,  0.5, \textcolor{comment}{//F - 0}
+25      0.5, -0.5,  0.5, \textcolor{comment}{//F - 1}
+26     -0.5,  0.5,  0.5, \textcolor{comment}{//F - 2}
+27      0.5,  0.5,  0.5, \textcolor{comment}{//F - 3}
+28     -0.5, -0.5, -0.5, \textcolor{comment}{//B - 4}
+29      0.5, -0.5, -0.5, \textcolor{comment}{//B - 5}
+30     -0.5,  0.5, -0.5, \textcolor{comment}{//B - 6}
+31      0.5,  0.5, -0.5  \textcolor{comment}{//B - 7}
+32 \}; \textcolor{comment}{// three points per vertex}
+33 
+34   \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\_element\_buffer\_data} = \textcolor{keyword}{new} GLushort[\hyperlink{classGameAsset_aae4d864335c2eca685cc86602881cd18}{num\_triangles} * 3]\{
+35 
+36     \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a27984980bad3e49e3a78994281d6949b}{F0}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1ab95fca6d288fdaa674e85ae46e366e2d}{F1}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1abef72d551f5d130fd850384d075a27d2}{F2},  \textcolor{comment}{//front}
+37     \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1ab95fca6d288fdaa674e85ae46e366e2d}{F1}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a28b74a906d078973f1d59203d964c045}{F3}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1abef72d551f5d130fd850384d075a27d2}{F2},
+38 
+39     \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1ab95fca6d288fdaa674e85ae46e366e2d}{F1}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a00ceaccae0110cd22f3d466348cda9e0}{B5}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a28b74a906d078973f1d59203d964c045}{F3},  \textcolor{comment}{//right}
+40     \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a00ceaccae0110cd22f3d466348cda9e0}{B5}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a5ab58c1a775f2759b6bd7fc6f97515df}{B7}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a28b74a906d078973f1d59203d964c045}{F3},
+41 
+42     \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a00ceaccae0110cd22f3d466348cda9e0}{B5}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a32ab5408a61c9a05baada047eaceb025}{B4}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a5ab58c1a775f2759b6bd7fc6f97515df}{B7},  \textcolor{comment}{//back}
+43     \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a32ab5408a61c9a05baada047eaceb025}{B4}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a0822565cdeeb34f9027775bab8f9ae0a}{B6}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a5ab58c1a775f2759b6bd7fc6f97515df}{B7},
+44 
+45     \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a32ab5408a61c9a05baada047eaceb025}{B4}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a27984980bad3e49e3a78994281d6949b}{F0}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a0822565cdeeb34f9027775bab8f9ae0a}{B6},  \textcolor{comment}{//left}
+46     \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a27984980bad3e49e3a78994281d6949b}{F0}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1abef72d551f5d130fd850384d075a27d2}{F2}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a0822565cdeeb34f9027775bab8f9ae0a}{B6},
+47 
+48     \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1abef72d551f5d130fd850384d075a27d2}{F2}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a28b74a906d078973f1d59203d964c045}{F3}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a0822565cdeeb34f9027775bab8f9ae0a}{B6},  \textcolor{comment}{//top}
+49     \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a28b74a906d078973f1d59203d964c045}{F3}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a5ab58c1a775f2759b6bd7fc6f97515df}{B7}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a0822565cdeeb34f9027775bab8f9ae0a}{B6},
+50 
+51     \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a32ab5408a61c9a05baada047eaceb025}{B4}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a00ceaccae0110cd22f3d466348cda9e0}{B5}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a27984980bad3e49e3a78994281d6949b}{F0},  \textcolor{comment}{//bottom}
+52     \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1a00ceaccae0110cd22f3d466348cda9e0}{B5}, \hyperlink{classEnemy_a60fed95ba2edb2a005487c91711fe7d1ab95fca6d288fdaa674e85ae46e366e2d}{F1}, F0
+53     
+54 \}; \textcolor{comment}{// three vertices per triangle}
+55 
+56   \hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}.reset();
+57   \hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox} = shared\_ptr<BoundingBox>(\textcolor{keyword}{new} \hyperlink{classBoundingBox}{BoundingBox}(\hyperlink{classVectormath_1_1Aos_1_1Point3}{Point3}(x, y, z), 1.0, 1.0, 1.0));
+58 
+59   \hyperlink{classGameAsset_aa26d85233ece476d599adf90074e9568}{make\_resources}();
+60 \}
+\end{DoxyCode}
+\hypertarget{classEnemy_ac0eec4755e28c02688065f9657150ac3}{\index{Enemy@{Enemy}!$\sim$\-Enemy@{$\sim$\-Enemy}}
+\index{$\sim$\-Enemy@{$\sim$\-Enemy}!Enemy@{Enemy}}
+\subsubsection[{$\sim$\-Enemy}]{\setlength{\rightskip}{0pt plus 5cm}Enemy\-::$\sim$\-Enemy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classEnemy_ac0eec4755e28c02688065f9657150ac3}
+
+
+Definition at line 62 of file Enemy.\-cpp.
+
+
+\begin{DoxyCode}
+62               \{
+63   \textcolor{comment}{// TODO: do something nice and fun here.}
+64 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classEnemy_a12e87c9cb633fed1d846a61cfe7f91c7}{\index{Enemy@{Enemy}!clean@{clean}}
+\index{clean@{clean}!Enemy@{Enemy}}
+\subsubsection[{clean}]{\setlength{\rightskip}{0pt plus 5cm}void Enemy\-::clean (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classEnemy_a12e87c9cb633fed1d846a61cfe7f91c7}
+
+
+Implements \hyperlink{classGameAsset_abbea962eaa63a813949b834778b7483e}{Game\-Asset}.
+
+
+
+Definition at line 99 of file Enemy.\-cpp.
+
+
+\begin{DoxyCode}
+99 \{\}
+\end{DoxyCode}
+\hypertarget{classEnemy_a0fd40f508e31be597eab5840df775749}{\index{Enemy@{Enemy}!collides\-With@{collides\-With}}
+\index{collides\-With@{collides\-With}!Enemy@{Enemy}}
+\subsubsection[{collides\-With}]{\setlength{\rightskip}{0pt plus 5cm}bool Enemy\-::collides\-With (
+\begin{DoxyParamCaption}
+\item[{{\bf Player} \&}]{a}
+\end{DoxyParamCaption}
+)}}\label{classEnemy_a0fd40f508e31be597eab5840df775749}
+
+
+Definition at line 90 of file Enemy.\-cpp.
+
+
+\begin{DoxyCode}
+90                                    \{
+91   \textcolor{keywordflow}{return} \hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}->collidesWith((*a.\hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}));
+92 \}
+\end{DoxyCode}
+\hypertarget{classEnemy_a7dcf45915f6288ef9264ec60af621b6c}{\index{Enemy@{Enemy}!draw@{draw}}
+\index{draw@{draw}!Enemy@{Enemy}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Enemy\-::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classEnemy_a7dcf45915f6288ef9264ec60af621b6c}
+
+
+Reimplemented from \hyperlink{classGameAsset_a2d7e18a8f1dd8ba89ed1bd14f2affeab}{Game\-Asset}.
+
+
+
+Definition at line 94 of file Enemy.\-cpp.
+
+
+\begin{DoxyCode}
+94                  \{
+95 \textcolor{comment}{//  std::cout << "x: " << bbox->getCentre()->getX() << "\(\backslash\)ty: " << bbox->getCentre()->getY() << "\(\backslash\)tz:" <<
+       bbox->getCentre()->getZ() << std::endl;}
+96   \hyperlink{classGameAsset_a2d7e18a8f1dd8ba89ed1bd14f2affeab}{GameAsset::draw}();
+97 \}
+\end{DoxyCode}
+\hypertarget{classEnemy_ac9934ae427de817275472e64cf617c39}{\index{Enemy@{Enemy}!get\-Diff@{get\-Diff}}
+\index{get\-Diff@{get\-Diff}!Enemy@{Enemy}}
+\subsubsection[{get\-Diff}]{\setlength{\rightskip}{0pt plus 5cm}double Enemy\-::get\-Diff (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classEnemy_ac9934ae427de817275472e64cf617c39}
+
+
+Definition at line 72 of file Enemy.\-cpp.
+
+
+\begin{DoxyCode}
+72                      \{
+73     \textcolor{keywordflow}{return} \hyperlink{classEnemy_acca04a63f878d07a3db3285f5f8fbbed}{difficulty};
+74 \}
+\end{DoxyCode}
+\hypertarget{classEnemy_a9a0377be732b07f337206077c1f1acf7}{\index{Enemy@{Enemy}!set\-Diff@{set\-Diff}}
+\index{set\-Diff@{set\-Diff}!Enemy@{Enemy}}
+\subsubsection[{set\-Diff}]{\setlength{\rightskip}{0pt plus 5cm}void Enemy\-::set\-Diff (
+\begin{DoxyParamCaption}
+\item[{double}]{diff}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classEnemy_a9a0377be732b07f337206077c1f1acf7}
+
+
+Definition at line 67 of file Enemy.\-cpp.
+
+
+\begin{DoxyCode}
+67                               \{
+68     \hyperlink{classEnemy_acca04a63f878d07a3db3285f5f8fbbed}{difficulty} = diff;
+69 \}
+\end{DoxyCode}
+\hypertarget{classEnemy_ad55ee71b5a8c23fbd00b3c368b90cc64}{\index{Enemy@{Enemy}!update@{update}}
+\index{update@{update}!Enemy@{Enemy}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Enemy\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classEnemy_ad55ee71b5a8c23fbd00b3c368b90cc64}
+
+
+Implements \hyperlink{classGameAsset_a42688ec8f02e201eaaa01e74a112083f}{Game\-Asset}.
+
+
+
+Definition at line 77 of file Enemy.\-cpp.
+
+
+\begin{DoxyCode}
+77                    \{
+78 
+79   \textcolor{keywordflow}{if}(\hyperlink{classGameAsset_aebf93ae52dc7fabbb6ec7edaadf915d0}{isAlive}) \{
+80 
+81     shared\_ptr<Point3> p = shared\_ptr<Point3>(\textcolor{keyword}{new} \hyperlink{classVectormath_1_1Aos_1_1Point3}{Point3}(this->\hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}->getCentre()->getX(), this->
+      \hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}->getCentre()->getY(), this->\hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}->getCentre()->getZ()-\hyperlink{classEnemy_acca04a63f878d07a3db3285f5f8fbbed}{difficulty}));
+82 
+83     this->\hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}.reset();
+84     this->\hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox} = shared\_ptr<BoundingBox>(\textcolor{keyword}{new} \hyperlink{classBoundingBox}{BoundingBox}(*p, 1.0, 1.0, 1.0));
+85     \textcolor{keywordflow}{if}( this->\hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}->getCentre()->getZ() < -5) \{ this->\hyperlink{classGameAsset_a631982e6d36061c08c7e8981ce0fd308}{dead}(); \}
+86 
+87   \}
+88 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classEnemy_acca04a63f878d07a3db3285f5f8fbbed}{\index{Enemy@{Enemy}!difficulty@{difficulty}}
+\index{difficulty@{difficulty}!Enemy@{Enemy}}
+\subsubsection[{difficulty}]{\setlength{\rightskip}{0pt plus 5cm}double Enemy\-::difficulty}}\label{classEnemy_acca04a63f878d07a3db3285f5f8fbbed}
+
+
+Definition at line 21 of file Enemy.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/sam/\-Cube\-Racer/src/\hyperlink{Enemy_8h}{Enemy.\-h}\item 
+/home/sam/\-Cube\-Racer/src/\hyperlink{Enemy_8cpp}{Enemy.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,1320 @@
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4}{\section{Vectormath\-:\-:Aos\-:\-:Matrix4 Class Reference}
+\label{classVectormath_1_1Aos_1_1Matrix4}\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+}
+
+
+{\ttfamily \#include $<$vectormath\-\_\-aos.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Matrix4_a37fd3dbd4a7b1a72707b394e550d79c7}{Matrix4} ()
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Matrix4_a025fe2cfa1581016444f2306c1112344}{Matrix4} (const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \&mat)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Matrix4_aacf4de7f6db283ad9004ca4328786ce9}{Matrix4} (const \hyperlink{classVectormath_1_1Aos_1_1Vector4}{Vector4} \&col0, const \hyperlink{classVectormath_1_1Aos_1_1Vector4}{Vector4} \&col1, const \hyperlink{classVectormath_1_1Aos_1_1Vector4}{Vector4} \&col2, const \hyperlink{classVectormath_1_1Aos_1_1Vector4}{Vector4} \&col3)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Matrix4_a3fa883e2169015e3de19961e2c1256a1}{Matrix4} (const \hyperlink{classVectormath_1_1Aos_1_1Transform3}{Transform3} \&mat)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Matrix4_ad5545bd33ad2e9d1447c815b3e905bca}{Matrix4} (const \hyperlink{classVectormath_1_1Aos_1_1Matrix3}{Matrix3} \&mat, const \hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3} \&translate\-Vec)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Matrix4_abec1bfbf4970db96b114ef8410243138}{Matrix4} (const \hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \&unit\-Quat, const \hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3} \&translate\-Vec)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Matrix4_ad68959c1e281a215bc923cd8f9c0ce9f}{Matrix4} (float scalar)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \& \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a0553a086f6a531ec33604bec921b39b1}{operator=} (const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \&mat)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \& \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a796651e64320a209ca5b386c3de3af9a}{set\-Upper3x3} (const \hyperlink{classVectormath_1_1Aos_1_1Matrix3}{Matrix3} \&mat3)
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Matrix3}{Matrix3} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a03bd8e35ef74921b486b9caaa5917fce}{get\-Upper3x3} () const 
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \& \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a8fc9714a1b77613027bde0e9b5cafe14}{set\-Translation} (const \hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3} \&translate\-Vec)
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a65c82c56c6c9a60604f587a1ae1ea889}{get\-Translation} () const 
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \& \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a02cbef72b8199d1484b377a460442681}{set\-Col0} (const \hyperlink{classVectormath_1_1Aos_1_1Vector4}{Vector4} \&col0)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \& \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a8db69ef5f587c3328ce96f7292e347f4}{set\-Col1} (const \hyperlink{classVectormath_1_1Aos_1_1Vector4}{Vector4} \&col1)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \& \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a979b28e8e6a622fd622cde6656099bb1}{set\-Col2} (const \hyperlink{classVectormath_1_1Aos_1_1Vector4}{Vector4} \&col2)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \& \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a73da9686b802d99b4232cb187e1d4aeb}{set\-Col3} (const \hyperlink{classVectormath_1_1Aos_1_1Vector4}{Vector4} \&col3)
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Vector4}{Vector4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a70063e1461d582bf7af3242f14fef9c2}{get\-Col0} () const 
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Vector4}{Vector4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_af2a346e5671e137e665abf428ea3fe37}{get\-Col1} () const 
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Vector4}{Vector4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a578e25e020f032f6797d091d60bd666c}{get\-Col2} () const 
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Vector4}{Vector4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_afa7a80b51829c7972210d619b764658e}{get\-Col3} () const 
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \& \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a74535c553b8a9234ee0c82e9a6f91ae5}{set\-Col} (int col, const \hyperlink{classVectormath_1_1Aos_1_1Vector4}{Vector4} \&vec)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \& \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a1e91c25cfc890cbe785ac70d40d005c2}{set\-Row} (int row, const \hyperlink{classVectormath_1_1Aos_1_1Vector4}{Vector4} \&vec)
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Vector4}{Vector4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a4faff444850b3255e9a1c74eedd54399}{get\-Col} (int col) const 
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Vector4}{Vector4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_ae0904650e9e70a4f5f919d8e7a174028}{get\-Row} (int row) const 
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Vector4}{Vector4} \& \hyperlink{classVectormath_1_1Aos_1_1Matrix4_ab927e8827863e8a3b2bb605f414152d2}{operator\mbox{[}$\,$\mbox{]}} (int col)
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Vector4}{Vector4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a4c95ed261847ac0f8392d7c6153ebb13}{operator\mbox{[}$\,$\mbox{]}} (int col) const 
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \& \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a4ca59f395e1037892dff2bb35eab821a}{set\-Elem} (int col, int row, float val)
+\item 
+float \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a871940538664158e8d98cc62a4c2cff4}{get\-Elem} (int col, int row) const 
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a36970ffb49dd6b80112474370306fef0}{operator+} (const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \&mat) const 
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a8a464a8ae3bd1827dd0fe42b89736573}{operator-\/} (const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \&mat) const 
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_ab7f05537a209295cf6c54468cb90d503}{operator-\/} () const 
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a3582bed80cf3b5882d7b14a3841ded36}{operator$\ast$} (float scalar) const 
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Vector4}{Vector4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a58532fc2be06849ee219c380221142cc}{operator$\ast$} (const \hyperlink{classVectormath_1_1Aos_1_1Vector4}{Vector4} \&vec) const 
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Vector4}{Vector4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a0d972b51bbf8abcb3df3be5760305a58}{operator$\ast$} (const \hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3} \&vec) const 
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Vector4}{Vector4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_aaaa78b99b6c3db990e5292392e5fb4d0}{operator$\ast$} (const \hyperlink{classVectormath_1_1Aos_1_1Point3}{Point3} \&pnt) const 
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_accbcaf900e4cf6c75779d0670d706c38}{operator$\ast$} (const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \&mat) const 
+\item 
+const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a3c729758e4a3fa24690bd313a4018e4d}{operator$\ast$} (const \hyperlink{classVectormath_1_1Aos_1_1Transform3}{Transform3} \&tfrm) const 
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \& \hyperlink{classVectormath_1_1Aos_1_1Matrix4_ac16ba820d1415dff7021b580e7402194}{operator+=} (const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \&mat)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \& \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a3f4aff0dc945d49e0299241eb9ac3111}{operator-\/=} (const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \&mat)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \& \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a9026d1416ff16638222e6117f5318e28}{operator$\ast$=} (float scalar)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \& \hyperlink{classVectormath_1_1Aos_1_1Matrix4_abc9cd8b2d92794826c7b5f4b1fc8b3cb}{operator$\ast$=} (const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \&mat)
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \& \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a7a8def7df1085d4e00f6acb43939dd41}{operator$\ast$=} (const \hyperlink{classVectormath_1_1Aos_1_1Transform3}{Transform3} \&tfrm)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_aeeda56162e208d53b02d3ec35ac08b86}{identity} ()
+\item 
+static const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a8b60f5a84e5799dbb0693051822d36ec}{rotation\-X} (float radians)
+\item 
+static const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a6846074690ae127e482c6faea36141f5}{rotation\-Y} (float radians)
+\item 
+static const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_ac1a41a4c8f65e4b95f28c2ac7fb03ccd}{rotation\-Z} (float radians)
+\item 
+static const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a3ae6f957cf2ce1fc489b114e32d0585a}{rotation\-Z\-Y\-X} (const \hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3} \&radians\-X\-Y\-Z)
+\item 
+static const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_ab273a38e96c7f069de2d9abd383bcc43}{rotation} (float radians, const \hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3} \&unit\-Vec)
+\item 
+static const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_ae5cbad3dfd398d6e1a1cfc9f534878c6}{rotation} (const \hyperlink{classVectormath_1_1Aos_1_1Quat}{Quat} \&unit\-Quat)
+\item 
+static const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_ab1df40d4ed35a1eaaed3c4e80b9c389c}{scale} (const \hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3} \&scale\-Vec)
+\item 
+static const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_ac308643c557108ab55bf98835accdfc8}{translation} (const \hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3} \&translate\-Vec)
+\item 
+static const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a49e313a5abadfcf35efdda1a5276c95a}{look\-At} (const \hyperlink{classVectormath_1_1Aos_1_1Point3}{Point3} \&eye\-Pos, const \hyperlink{classVectormath_1_1Aos_1_1Point3}{Point3} \&look\-At\-Pos, const \hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3} \&up\-Vec)
+\item 
+static const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a30a81516249e282bb41c9ca3c382be5b}{perspective} (float fovy\-Radians, float aspect, float z\-Near, float z\-Far)
+\item 
+static const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_aec76177ef20c8645c11bb8f66518327e}{frustum} (float left, float right, float bottom, float top, float z\-Near, float z\-Far)
+\item 
+static const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a308a132dc0f318ce18b9ef2e64a693b6}{orthographic} (float left, float right, float bottom, float top, float z\-Near, float z\-Far)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1352 of file vectormath\-\_\-aos.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a37fd3dbd4a7b1a72707b394e550d79c7}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!Matrix4@{Matrix4}}
+\index{Matrix4@{Matrix4}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{Matrix4}]{\setlength{\rightskip}{0pt plus 5cm}Vectormath\-::\-Aos\-::\-Matrix4\-::\-Matrix4 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a37fd3dbd4a7b1a72707b394e550d79c7}
+
+
+Definition at line 1362 of file vectormath\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+1362 \{ \};
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a025fe2cfa1581016444f2306c1112344}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!Matrix4@{Matrix4}}
+\index{Matrix4@{Matrix4}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{Matrix4}]{\setlength{\rightskip}{0pt plus 5cm}Vectormath\-::\-Aos\-::\-Matrix4\-::\-Matrix4 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix4} \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a025fe2cfa1581016444f2306c1112344}
+
+
+Definition at line 448 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+449 \{
+450     mCol0 = mat.mCol0;
+451     mCol1 = mat.mCol1;
+452     mCol2 = mat.mCol2;
+453     mCol3 = mat.mCol3;
+454 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_aacf4de7f6db283ad9004ca4328786ce9}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!Matrix4@{Matrix4}}
+\index{Matrix4@{Matrix4}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{Matrix4}]{\setlength{\rightskip}{0pt plus 5cm}Vectormath\-::\-Aos\-::\-Matrix4\-::\-Matrix4 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector4} \&}]{col0, }
+\item[{const {\bf Vector4} \&}]{col1, }
+\item[{const {\bf Vector4} \&}]{col2, }
+\item[{const {\bf Vector4} \&}]{col3}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_aacf4de7f6db283ad9004ca4328786ce9}
+
+
+Definition at line 472 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+473 \{
+474     mCol0 = \_col0;
+475     mCol1 = \_col1;
+476     mCol2 = \_col2;
+477     mCol3 = \_col3;
+478 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a3fa883e2169015e3de19961e2c1256a1}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!Matrix4@{Matrix4}}
+\index{Matrix4@{Matrix4}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{Matrix4}]{\setlength{\rightskip}{0pt plus 5cm}Vectormath\-::\-Aos\-::\-Matrix4\-::\-Matrix4 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Transform3} \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a3fa883e2169015e3de19961e2c1256a1}
+
+
+Definition at line 464 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+465 \{
+466     mCol0 = Vector4( mat.getCol0(), 0.0f );
+467     mCol1 = Vector4( mat.getCol1(), 0.0f );
+468     mCol2 = Vector4( mat.getCol2(), 0.0f );
+469     mCol3 = Vector4( mat.getCol3(), 1.0f );
+470 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_ad5545bd33ad2e9d1447c815b3e905bca}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!Matrix4@{Matrix4}}
+\index{Matrix4@{Matrix4}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{Matrix4}]{\setlength{\rightskip}{0pt plus 5cm}Vectormath\-::\-Aos\-::\-Matrix4\-::\-Matrix4 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix3} \&}]{mat, }
+\item[{const {\bf Vector3} \&}]{translate\-Vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_ad5545bd33ad2e9d1447c815b3e905bca}
+
+
+Definition at line 480 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+481 \{
+482     mCol0 = Vector4( mat.getCol0(), 0.0f );
+483     mCol1 = Vector4( mat.getCol1(), 0.0f );
+484     mCol2 = Vector4( mat.getCol2(), 0.0f );
+485     mCol3 = Vector4( translateVec, 1.0f );
+486 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_abec1bfbf4970db96b114ef8410243138}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!Matrix4@{Matrix4}}
+\index{Matrix4@{Matrix4}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{Matrix4}]{\setlength{\rightskip}{0pt plus 5cm}Vectormath\-::\-Aos\-::\-Matrix4\-::\-Matrix4 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quat} \&}]{unit\-Quat, }
+\item[{const {\bf Vector3} \&}]{translate\-Vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_abec1bfbf4970db96b114ef8410243138}
+
+
+Definition at line 488 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+489 \{
+490     Matrix3 mat;
+491     mat = Matrix3( unitQuat );
+492     mCol0 = Vector4( mat.getCol0(), 0.0f );
+493     mCol1 = Vector4( mat.getCol1(), 0.0f );
+494     mCol2 = Vector4( mat.getCol2(), 0.0f );
+495     mCol3 = Vector4( translateVec, 1.0f );
+496 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_ad68959c1e281a215bc923cd8f9c0ce9f}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!Matrix4@{Matrix4}}
+\index{Matrix4@{Matrix4}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{Matrix4}]{\setlength{\rightskip}{0pt plus 5cm}Vectormath\-::\-Aos\-::\-Matrix4\-::\-Matrix4 (
+\begin{DoxyParamCaption}
+\item[{float}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classVectormath_1_1Aos_1_1Matrix4_ad68959c1e281a215bc923cd8f9c0ce9f}
+
+
+Definition at line 456 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+457 \{
+458     mCol0 = Vector4( scalar );
+459     mCol1 = Vector4( scalar );
+460     mCol2 = Vector4( scalar );
+461     mCol3 = Vector4( scalar );
+462 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_aec76177ef20c8645c11bb8f66518327e}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!frustum@{frustum}}
+\index{frustum@{frustum}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{frustum}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Matrix4} Vectormath\-::\-Aos\-::\-Matrix4\-::frustum (
+\begin{DoxyParamCaption}
+\item[{float}]{left, }
+\item[{float}]{right, }
+\item[{float}]{bottom, }
+\item[{float}]{top, }
+\item[{float}]{z\-Near, }
+\item[{float}]{z\-Far}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classVectormath_1_1Aos_1_1Matrix4_aec76177ef20c8645c11bb8f66518327e}
+
+
+Definition at line 1064 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+1065 \{
+1066     \textcolor{keywordtype}{float} sum\_rl, sum\_tb, sum\_nf, inv\_rl, inv\_tb, inv\_nf, n2;
+1067     sum\_rl = ( right + left );
+1068     sum\_tb = ( top + bottom );
+1069     sum\_nf = ( zNear + zFar );
+1070     inv\_rl = ( 1.0f / ( right - left ) );
+1071     inv\_tb = ( 1.0f / ( top - bottom ) );
+1072     inv\_nf = ( 1.0f / ( zNear - zFar ) );
+1073     n2 = ( zNear + zNear );
+1074     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a37fd3dbd4a7b1a72707b394e550d79c7}{Matrix4}(
+1075         Vector4( ( n2 * inv\_rl ), 0.0f, 0.0f, 0.0f ),
+1076         Vector4( 0.0f, ( n2 * inv\_tb ), 0.0f, 0.0f ),
+1077         Vector4( ( sum\_rl * inv\_rl ), ( sum\_tb * inv\_tb ), ( sum\_nf * inv\_nf ), -1.0f ),
+1078         Vector4( 0.0f, 0.0f, ( ( n2 * inv\_nf ) * zFar ), 0.0f )
+1079     );
+1080 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a4faff444850b3255e9a1c74eedd54399}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!get\-Col@{get\-Col}}
+\index{get\-Col@{get\-Col}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{get\-Col}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector4} Vectormath\-::\-Aos\-::\-Matrix4\-::get\-Col (
+\begin{DoxyParamCaption}
+\item[{int}]{col}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a4faff444850b3255e9a1c74eedd54399}
+
+
+Definition at line 571 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+572 \{
+573     \textcolor{keywordflow}{return} *(&mCol0 + col);
+574 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a70063e1461d582bf7af3242f14fef9c2}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!get\-Col0@{get\-Col0}}
+\index{get\-Col0@{get\-Col0}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{get\-Col0}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector4} Vectormath\-::\-Aos\-::\-Matrix4\-::get\-Col0 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a70063e1461d582bf7af3242f14fef9c2}
+
+
+Definition at line 551 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+552 \{
+553     \textcolor{keywordflow}{return} mCol0;
+554 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_af2a346e5671e137e665abf428ea3fe37}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!get\-Col1@{get\-Col1}}
+\index{get\-Col1@{get\-Col1}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{get\-Col1}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector4} Vectormath\-::\-Aos\-::\-Matrix4\-::get\-Col1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_af2a346e5671e137e665abf428ea3fe37}
+
+
+Definition at line 556 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+557 \{
+558     \textcolor{keywordflow}{return} mCol1;
+559 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a578e25e020f032f6797d091d60bd666c}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!get\-Col2@{get\-Col2}}
+\index{get\-Col2@{get\-Col2}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{get\-Col2}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector4} Vectormath\-::\-Aos\-::\-Matrix4\-::get\-Col2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a578e25e020f032f6797d091d60bd666c}
+
+
+Definition at line 561 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+562 \{
+563     \textcolor{keywordflow}{return} mCol2;
+564 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_afa7a80b51829c7972210d619b764658e}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!get\-Col3@{get\-Col3}}
+\index{get\-Col3@{get\-Col3}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{get\-Col3}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector4} Vectormath\-::\-Aos\-::\-Matrix4\-::get\-Col3 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_afa7a80b51829c7972210d619b764658e}
+
+
+Definition at line 566 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+567 \{
+568     \textcolor{keywordflow}{return} mCol3;
+569 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a871940538664158e8d98cc62a4c2cff4}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!get\-Elem@{get\-Elem}}
+\index{get\-Elem@{get\-Elem}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{get\-Elem}]{\setlength{\rightskip}{0pt plus 5cm}float Vectormath\-::\-Aos\-::\-Matrix4\-::get\-Elem (
+\begin{DoxyParamCaption}
+\item[{int}]{col, }
+\item[{int}]{row}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a871940538664158e8d98cc62a4c2cff4}
+
+
+Definition at line 546 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+547 \{
+548     \textcolor{keywordflow}{return} this->\hyperlink{classVectormath_1_1Aos_1_1Matrix4_a4faff444850b3255e9a1c74eedd54399}{getCol}( col ).\hyperlink{classVectormath_1_1Aos_1_1Vector4_a8020669cc9b22410645efb136d1b74de}{getElem}( row );
+549 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_ae0904650e9e70a4f5f919d8e7a174028}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!get\-Row@{get\-Row}}
+\index{get\-Row@{get\-Row}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{get\-Row}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector4} Vectormath\-::\-Aos\-::\-Matrix4\-::get\-Row (
+\begin{DoxyParamCaption}
+\item[{int}]{row}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_ae0904650e9e70a4f5f919d8e7a174028}
+
+
+Definition at line 576 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+577 \{
+578     \textcolor{keywordflow}{return} Vector4( mCol0.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a8020669cc9b22410645efb136d1b74de}{getElem}( row ), mCol1.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a8020669cc9b22410645efb136d1b74de}{getElem}( row ), mCol2.
+      \hyperlink{classVectormath_1_1Aos_1_1Vector4_a8020669cc9b22410645efb136d1b74de}{getElem}( row ), mCol3.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a8020669cc9b22410645efb136d1b74de}{getElem}( row ) );
+579 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a65c82c56c6c9a60604f587a1ae1ea889}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!get\-Translation@{get\-Translation}}
+\index{get\-Translation@{get\-Translation}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{get\-Translation}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector3} Vectormath\-::\-Aos\-::\-Matrix4\-::get\-Translation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a65c82c56c6c9a60604f587a1ae1ea889}
+
+
+Definition at line 909 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+910 \{
+911     \textcolor{keywordflow}{return} mCol3.\hyperlink{classVectormath_1_1Aos_1_1Vector4_ac55e276ad09b33112ff0daf7d30a461b}{getXYZ}( );
+912 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a03bd8e35ef74921b486b9caaa5917fce}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!get\-Upper3x3@{get\-Upper3x3}}
+\index{get\-Upper3x3@{get\-Upper3x3}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{get\-Upper3x3}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Matrix3} Vectormath\-::\-Aos\-::\-Matrix4\-::get\-Upper3x3 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a03bd8e35ef74921b486b9caaa5917fce}
+
+
+Definition at line 894 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+895 \{
+896     \textcolor{keywordflow}{return} Matrix3(
+897         mCol0.\hyperlink{classVectormath_1_1Aos_1_1Vector4_ac55e276ad09b33112ff0daf7d30a461b}{getXYZ}( ),
+898         mCol1.\hyperlink{classVectormath_1_1Aos_1_1Vector4_ac55e276ad09b33112ff0daf7d30a461b}{getXYZ}( ),
+899         mCol2.\hyperlink{classVectormath_1_1Aos_1_1Vector4_ac55e276ad09b33112ff0daf7d30a461b}{getXYZ}( )
+900     );
+901 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_aeeda56162e208d53b02d3ec35ac08b86}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!identity@{identity}}
+\index{identity@{identity}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{identity}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Matrix4} Vectormath\-::\-Aos\-::\-Matrix4\-::identity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classVectormath_1_1Aos_1_1Matrix4_aeeda56162e208d53b02d3ec35ac08b86}
+
+
+Definition at line 876 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+877 \{
+878     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a37fd3dbd4a7b1a72707b394e550d79c7}{Matrix4}(
+879         \hyperlink{classVectormath_1_1Aos_1_1Vector4_a2d3d445ccc2312e61f9c580eddb96abe}{Vector4::xAxis}( ),
+880         \hyperlink{classVectormath_1_1Aos_1_1Vector4_abbcd87fdbbebd6d6b8cfb50e0d3a40ba}{Vector4::yAxis}( ),
+881         \hyperlink{classVectormath_1_1Aos_1_1Vector4_a38d4fa96d926c28f7499feef11e546e3}{Vector4::zAxis}( ),
+882         \hyperlink{classVectormath_1_1Aos_1_1Vector4_af323231cf359e29c2bdc95c6f6083c0d}{Vector4::wAxis}( )
+883     );
+884 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a49e313a5abadfcf35efdda1a5276c95a}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!look\-At@{look\-At}}
+\index{look\-At@{look\-At}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{look\-At}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Matrix4} Vectormath\-::\-Aos\-::\-Matrix4\-::look\-At (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point3} \&}]{eye\-Pos, }
+\item[{const {\bf Point3} \&}]{look\-At\-Pos, }
+\item[{const {\bf Vector3} \&}]{up\-Vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a49e313a5abadfcf35efdda1a5276c95a}
+
+
+Definition at line 1039 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+1040 \{
+1041     \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a37fd3dbd4a7b1a72707b394e550d79c7}{Matrix4} m4EyeFrame;
+1042     Vector3 v3X, v3Y, v3Z;
+1043     v3Y = \hyperlink{namespaceVectormath_1_1Aos_aac46a6b9ec5fef7c62916fbb4a1b242f}{normalize}( upVec );
+1044     v3Z = \hyperlink{namespaceVectormath_1_1Aos_aac46a6b9ec5fef7c62916fbb4a1b242f}{normalize}( ( eyePos - lookAtPos ) );
+1045     v3X = \hyperlink{namespaceVectormath_1_1Aos_aac46a6b9ec5fef7c62916fbb4a1b242f}{normalize}( \hyperlink{namespaceVectormath_1_1Aos_a1fd2b64c21e5517a060ff05160234ff7}{cross}( v3Y, v3Z ) );
+1046     v3Y = \hyperlink{namespaceVectormath_1_1Aos_a1fd2b64c21e5517a060ff05160234ff7}{cross}( v3Z, v3X );
+1047     m4EyeFrame = \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a37fd3dbd4a7b1a72707b394e550d79c7}{Matrix4}( Vector4( v3X ), Vector4( v3Y ), Vector4( v3Z ), Vector4( eyePos ) );
+1048     \textcolor{keywordflow}{return} \hyperlink{namespaceVectormath_1_1Aos_a33a543c80d4bcdfe8e0293ceedec4178}{orthoInverse}( m4EyeFrame );
+1049 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a3582bed80cf3b5882d7b14a3841ded36}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Matrix4} Vectormath\-::\-Aos\-::\-Matrix4\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{float}]{scalar}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a3582bed80cf3b5882d7b14a3841ded36}
+
+
+Definition at line 783 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+784 \{
+785     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a37fd3dbd4a7b1a72707b394e550d79c7}{Matrix4}(
+786         ( mCol0 * scalar ),
+787         ( mCol1 * scalar ),
+788         ( mCol2 * scalar ),
+789         ( mCol3 * scalar )
+790     );
+791 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a58532fc2be06849ee219c380221142cc}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector4} Vectormath\-::\-Aos\-::\-Matrix4\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector4} \&}]{vec}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a58532fc2be06849ee219c380221142cc}
+
+
+Definition at line 804 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+805 \{
+806     \textcolor{keywordflow}{return} Vector4(
+807         ( ( ( ( mCol0.\hyperlink{classVectormath_1_1Aos_1_1Vector4_af067fb75d2fdf3a88189229131f36329}{getX}() * vec.getX() ) + ( mCol1.\hyperlink{classVectormath_1_1Aos_1_1Vector4_af067fb75d2fdf3a88189229131f36329}{getX}() * vec.getY() ) ) + ( mCol2.
+      \hyperlink{classVectormath_1_1Aos_1_1Vector4_af067fb75d2fdf3a88189229131f36329}{getX}() * vec.getZ() ) ) + ( mCol3.\hyperlink{classVectormath_1_1Aos_1_1Vector4_af067fb75d2fdf3a88189229131f36329}{getX}() * vec.getW() ) ),
+808         ( ( ( ( mCol0.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a895b1271a74265bb853772718aca2b24}{getY}() * vec.getX() ) + ( mCol1.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a895b1271a74265bb853772718aca2b24}{getY}() * vec.getY() ) ) + ( mCol2.
+      \hyperlink{classVectormath_1_1Aos_1_1Vector4_a895b1271a74265bb853772718aca2b24}{getY}() * vec.getZ() ) ) + ( mCol3.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a895b1271a74265bb853772718aca2b24}{getY}() * vec.getW() ) ),
+809         ( ( ( ( mCol0.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a51336902d57b1c54df19fb708e93b4f2}{getZ}() * vec.getX() ) + ( mCol1.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a51336902d57b1c54df19fb708e93b4f2}{getZ}() * vec.getY() ) ) + ( mCol2.
+      \hyperlink{classVectormath_1_1Aos_1_1Vector4_a51336902d57b1c54df19fb708e93b4f2}{getZ}() * vec.getZ() ) ) + ( mCol3.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a51336902d57b1c54df19fb708e93b4f2}{getZ}() * vec.getW() ) ),
+810         ( ( ( ( mCol0.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a775bd40a8bd926cd510d39e890c0b686}{getW}() * vec.getX() ) + ( mCol1.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a775bd40a8bd926cd510d39e890c0b686}{getW}() * vec.getY() ) ) + ( mCol2.
+      \hyperlink{classVectormath_1_1Aos_1_1Vector4_a775bd40a8bd926cd510d39e890c0b686}{getW}() * vec.getZ() ) ) + ( mCol3.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a775bd40a8bd926cd510d39e890c0b686}{getW}() * vec.getW() ) )
+811     );
+812 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a0d972b51bbf8abcb3df3be5760305a58}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector4} Vectormath\-::\-Aos\-::\-Matrix4\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3} \&}]{vec}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a0d972b51bbf8abcb3df3be5760305a58}
+
+
+Definition at line 814 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+815 \{
+816     \textcolor{keywordflow}{return} Vector4(
+817         ( ( ( mCol0.\hyperlink{classVectormath_1_1Aos_1_1Vector4_af067fb75d2fdf3a88189229131f36329}{getX}() * vec.getX() ) + ( mCol1.\hyperlink{classVectormath_1_1Aos_1_1Vector4_af067fb75d2fdf3a88189229131f36329}{getX}() * vec.getY() ) ) + ( mCol2.
+      \hyperlink{classVectormath_1_1Aos_1_1Vector4_af067fb75d2fdf3a88189229131f36329}{getX}() * vec.getZ() ) ),
+818         ( ( ( mCol0.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a895b1271a74265bb853772718aca2b24}{getY}() * vec.getX() ) + ( mCol1.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a895b1271a74265bb853772718aca2b24}{getY}() * vec.getY() ) ) + ( mCol2.
+      \hyperlink{classVectormath_1_1Aos_1_1Vector4_a895b1271a74265bb853772718aca2b24}{getY}() * vec.getZ() ) ),
+819         ( ( ( mCol0.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a51336902d57b1c54df19fb708e93b4f2}{getZ}() * vec.getX() ) + ( mCol1.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a51336902d57b1c54df19fb708e93b4f2}{getZ}() * vec.getY() ) ) + ( mCol2.
+      \hyperlink{classVectormath_1_1Aos_1_1Vector4_a51336902d57b1c54df19fb708e93b4f2}{getZ}() * vec.getZ() ) ),
+820         ( ( ( mCol0.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a775bd40a8bd926cd510d39e890c0b686}{getW}() * vec.getX() ) + ( mCol1.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a775bd40a8bd926cd510d39e890c0b686}{getW}() * vec.getY() ) ) + ( mCol2.
+      \hyperlink{classVectormath_1_1Aos_1_1Vector4_a775bd40a8bd926cd510d39e890c0b686}{getW}() * vec.getZ() ) )
+821     );
+822 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_aaaa78b99b6c3db990e5292392e5fb4d0}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector4} Vectormath\-::\-Aos\-::\-Matrix4\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point3} \&}]{pnt}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_aaaa78b99b6c3db990e5292392e5fb4d0}
+
+
+Definition at line 824 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+825 \{
+826     \textcolor{keywordflow}{return} Vector4(
+827         ( ( ( ( mCol0.\hyperlink{classVectormath_1_1Aos_1_1Vector4_af067fb75d2fdf3a88189229131f36329}{getX}() * pnt.getX() ) + ( mCol1.\hyperlink{classVectormath_1_1Aos_1_1Vector4_af067fb75d2fdf3a88189229131f36329}{getX}() * pnt.getY() ) ) + ( mCol2.
+      \hyperlink{classVectormath_1_1Aos_1_1Vector4_af067fb75d2fdf3a88189229131f36329}{getX}() * pnt.getZ() ) ) + mCol3.\hyperlink{classVectormath_1_1Aos_1_1Vector4_af067fb75d2fdf3a88189229131f36329}{getX}() ),
+828         ( ( ( ( mCol0.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a895b1271a74265bb853772718aca2b24}{getY}() * pnt.getX() ) + ( mCol1.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a895b1271a74265bb853772718aca2b24}{getY}() * pnt.getY() ) ) + ( mCol2.
+      \hyperlink{classVectormath_1_1Aos_1_1Vector4_a895b1271a74265bb853772718aca2b24}{getY}() * pnt.getZ() ) ) + mCol3.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a895b1271a74265bb853772718aca2b24}{getY}() ),
+829         ( ( ( ( mCol0.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a51336902d57b1c54df19fb708e93b4f2}{getZ}() * pnt.getX() ) + ( mCol1.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a51336902d57b1c54df19fb708e93b4f2}{getZ}() * pnt.getY() ) ) + ( mCol2.
+      \hyperlink{classVectormath_1_1Aos_1_1Vector4_a51336902d57b1c54df19fb708e93b4f2}{getZ}() * pnt.getZ() ) ) + mCol3.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a51336902d57b1c54df19fb708e93b4f2}{getZ}() ),
+830         ( ( ( ( mCol0.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a775bd40a8bd926cd510d39e890c0b686}{getW}() * pnt.getX() ) + ( mCol1.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a775bd40a8bd926cd510d39e890c0b686}{getW}() * pnt.getY() ) ) + ( mCol2.
+      \hyperlink{classVectormath_1_1Aos_1_1Vector4_a775bd40a8bd926cd510d39e890c0b686}{getW}() * pnt.getZ() ) ) + mCol3.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a775bd40a8bd926cd510d39e890c0b686}{getW}() )
+831     );
+832 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_accbcaf900e4cf6c75779d0670d706c38}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Matrix4} Vectormath\-::\-Aos\-::\-Matrix4\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix4} \&}]{mat}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_accbcaf900e4cf6c75779d0670d706c38}
+
+
+Definition at line 834 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+835 \{
+836     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a37fd3dbd4a7b1a72707b394e550d79c7}{Matrix4}(
+837         ( *\textcolor{keyword}{this} * mat.mCol0 ),
+838         ( *\textcolor{keyword}{this} * mat.mCol1 ),
+839         ( *\textcolor{keyword}{this} * mat.mCol2 ),
+840         ( *\textcolor{keyword}{this} * mat.mCol3 )
+841     );
+842 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a3c729758e4a3fa24690bd313a4018e4d}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Matrix4} Vectormath\-::\-Aos\-::\-Matrix4\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Transform3} \&}]{tfrm}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a3c729758e4a3fa24690bd313a4018e4d}
+
+
+Definition at line 850 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+851 \{
+852     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a37fd3dbd4a7b1a72707b394e550d79c7}{Matrix4}(
+853         ( *\textcolor{keyword}{this} * tfrm.getCol0() ),
+854         ( *\textcolor{keyword}{this} * tfrm.getCol1() ),
+855         ( *\textcolor{keyword}{this} * tfrm.getCol2() ),
+856         ( *\textcolor{keyword}{this} * Point3( tfrm.getCol3() ) )
+857     );
+858 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a9026d1416ff16638222e6117f5318e28}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix4} \& Vectormath\-::\-Aos\-::\-Matrix4\-::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{float}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a9026d1416ff16638222e6117f5318e28}
+
+
+Definition at line 793 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+794 \{
+795     *\textcolor{keyword}{this} = *\textcolor{keyword}{this} * scalar;
+796     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+797 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_abc9cd8b2d92794826c7b5f4b1fc8b3cb}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix4} \& Vectormath\-::\-Aos\-::\-Matrix4\-::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix4} \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_abc9cd8b2d92794826c7b5f4b1fc8b3cb}
+
+
+Definition at line 844 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+845 \{
+846     *\textcolor{keyword}{this} = *\textcolor{keyword}{this} * mat;
+847     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+848 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a7a8def7df1085d4e00f6acb43939dd41}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix4} \& Vectormath\-::\-Aos\-::\-Matrix4\-::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Transform3} \&}]{tfrm}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a7a8def7df1085d4e00f6acb43939dd41}
+
+
+Definition at line 860 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+861 \{
+862     *\textcolor{keyword}{this} = *\textcolor{keyword}{this} * tfrm;
+863     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+864 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a36970ffb49dd6b80112474370306fef0}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!operator+@{operator+}}
+\index{operator+@{operator+}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Matrix4} Vectormath\-::\-Aos\-::\-Matrix4\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix4} \&}]{mat}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a36970ffb49dd6b80112474370306fef0}
+
+
+Definition at line 731 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+732 \{
+733     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a37fd3dbd4a7b1a72707b394e550d79c7}{Matrix4}(
+734         ( mCol0 + mat.mCol0 ),
+735         ( mCol1 + mat.mCol1 ),
+736         ( mCol2 + mat.mCol2 ),
+737         ( mCol3 + mat.mCol3 )
+738     );
+739 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_ac16ba820d1415dff7021b580e7402194}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix4} \& Vectormath\-::\-Aos\-::\-Matrix4\-::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix4} \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_ac16ba820d1415dff7021b580e7402194}
+
+
+Definition at line 751 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+752 \{
+753     *\textcolor{keyword}{this} = *\textcolor{keyword}{this} + mat;
+754     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+755 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a8a464a8ae3bd1827dd0fe42b89736573}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Matrix4} Vectormath\-::\-Aos\-::\-Matrix4\-::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix4} \&}]{mat}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a8a464a8ae3bd1827dd0fe42b89736573}
+
+
+Definition at line 741 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+742 \{
+743     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a37fd3dbd4a7b1a72707b394e550d79c7}{Matrix4}(
+744         ( mCol0 - mat.mCol0 ),
+745         ( mCol1 - mat.mCol1 ),
+746         ( mCol2 - mat.mCol2 ),
+747         ( mCol3 - mat.mCol3 )
+748     );
+749 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_ab7f05537a209295cf6c54468cb90d503}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Matrix4} Vectormath\-::\-Aos\-::\-Matrix4\-::operator-\/ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_ab7f05537a209295cf6c54468cb90d503}
+
+
+Definition at line 763 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+764 \{
+765     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a37fd3dbd4a7b1a72707b394e550d79c7}{Matrix4}(
+766         ( -mCol0 ),
+767         ( -mCol1 ),
+768         ( -mCol2 ),
+769         ( -mCol3 )
+770     );
+771 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a3f4aff0dc945d49e0299241eb9ac3111}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix4} \& Vectormath\-::\-Aos\-::\-Matrix4\-::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix4} \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a3f4aff0dc945d49e0299241eb9ac3111}
+
+
+Definition at line 757 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+758 \{
+759     *\textcolor{keyword}{this} = *\textcolor{keyword}{this} - mat;
+760     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+761 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a0553a086f6a531ec33604bec921b39b1}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!operator=@{operator=}}
+\index{operator=@{operator=}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix4} \& Vectormath\-::\-Aos\-::\-Matrix4\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix4} \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a0553a086f6a531ec33604bec921b39b1}
+
+
+Definition at line 591 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+592 \{
+593     mCol0 = mat.mCol0;
+594     mCol1 = mat.mCol1;
+595     mCol2 = mat.mCol2;
+596     mCol3 = mat.mCol3;
+597     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+598 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_ab927e8827863e8a3b2bb605f414152d2}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector4} \& Vectormath\-::\-Aos\-::\-Matrix4\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_ab927e8827863e8a3b2bb605f414152d2}
+
+
+Definition at line 581 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+582 \{
+583     \textcolor{keywordflow}{return} *(&mCol0 + col);
+584 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a4c95ed261847ac0f8392d7c6153ebb13}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector4} Vectormath\-::\-Aos\-::\-Matrix4\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{col}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a4c95ed261847ac0f8392d7c6153ebb13}
+
+
+Definition at line 586 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+587 \{
+588     \textcolor{keywordflow}{return} *(&mCol0 + col);
+589 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a308a132dc0f318ce18b9ef2e64a693b6}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!orthographic@{orthographic}}
+\index{orthographic@{orthographic}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{orthographic}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Matrix4} Vectormath\-::\-Aos\-::\-Matrix4\-::orthographic (
+\begin{DoxyParamCaption}
+\item[{float}]{left, }
+\item[{float}]{right, }
+\item[{float}]{bottom, }
+\item[{float}]{top, }
+\item[{float}]{z\-Near, }
+\item[{float}]{z\-Far}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a308a132dc0f318ce18b9ef2e64a693b6}
+
+
+Definition at line 1082 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+1083 \{
+1084     \textcolor{keywordtype}{float} sum\_rl, sum\_tb, sum\_nf, inv\_rl, inv\_tb, inv\_nf;
+1085     sum\_rl = ( right + left );
+1086     sum\_tb = ( top + bottom );
+1087     sum\_nf = ( zNear + zFar );
+1088     inv\_rl = ( 1.0f / ( right - left ) );
+1089     inv\_tb = ( 1.0f / ( top - bottom ) );
+1090     inv\_nf = ( 1.0f / ( zNear - zFar ) );
+1091     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a37fd3dbd4a7b1a72707b394e550d79c7}{Matrix4}(
+1092         Vector4( ( inv\_rl + inv\_rl ), 0.0f, 0.0f, 0.0f ),
+1093         Vector4( 0.0f, ( inv\_tb + inv\_tb ), 0.0f, 0.0f ),
+1094         Vector4( 0.0f, 0.0f, ( inv\_nf + inv\_nf ), 0.0f ),
+1095         Vector4( ( -sum\_rl * inv\_rl ), ( -sum\_tb * inv\_tb ), ( sum\_nf * inv\_nf ), 1.0f )
+1096     );
+1097 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a30a81516249e282bb41c9ca3c382be5b}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!perspective@{perspective}}
+\index{perspective@{perspective}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{perspective}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Matrix4} Vectormath\-::\-Aos\-::\-Matrix4\-::perspective (
+\begin{DoxyParamCaption}
+\item[{float}]{fovy\-Radians, }
+\item[{float}]{aspect, }
+\item[{float}]{z\-Near, }
+\item[{float}]{z\-Far}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a30a81516249e282bb41c9ca3c382be5b}
+
+
+Definition at line 1051 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+1052 \{
+1053     \textcolor{keywordtype}{float} f, rangeInv;
+1054     f = tanf( ( (\textcolor{keywordtype}{float})( \hyperlink{mat__aos_8h_a1dfbdd12974379813ee01f28aafb4b1c}{\_VECTORMATH\_PI\_OVER\_2} ) - ( 0.5f * fovyRadians ) ) );
+1055     rangeInv = ( 1.0f / ( zNear - zFar ) );
+1056     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a37fd3dbd4a7b1a72707b394e550d79c7}{Matrix4}(
+1057         Vector4( ( f / aspect ), 0.0f, 0.0f, 0.0f ),
+1058         Vector4( 0.0f, f, 0.0f, 0.0f ),
+1059         Vector4( 0.0f, 0.0f, ( ( zNear + zFar ) * rangeInv ), -1.0f ),
+1060         Vector4( 0.0f, 0.0f, ( ( ( zNear * zFar ) * rangeInv ) * 2.0f ), 0.0f )
+1061     );
+1062 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_ab273a38e96c7f069de2d9abd383bcc43}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!rotation@{rotation}}
+\index{rotation@{rotation}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{rotation}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Matrix4} Vectormath\-::\-Aos\-::\-Matrix4\-::rotation (
+\begin{DoxyParamCaption}
+\item[{float}]{radians, }
+\item[{const {\bf Vector3} \&}]{unit\-Vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classVectormath_1_1Aos_1_1Matrix4_ab273a38e96c7f069de2d9abd383bcc43}
+
+
+Definition at line 972 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+973 \{
+974     \textcolor{keywordtype}{float} x, y, z, s, c, oneMinusC, xy, yz, zx;
+975     s = sinf( radians );
+976     c = cosf( radians );
+977     x = unitVec.getX();
+978     y = unitVec.getY();
+979     z = unitVec.getZ();
+980     xy = ( x * y );
+981     yz = ( y * z );
+982     zx = ( z * x );
+983     oneMinusC = ( 1.0f - c );
+984     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a37fd3dbd4a7b1a72707b394e550d79c7}{Matrix4}(
+985         Vector4( ( ( ( x * x ) * oneMinusC ) + c ), ( ( xy * oneMinusC ) + ( z * s ) ), ( ( zx * oneMinusC 
+      ) - ( y * s ) ), 0.0f ),
+986         Vector4( ( ( xy * oneMinusC ) - ( z * s ) ), ( ( ( y * y ) * oneMinusC ) + c ), ( ( yz * oneMinusC 
+      ) + ( x * s ) ), 0.0f ),
+987         Vector4( ( ( zx * oneMinusC ) + ( y * s ) ), ( ( yz * oneMinusC ) - ( x * s ) ), ( ( ( z * z ) * 
+      oneMinusC ) + c ), 0.0f ),
+988         \hyperlink{classVectormath_1_1Aos_1_1Vector4_af323231cf359e29c2bdc95c6f6083c0d}{Vector4::wAxis}( )
+989     );
+990 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_ae5cbad3dfd398d6e1a1cfc9f534878c6}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!rotation@{rotation}}
+\index{rotation@{rotation}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{rotation}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Matrix4} Vectormath\-::\-Aos\-::\-Matrix4\-::rotation (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quat} \&}]{unit\-Quat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classVectormath_1_1Aos_1_1Matrix4_ae5cbad3dfd398d6e1a1cfc9f534878c6}
+
+
+Definition at line 992 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+993 \{
+994     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a37fd3dbd4a7b1a72707b394e550d79c7}{Matrix4}( \hyperlink{classVectormath_1_1Aos_1_1Transform3_a56e3588c1c10d375515d00e4479369a7}{Transform3::rotation}( unitQuat ) );
+995 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a8b60f5a84e5799dbb0693051822d36ec}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!rotation\-X@{rotation\-X}}
+\index{rotation\-X@{rotation\-X}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{rotation\-X}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Matrix4} Vectormath\-::\-Aos\-::\-Matrix4\-::rotation\-X (
+\begin{DoxyParamCaption}
+\item[{float}]{radians}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a8b60f5a84e5799dbb0693051822d36ec}
+
+
+Definition at line 914 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+915 \{
+916     \textcolor{keywordtype}{float} s, c;
+917     s = sinf( radians );
+918     c = cosf( radians );
+919     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a37fd3dbd4a7b1a72707b394e550d79c7}{Matrix4}(
+920         \hyperlink{classVectormath_1_1Aos_1_1Vector4_a2d3d445ccc2312e61f9c580eddb96abe}{Vector4::xAxis}( ),
+921         Vector4( 0.0f, c, s, 0.0f ),
+922         Vector4( 0.0f, -s, c, 0.0f ),
+923         \hyperlink{classVectormath_1_1Aos_1_1Vector4_af323231cf359e29c2bdc95c6f6083c0d}{Vector4::wAxis}( )
+924     );
+925 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a6846074690ae127e482c6faea36141f5}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!rotation\-Y@{rotation\-Y}}
+\index{rotation\-Y@{rotation\-Y}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{rotation\-Y}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Matrix4} Vectormath\-::\-Aos\-::\-Matrix4\-::rotation\-Y (
+\begin{DoxyParamCaption}
+\item[{float}]{radians}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a6846074690ae127e482c6faea36141f5}
+
+
+Definition at line 927 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+928 \{
+929     \textcolor{keywordtype}{float} s, c;
+930     s = sinf( radians );
+931     c = cosf( radians );
+932     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a37fd3dbd4a7b1a72707b394e550d79c7}{Matrix4}(
+933         Vector4( c, 0.0f, -s, 0.0f ),
+934         \hyperlink{classVectormath_1_1Aos_1_1Vector4_abbcd87fdbbebd6d6b8cfb50e0d3a40ba}{Vector4::yAxis}( ),
+935         Vector4( s, 0.0f, c, 0.0f ),
+936         \hyperlink{classVectormath_1_1Aos_1_1Vector4_af323231cf359e29c2bdc95c6f6083c0d}{Vector4::wAxis}( )
+937     );
+938 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_ac1a41a4c8f65e4b95f28c2ac7fb03ccd}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!rotation\-Z@{rotation\-Z}}
+\index{rotation\-Z@{rotation\-Z}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{rotation\-Z}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Matrix4} Vectormath\-::\-Aos\-::\-Matrix4\-::rotation\-Z (
+\begin{DoxyParamCaption}
+\item[{float}]{radians}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classVectormath_1_1Aos_1_1Matrix4_ac1a41a4c8f65e4b95f28c2ac7fb03ccd}
+
+
+Definition at line 940 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+941 \{
+942     \textcolor{keywordtype}{float} s, c;
+943     s = sinf( radians );
+944     c = cosf( radians );
+945     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a37fd3dbd4a7b1a72707b394e550d79c7}{Matrix4}(
+946         Vector4( c, s, 0.0f, 0.0f ),
+947         Vector4( -s, c, 0.0f, 0.0f ),
+948         \hyperlink{classVectormath_1_1Aos_1_1Vector4_a38d4fa96d926c28f7499feef11e546e3}{Vector4::zAxis}( ),
+949         \hyperlink{classVectormath_1_1Aos_1_1Vector4_af323231cf359e29c2bdc95c6f6083c0d}{Vector4::wAxis}( )
+950     );
+951 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a3ae6f957cf2ce1fc489b114e32d0585a}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!rotation\-Z\-Y\-X@{rotation\-Z\-Y\-X}}
+\index{rotation\-Z\-Y\-X@{rotation\-Z\-Y\-X}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{rotation\-Z\-Y\-X}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Matrix4} Vectormath\-::\-Aos\-::\-Matrix4\-::rotation\-Z\-Y\-X (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3} \&}]{radians\-X\-Y\-Z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a3ae6f957cf2ce1fc489b114e32d0585a}
+
+
+Definition at line 953 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+954 \{
+955     \textcolor{keywordtype}{float} sX, cX, sY, cY, sZ, cZ, tmp0, tmp1;
+956     sX = sinf( radiansXYZ.getX() );
+957     cX = cosf( radiansXYZ.getX() );
+958     sY = sinf( radiansXYZ.getY() );
+959     cY = cosf( radiansXYZ.getY() );
+960     sZ = sinf( radiansXYZ.getZ() );
+961     cZ = cosf( radiansXYZ.getZ() );
+962     tmp0 = ( cZ * sY );
+963     tmp1 = ( sZ * sY );
+964     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a37fd3dbd4a7b1a72707b394e550d79c7}{Matrix4}(
+965         Vector4( ( cZ * cY ), ( sZ * cY ), -sY, 0.0f ),
+966         Vector4( ( ( tmp0 * sX ) - ( sZ * cX ) ), ( ( tmp1 * sX ) + ( cZ * cX ) ), ( cY * sX ), 0.0f ),
+967         Vector4( ( ( tmp0 * cX ) + ( sZ * sX ) ), ( ( tmp1 * cX ) - ( cZ * sX ) ), ( cY * cX ), 0.0f ),
+968         \hyperlink{classVectormath_1_1Aos_1_1Vector4_af323231cf359e29c2bdc95c6f6083c0d}{Vector4::wAxis}( )
+969     );
+970 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_ab1df40d4ed35a1eaaed3c4e80b9c389c}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!scale@{scale}}
+\index{scale@{scale}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{scale}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Matrix4} Vectormath\-::\-Aos\-::\-Matrix4\-::scale (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3} \&}]{scale\-Vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classVectormath_1_1Aos_1_1Matrix4_ab1df40d4ed35a1eaaed3c4e80b9c389c}
+
+
+Definition at line 997 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+998 \{
+999     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a37fd3dbd4a7b1a72707b394e550d79c7}{Matrix4}(
+1000         Vector4( scaleVec.getX(), 0.0f, 0.0f, 0.0f ),
+1001         Vector4( 0.0f, scaleVec.getY(), 0.0f, 0.0f ),
+1002         Vector4( 0.0f, 0.0f, scaleVec.getZ(), 0.0f ),
+1003         \hyperlink{classVectormath_1_1Aos_1_1Vector4_af323231cf359e29c2bdc95c6f6083c0d}{Vector4::wAxis}( )
+1004     );
+1005 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a74535c553b8a9234ee0c82e9a6f91ae5}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!set\-Col@{set\-Col}}
+\index{set\-Col@{set\-Col}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{set\-Col}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix4} \& Vectormath\-::\-Aos\-::\-Matrix4\-::set\-Col (
+\begin{DoxyParamCaption}
+\item[{int}]{col, }
+\item[{const {\bf Vector4} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a74535c553b8a9234ee0c82e9a6f91ae5}
+
+
+Definition at line 522 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+523 \{
+524     *(&mCol0 + col) = vec;
+525     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+526 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a02cbef72b8199d1484b377a460442681}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!set\-Col0@{set\-Col0}}
+\index{set\-Col0@{set\-Col0}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{set\-Col0}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix4} \& Vectormath\-::\-Aos\-::\-Matrix4\-::set\-Col0 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector4} \&}]{col0}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a02cbef72b8199d1484b377a460442681}
+
+
+Definition at line 498 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+499 \{
+500     mCol0 = \_col0;
+501     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+502 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a8db69ef5f587c3328ce96f7292e347f4}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!set\-Col1@{set\-Col1}}
+\index{set\-Col1@{set\-Col1}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{set\-Col1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix4} \& Vectormath\-::\-Aos\-::\-Matrix4\-::set\-Col1 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector4} \&}]{col1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a8db69ef5f587c3328ce96f7292e347f4}
+
+
+Definition at line 504 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+505 \{
+506     mCol1 = \_col1;
+507     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+508 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a979b28e8e6a622fd622cde6656099bb1}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!set\-Col2@{set\-Col2}}
+\index{set\-Col2@{set\-Col2}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{set\-Col2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix4} \& Vectormath\-::\-Aos\-::\-Matrix4\-::set\-Col2 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector4} \&}]{col2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a979b28e8e6a622fd622cde6656099bb1}
+
+
+Definition at line 510 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+511 \{
+512     mCol2 = \_col2;
+513     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+514 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a73da9686b802d99b4232cb187e1d4aeb}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!set\-Col3@{set\-Col3}}
+\index{set\-Col3@{set\-Col3}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{set\-Col3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix4} \& Vectormath\-::\-Aos\-::\-Matrix4\-::set\-Col3 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector4} \&}]{col3}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a73da9686b802d99b4232cb187e1d4aeb}
+
+
+Definition at line 516 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+517 \{
+518     mCol3 = \_col3;
+519     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+520 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a4ca59f395e1037892dff2bb35eab821a}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!set\-Elem@{set\-Elem}}
+\index{set\-Elem@{set\-Elem}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{set\-Elem}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix4} \& Vectormath\-::\-Aos\-::\-Matrix4\-::set\-Elem (
+\begin{DoxyParamCaption}
+\item[{int}]{col, }
+\item[{int}]{row, }
+\item[{float}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a4ca59f395e1037892dff2bb35eab821a}
+
+
+Definition at line 537 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+538 \{
+539     Vector4 tmpV3\_0;
+540     tmpV3\_0 = this->\hyperlink{classVectormath_1_1Aos_1_1Matrix4_a4faff444850b3255e9a1c74eedd54399}{getCol}( col );
+541     tmpV3\_0.setElem( row, val );
+542     this->\hyperlink{classVectormath_1_1Aos_1_1Matrix4_a74535c553b8a9234ee0c82e9a6f91ae5}{setCol}( col, tmpV3\_0 );
+543     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+544 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a1e91c25cfc890cbe785ac70d40d005c2}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!set\-Row@{set\-Row}}
+\index{set\-Row@{set\-Row}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{set\-Row}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix4} \& Vectormath\-::\-Aos\-::\-Matrix4\-::set\-Row (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{const {\bf Vector4} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a1e91c25cfc890cbe785ac70d40d005c2}
+
+
+Definition at line 528 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+529 \{
+530     mCol0.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a07b4a99492fa1443061e1701a261e23b}{setElem}( row, vec.getElem( 0 ) );
+531     mCol1.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a07b4a99492fa1443061e1701a261e23b}{setElem}( row, vec.getElem( 1 ) );
+532     mCol2.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a07b4a99492fa1443061e1701a261e23b}{setElem}( row, vec.getElem( 2 ) );
+533     mCol3.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a07b4a99492fa1443061e1701a261e23b}{setElem}( row, vec.getElem( 3 ) );
+534     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+535 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a8fc9714a1b77613027bde0e9b5cafe14}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!set\-Translation@{set\-Translation}}
+\index{set\-Translation@{set\-Translation}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{set\-Translation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix4} \& Vectormath\-::\-Aos\-::\-Matrix4\-::set\-Translation (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3} \&}]{translate\-Vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a8fc9714a1b77613027bde0e9b5cafe14}
+
+
+Definition at line 903 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+904 \{
+905     mCol3.\hyperlink{classVectormath_1_1Aos_1_1Vector4_ac22f038a90414ec94443a7b47816e3a7}{setXYZ}( translateVec );
+906     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+907 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_a796651e64320a209ca5b386c3de3af9a}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!set\-Upper3x3@{set\-Upper3x3}}
+\index{set\-Upper3x3@{set\-Upper3x3}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{set\-Upper3x3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix4} \& Vectormath\-::\-Aos\-::\-Matrix4\-::set\-Upper3x3 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix3} \&}]{mat3}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classVectormath_1_1Aos_1_1Matrix4_a796651e64320a209ca5b386c3de3af9a}
+
+
+Definition at line 886 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+887 \{
+888     mCol0.\hyperlink{classVectormath_1_1Aos_1_1Vector4_ac22f038a90414ec94443a7b47816e3a7}{setXYZ}( mat3.getCol0() );
+889     mCol1.\hyperlink{classVectormath_1_1Aos_1_1Vector4_ac22f038a90414ec94443a7b47816e3a7}{setXYZ}( mat3.getCol1() );
+890     mCol2.\hyperlink{classVectormath_1_1Aos_1_1Vector4_ac22f038a90414ec94443a7b47816e3a7}{setXYZ}( mat3.getCol2() );
+891     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+892 \}
+\end{DoxyCode}
+\hypertarget{classVectormath_1_1Aos_1_1Matrix4_ac308643c557108ab55bf98835accdfc8}{\index{Vectormath\-::\-Aos\-::\-Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}!translation@{translation}}
+\index{translation@{translation}!Vectormath::Aos::Matrix4@{Vectormath\-::\-Aos\-::\-Matrix4}}
+\subsubsection[{translation}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Matrix4} Vectormath\-::\-Aos\-::\-Matrix4\-::translation (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3} \&}]{translate\-Vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classVectormath_1_1Aos_1_1Matrix4_ac308643c557108ab55bf98835accdfc8}
+
+
+Definition at line 1029 of file mat\-\_\-aos.\-h.
+
+
+\begin{DoxyCode}
+1030 \{
+1031     \textcolor{keywordflow}{return} \hyperlink{classVectormath_1_1Aos_1_1Matrix4_a37fd3dbd4a7b1a72707b394e550d79c7}{Matrix4}(
+1032         \hyperlink{classVectormath_1_1Aos_1_1Vector4_a2d3d445ccc2312e61f9c580eddb96abe}{Vector4::xAxis}( ),
+1033         \hyperlink{classVectormath_1_1Aos_1_1Vector4_abbcd87fdbbebd6d6b8cfb50e0d3a40ba}{Vector4::yAxis}( ),
+1034         \hyperlink{classVectormath_1_1Aos_1_1Vector4_a38d4fa96d926c28f7499feef11e546e3}{Vector4::zAxis}( ),
+1035         Vector4( translateVec, 1.0f )
+1036     );
+1037 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/sam/\-Cube\-Racer/src/vectormath/\hyperlink{vectormath__aos_8h}{vectormath\-\_\-aos.\-h}\item 
+/home/sam/\-Cube\-Racer/src/vectormath/\hyperlink{mat__aos_8h}{mat\-\_\-aos.\-h}\end{DoxyCompactItemize}

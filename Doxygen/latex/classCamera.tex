@@ -1,0 +1,173 @@
+\hypertarget{classCamera}{\section{Camera Class Reference}
+\label{classCamera}\index{Camera@{Camera}}
+}
+
+
+{\ttfamily \#include $<$Camera.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classCamera_ad1897942d0ccf91052386388a497349f}{$\sim$\-Camera} ()
+\item 
+void \hyperlink{classCamera_a16c5e6f7b2eed95a78675f55c4a435e6}{set\-Camera} (const \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \&m)
+\item 
+void \hyperlink{classCamera_aa91c4a447f23e08322ef17f2786851bf}{look\-At} (const \hyperlink{classVectormath_1_1Aos_1_1Point3}{Point3} \&eye, const \hyperlink{classVectormath_1_1Aos_1_1Point3}{Point3} \&point, const \hyperlink{classVectormath_1_1Aos_1_1Vector3}{Vector3} \&up)
+\item 
+float $\ast$ \hyperlink{classCamera_a25f2f9d8ccc76f38c0580709587afadf}{get\-Camera} ()
+\item 
+\hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} \& \hyperlink{classCamera_a156b6aba4309cde6f0252ff325663e2f}{get\-Camera\-M} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classCamera}{Camera} \& \hyperlink{classCamera_aa84baebe5d771ddfd82a5b55bd3fde39}{get\-Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file Camera.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCamera_ad1897942d0ccf91052386388a497349f}{\index{Camera@{Camera}!$\sim$\-Camera@{$\sim$\-Camera}}
+\index{$\sim$\-Camera@{$\sim$\-Camera}!Camera@{Camera}}
+\subsubsection[{$\sim$\-Camera}]{\setlength{\rightskip}{0pt plus 5cm}Camera\-::$\sim$\-Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCamera_ad1897942d0ccf91052386388a497349f}
+
+
+Definition at line 12 of file Camera.\-cpp.
+
+
+\begin{DoxyCode}
+12                 \{
+13     \textcolor{comment}{// TODO Auto-generated destructor stub}
+14 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCamera_a25f2f9d8ccc76f38c0580709587afadf}{\index{Camera@{Camera}!get\-Camera@{get\-Camera}}
+\index{get\-Camera@{get\-Camera}!Camera@{Camera}}
+\subsubsection[{get\-Camera}]{\setlength{\rightskip}{0pt plus 5cm}float $\ast$ Camera\-::get\-Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCamera_a25f2f9d8ccc76f38c0580709587afadf}
+
+
+Definition at line 26 of file Camera.\-cpp.
+
+
+\begin{DoxyCode}
+26                          \{
+27     \textcolor{keywordtype}{float} * f = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[16];
+28     f[0] = camera->\hyperlink{classVectormath_1_1Aos_1_1Matrix4_a70063e1461d582bf7af3242f14fef9c2}{getCol0}().\hyperlink{classVectormath_1_1Aos_1_1Vector4_af067fb75d2fdf3a88189229131f36329}{getX}();
+29     f[4] = camera->\hyperlink{classVectormath_1_1Aos_1_1Matrix4_a70063e1461d582bf7af3242f14fef9c2}{getCol0}().\hyperlink{classVectormath_1_1Aos_1_1Vector4_a895b1271a74265bb853772718aca2b24}{getY}();
+30     f[8] = camera->\hyperlink{classVectormath_1_1Aos_1_1Matrix4_a70063e1461d582bf7af3242f14fef9c2}{getCol0}().\hyperlink{classVectormath_1_1Aos_1_1Vector4_a51336902d57b1c54df19fb708e93b4f2}{getZ}();
+31     f[12] = camera->\hyperlink{classVectormath_1_1Aos_1_1Matrix4_a70063e1461d582bf7af3242f14fef9c2}{getCol0}().\hyperlink{classVectormath_1_1Aos_1_1Vector4_a775bd40a8bd926cd510d39e890c0b686}{getW}();
+32 
+33     f[1] = camera->\hyperlink{classVectormath_1_1Aos_1_1Matrix4_af2a346e5671e137e665abf428ea3fe37}{getCol1}().\hyperlink{classVectormath_1_1Aos_1_1Vector4_af067fb75d2fdf3a88189229131f36329}{getX}();
+34     f[5] = camera->\hyperlink{classVectormath_1_1Aos_1_1Matrix4_af2a346e5671e137e665abf428ea3fe37}{getCol1}().\hyperlink{classVectormath_1_1Aos_1_1Vector4_a895b1271a74265bb853772718aca2b24}{getY}();
+35     f[9] = camera->\hyperlink{classVectormath_1_1Aos_1_1Matrix4_af2a346e5671e137e665abf428ea3fe37}{getCol1}().\hyperlink{classVectormath_1_1Aos_1_1Vector4_a51336902d57b1c54df19fb708e93b4f2}{getZ}();
+36     f[13] = camera->\hyperlink{classVectormath_1_1Aos_1_1Matrix4_af2a346e5671e137e665abf428ea3fe37}{getCol1}().\hyperlink{classVectormath_1_1Aos_1_1Vector4_a775bd40a8bd926cd510d39e890c0b686}{getW}();
+37 
+38     f[2] = camera->\hyperlink{classVectormath_1_1Aos_1_1Matrix4_a578e25e020f032f6797d091d60bd666c}{getCol2}().\hyperlink{classVectormath_1_1Aos_1_1Vector4_af067fb75d2fdf3a88189229131f36329}{getX}();
+39     f[6] = camera->\hyperlink{classVectormath_1_1Aos_1_1Matrix4_a578e25e020f032f6797d091d60bd666c}{getCol2}().\hyperlink{classVectormath_1_1Aos_1_1Vector4_a895b1271a74265bb853772718aca2b24}{getY}();
+40     f[10] = camera->\hyperlink{classVectormath_1_1Aos_1_1Matrix4_a578e25e020f032f6797d091d60bd666c}{getCol2}().\hyperlink{classVectormath_1_1Aos_1_1Vector4_a51336902d57b1c54df19fb708e93b4f2}{getZ}();
+41     f[14] = camera->\hyperlink{classVectormath_1_1Aos_1_1Matrix4_a578e25e020f032f6797d091d60bd666c}{getCol2}().\hyperlink{classVectormath_1_1Aos_1_1Vector4_a775bd40a8bd926cd510d39e890c0b686}{getW}();
+42 
+43     f[3] = camera->\hyperlink{classVectormath_1_1Aos_1_1Matrix4_afa7a80b51829c7972210d619b764658e}{getCol3}().\hyperlink{classVectormath_1_1Aos_1_1Vector4_af067fb75d2fdf3a88189229131f36329}{getX}();
+44     f[7] = camera->\hyperlink{classVectormath_1_1Aos_1_1Matrix4_afa7a80b51829c7972210d619b764658e}{getCol3}().\hyperlink{classVectormath_1_1Aos_1_1Vector4_a895b1271a74265bb853772718aca2b24}{getY}();
+45     f[11] = camera->\hyperlink{classVectormath_1_1Aos_1_1Matrix4_afa7a80b51829c7972210d619b764658e}{getCol3}().\hyperlink{classVectormath_1_1Aos_1_1Vector4_a51336902d57b1c54df19fb708e93b4f2}{getZ}();
+46     f[15] = camera->\hyperlink{classVectormath_1_1Aos_1_1Matrix4_afa7a80b51829c7972210d619b764658e}{getCol3}().\hyperlink{classVectormath_1_1Aos_1_1Vector4_a775bd40a8bd926cd510d39e890c0b686}{getW}();
+47     \textcolor{keywordflow}{return} f;
+48 \}
+\end{DoxyCode}
+\hypertarget{classCamera_a156b6aba4309cde6f0252ff325663e2f}{\index{Camera@{Camera}!get\-Camera\-M@{get\-Camera\-M}}
+\index{get\-Camera\-M@{get\-Camera\-M}!Camera@{Camera}}
+\subsubsection[{get\-Camera\-M}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix4} \& Camera\-::get\-Camera\-M (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCamera_a156b6aba4309cde6f0252ff325663e2f}
+
+
+Definition at line 50 of file Camera.\-cpp.
+
+
+\begin{DoxyCode}
+50                             \{
+51   \textcolor{keywordflow}{return} *camera;
+52 \}
+\end{DoxyCode}
+\hypertarget{classCamera_aa84baebe5d771ddfd82a5b55bd3fde39}{\index{Camera@{Camera}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!Camera@{Camera}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera} \& Camera\-::get\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classCamera_aa84baebe5d771ddfd82a5b55bd3fde39}
+
+
+Definition at line 54 of file Camera.\-cpp.
+
+
+\begin{DoxyCode}
+54                             \{
+55     \textcolor{keywordflow}{if}(0 == c) \{
+56         c = \textcolor{keyword}{new} \hyperlink{classCamera}{Camera}();
+57     \}
+58     \textcolor{keywordflow}{return} (*c);
+59 \}
+\end{DoxyCode}
+\hypertarget{classCamera_aa91c4a447f23e08322ef17f2786851bf}{\index{Camera@{Camera}!look\-At@{look\-At}}
+\index{look\-At@{look\-At}!Camera@{Camera}}
+\subsubsection[{look\-At}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\-::look\-At (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point3} \&}]{eye, }
+\item[{const {\bf Point3} \&}]{point, }
+\item[{const {\bf Vector3} \&}]{up}
+\end{DoxyParamCaption}
+)}}\label{classCamera_aa91c4a447f23e08322ef17f2786851bf}
+
+
+Definition at line 16 of file Camera.\-cpp.
+
+
+\begin{DoxyCode}
+16                                                                              \{
+17   camera = \textcolor{keyword}{new} \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4}(camera->\hyperlink{classVectormath_1_1Aos_1_1Matrix4_a49e313a5abadfcf35efdda1a5276c95a}{lookAt}(eye, point, up));
+18 \}
+\end{DoxyCode}
+\hypertarget{classCamera_a16c5e6f7b2eed95a78675f55c4a435e6}{\index{Camera@{Camera}!set\-Camera@{set\-Camera}}
+\index{set\-Camera@{set\-Camera}!Camera@{Camera}}
+\subsubsection[{set\-Camera}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\-::set\-Camera (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix4} \&}]{m}
+\end{DoxyParamCaption}
+)}}\label{classCamera_a16c5e6f7b2eed95a78675f55c4a435e6}
+
+
+Definition at line 20 of file Camera.\-cpp.
+
+
+\begin{DoxyCode}
+20                                         \{
+21   \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4} * tmp = camera;
+22   camera = \textcolor{keyword}{new} \hyperlink{classVectormath_1_1Aos_1_1Matrix4}{Matrix4}(m);
+23   \textcolor{keyword}{delete} (tmp);
+24 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/sam/\-Cube\-Racer/src/\hyperlink{Camera_8h}{Camera.\-h}\item 
+/home/sam/\-Cube\-Racer/src/\hyperlink{Camera_8cpp}{Camera.\-cpp}\end{DoxyCompactItemize}

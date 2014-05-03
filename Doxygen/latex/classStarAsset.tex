@@ -1,0 +1,322 @@
+\hypertarget{classStarAsset}{\section{Star\-Asset Class Reference}
+\label{classStarAsset}\index{Star\-Asset@{Star\-Asset}}
+}
+
+
+{\ttfamily \#include $<$Star\-Asset.\-h$>$}
+
+Inheritance diagram for Star\-Asset\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classStarAsset}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cef}{vertices} \{ \\*
+\hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefaadcb919baa5887d4a379bdce37833efe}{F0}, 
+\hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa170a4b73924ae45dc9f35aeab6a11ec5}{F1}, 
+\hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae935994103227f6914fd7479331c156a}{F2}, 
+\hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa0d9d6c5db831f400fb3137b01aaa7f6d}{F3}, 
+\\*
+\hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa46e1bdb884b4d250c1f826b7e29192d0}{F4}, 
+\hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae19e6287a83ee0c27375c0ed1bdf4c1b}{F5}, 
+\hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa096f0d517df2f8b60264dedaa3bb8adc}{F6}, 
+\hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa59bbf4a0df7d231dfe97e19539da411c}{F7}, 
+\\*
+\hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefaeb5ac468dd02d472c35ca71a96819abe}{F8}, 
+\hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefafaf00a7281e8c2b6ee7c50a6238fffc2}{F9}, 
+\hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae5472cbbc494096850a67cd767b7aebb}{F10}, 
+\hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefac5eddbc625aca62237c12e905700abc0}{F11}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classStarAsset_a256d7fef7a77f48eab4af886b2411959}{Star\-Asset} ()
+\item 
+\hyperlink{classStarAsset_a3dae8c8b498f6029b033aa172f555865}{Star\-Asset} (float x, float y, float z)
+\item 
+\hyperlink{classStarAsset_a77a07269f87ab84c206d1bc5733e0a10}{$\sim$\-Star\-Asset} ()
+\item 
+bool \hyperlink{classStarAsset_a359a29db9eaf03058af02bf3bf1d0263}{collides\-With} (\hyperlink{classPlayer}{Player} \&a)
+\item 
+virtual void \hyperlink{classStarAsset_a21f6e7f632408f34209db35d41f41877}{update} ()
+\item 
+virtual void \hyperlink{classStarAsset_a0ebfee331ac06d5e58ee0226104ac4e2}{draw} ()
+\item 
+virtual void \hyperlink{classStarAsset_a0e0f4afbd0edd0d10b7e4a2810222c66}{clean} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file Star\-Asset.\-h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cef}{\index{Star\-Asset@{Star\-Asset}!vertices@{vertices}}
+\index{vertices@{vertices}!StarAsset@{Star\-Asset}}
+\subsubsection[{vertices}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Star\-Asset\-::vertices}}}\label{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cef}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{F0@{F0}!Star\-Asset@{Star\-Asset}}\index{Star\-Asset@{Star\-Asset}!F0@{F0}}\item[{\em 
+\hypertarget{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefaadcb919baa5887d4a379bdce37833efe}{F0}\label{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefaadcb919baa5887d4a379bdce37833efe}
+}]\index{F1@{F1}!Star\-Asset@{Star\-Asset}}\index{Star\-Asset@{Star\-Asset}!F1@{F1}}\item[{\em 
+\hypertarget{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa170a4b73924ae45dc9f35aeab6a11ec5}{F1}\label{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa170a4b73924ae45dc9f35aeab6a11ec5}
+}]\index{F2@{F2}!Star\-Asset@{Star\-Asset}}\index{Star\-Asset@{Star\-Asset}!F2@{F2}}\item[{\em 
+\hypertarget{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae935994103227f6914fd7479331c156a}{F2}\label{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae935994103227f6914fd7479331c156a}
+}]\index{F3@{F3}!Star\-Asset@{Star\-Asset}}\index{Star\-Asset@{Star\-Asset}!F3@{F3}}\item[{\em 
+\hypertarget{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa0d9d6c5db831f400fb3137b01aaa7f6d}{F3}\label{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa0d9d6c5db831f400fb3137b01aaa7f6d}
+}]\index{F4@{F4}!Star\-Asset@{Star\-Asset}}\index{Star\-Asset@{Star\-Asset}!F4@{F4}}\item[{\em 
+\hypertarget{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa46e1bdb884b4d250c1f826b7e29192d0}{F4}\label{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa46e1bdb884b4d250c1f826b7e29192d0}
+}]\index{F5@{F5}!Star\-Asset@{Star\-Asset}}\index{Star\-Asset@{Star\-Asset}!F5@{F5}}\item[{\em 
+\hypertarget{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae19e6287a83ee0c27375c0ed1bdf4c1b}{F5}\label{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae19e6287a83ee0c27375c0ed1bdf4c1b}
+}]\index{F6@{F6}!Star\-Asset@{Star\-Asset}}\index{Star\-Asset@{Star\-Asset}!F6@{F6}}\item[{\em 
+\hypertarget{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa096f0d517df2f8b60264dedaa3bb8adc}{F6}\label{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa096f0d517df2f8b60264dedaa3bb8adc}
+}]\index{F7@{F7}!Star\-Asset@{Star\-Asset}}\index{Star\-Asset@{Star\-Asset}!F7@{F7}}\item[{\em 
+\hypertarget{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa59bbf4a0df7d231dfe97e19539da411c}{F7}\label{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa59bbf4a0df7d231dfe97e19539da411c}
+}]\index{F8@{F8}!Star\-Asset@{Star\-Asset}}\index{Star\-Asset@{Star\-Asset}!F8@{F8}}\item[{\em 
+\hypertarget{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefaeb5ac468dd02d472c35ca71a96819abe}{F8}\label{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefaeb5ac468dd02d472c35ca71a96819abe}
+}]\index{F9@{F9}!Star\-Asset@{Star\-Asset}}\index{Star\-Asset@{Star\-Asset}!F9@{F9}}\item[{\em 
+\hypertarget{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefafaf00a7281e8c2b6ee7c50a6238fffc2}{F9}\label{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefafaf00a7281e8c2b6ee7c50a6238fffc2}
+}]\index{F10@{F10}!Star\-Asset@{Star\-Asset}}\index{Star\-Asset@{Star\-Asset}!F10@{F10}}\item[{\em 
+\hypertarget{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae5472cbbc494096850a67cd767b7aebb}{F10}\label{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae5472cbbc494096850a67cd767b7aebb}
+}]\index{F11@{F11}!Star\-Asset@{Star\-Asset}}\index{Star\-Asset@{Star\-Asset}!F11@{F11}}\item[{\em 
+\hypertarget{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefac5eddbc625aca62237c12e905700abc0}{F11}\label{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefac5eddbc625aca62237c12e905700abc0}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 19 of file Star\-Asset.\-h.
+
+
+\begin{DoxyCode}
+19                 \{
+20       \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefaadcb919baa5887d4a379bdce37833efe}{F0}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa170a4b73924ae45dc9f35aeab6a11ec5}{F1}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae935994103227f6914fd7479331c156a}{F2}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa0d9d6c5db831f400fb3137b01aaa7f6d}{F3}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa46e1bdb884b4d250c1f826b7e29192d0}{F4}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae19e6287a83ee0c27375c0ed1bdf4c1b}{F5}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa096f0d517df2f8b60264dedaa3bb8adc}{F6}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa59bbf4a0df7d231dfe97e19539da411c}{F7}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefaeb5ac468dd02d472c35ca71a96819abe}{F8}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefafaf00a7281e8c2b6ee7c50a6238fffc2}{F9}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae5472cbbc494096850a67cd767b7aebb}{F10}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefac5eddbc625aca62237c12e905700abc0}{F11}, 
+21   \};
+\end{DoxyCode}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classStarAsset_a256d7fef7a77f48eab4af886b2411959}{\index{Star\-Asset@{Star\-Asset}!Star\-Asset@{Star\-Asset}}
+\index{Star\-Asset@{Star\-Asset}!StarAsset@{Star\-Asset}}
+\subsubsection[{Star\-Asset}]{\setlength{\rightskip}{0pt plus 5cm}Star\-Asset\-::\-Star\-Asset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classStarAsset_a256d7fef7a77f48eab4af886b2411959}
+
+
+Definition at line 3 of file Star\-Asset.\-cpp.
+
+
+\begin{DoxyCode}
+4   : \hyperlink{classGameAsset_a9c96b0bafa2b6973a2e8c09bf51c52ec}{GameAsset}(
+5           \textcolor{keywordtype}{string}(\textcolor{stringliteral}{"CubeRacer/shaders/hello-gl.v.glsl"})
+6           , \textcolor{keywordtype}{string}(\textcolor{stringliteral}{"CubeRacer/shaders/starAsset.f.glsl"})
+7           )
+8 \{
+9   \hyperlink{classStarAsset_a256d7fef7a77f48eab4af886b2411959}{StarAsset}(0, 0, 0);
+10 \}
+\end{DoxyCode}
+\hypertarget{classStarAsset_a3dae8c8b498f6029b033aa172f555865}{\index{Star\-Asset@{Star\-Asset}!Star\-Asset@{Star\-Asset}}
+\index{Star\-Asset@{Star\-Asset}!StarAsset@{Star\-Asset}}
+\subsubsection[{Star\-Asset}]{\setlength{\rightskip}{0pt plus 5cm}Star\-Asset\-::\-Star\-Asset (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}}\label{classStarAsset_a3dae8c8b498f6029b033aa172f555865}
+
+
+Definition at line 12 of file Star\-Asset.\-cpp.
+
+
+\begin{DoxyCode}
+13   : \hyperlink{classGameAsset_a9c96b0bafa2b6973a2e8c09bf51c52ec}{GameAsset}(
+14       \textcolor{keywordtype}{string}(\textcolor{stringliteral}{"CubeRacer/shaders/hello-gl.v.glsl"}), 
+15       \textcolor{keywordtype}{string}(\textcolor{stringliteral}{"CubeRacer/shaders/starAsset-gl.f.glsl"})
+16 )\{
+17 
+18   \textcolor{comment}{// A default "unit" Star}
+19   \hyperlink{classGameAsset_a3e8d7dc58d3d4efafbbce1536b78dbc7}{num\_vertices} = 12;
+20   \hyperlink{classGameAsset_aae4d864335c2eca685cc86602881cd18}{num\_triangles} = 20;
+21   \hyperlink{classGameAsset_ae1d682ecf84d9cd3f91a8c870acf2777}{g\_vertex\_buffer\_data} = \textcolor{keyword}{new} GLfloat[\hyperlink{classGameAsset_a3e8d7dc58d3d4efafbbce1536b78dbc7}{num\_vertices} * 3]\{
+22 
+23   \textcolor{comment}{//     x      y     z     //www.clipartbest.com/cliparts/dir/aAp/diraAp9i9.jpeg}
+24     -0.65,  -1.0,    0.0,   \textcolor{comment}{//Bottom left point     F0}
+25      0.65,  -1.0,    0.0,   \textcolor{comment}{//Bottom right point        F1}
+26      0.0,   -0.5,    0.0,   \textcolor{comment}{//Bottom middle point       F2}
+27     
+28     -0.4,   -0.2,    0.0,   \textcolor{comment}{//Lower-middle left point   F3}
+29      0.4,   -0.2,    0.0,   \textcolor{comment}{//Lower-middle right point  F4}
+30 
+31     -1.0,    0.25,   0.0,   \textcolor{comment}{//Middle left-most point    F5}
+32      1.0,    0.25,   0.0,   \textcolor{comment}{//Middle right-most point   F6}
+33     -0.25,   0.3,    0.0,   \textcolor{comment}{//Middle left point     F7}
+34      0.25,   0.3,    0.0,   \textcolor{comment}{//Middle right point        F8}
+35 
+36      0.0,    1.0,    0.0,   \textcolor{comment}{//Top point         F9}
+37      0.0,    0.0,    0.5,   \textcolor{comment}{//Middle Front point        F10}
+38      0.0,    0.0,   -0.5    \textcolor{comment}{//Middle Back point     F11 }
+39     
+40 \}; \textcolor{comment}{// three points per vertex}
+41 
+42   \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\_element\_buffer\_data} = \textcolor{keyword}{new} GLushort[\hyperlink{classGameAsset_aae4d864335c2eca685cc86602881cd18}{num\_triangles} * 3]\{
+43 
+44     \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae5472cbbc494096850a67cd767b7aebb}{F10}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa0d9d6c5db831f400fb3137b01aaa7f6d}{F3},  \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefaadcb919baa5887d4a379bdce37833efe}{F0},    \textcolor{comment}{//Bottom left point}
+45     \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefaadcb919baa5887d4a379bdce37833efe}{F0},  \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae935994103227f6914fd7479331c156a}{F2},  \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae5472cbbc494096850a67cd767b7aebb}{F10},
+46 
+47     \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae5472cbbc494096850a67cd767b7aebb}{F10}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae935994103227f6914fd7479331c156a}{F2},  \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa170a4b73924ae45dc9f35aeab6a11ec5}{F1},    \textcolor{comment}{//Bottom right point}
+48     \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa170a4b73924ae45dc9f35aeab6a11ec5}{F1},  \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa46e1bdb884b4d250c1f826b7e29192d0}{F4},  \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae5472cbbc494096850a67cd767b7aebb}{F10},
+49 
+50     \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae5472cbbc494096850a67cd767b7aebb}{F10}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa46e1bdb884b4d250c1f826b7e29192d0}{F4},  \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa096f0d517df2f8b60264dedaa3bb8adc}{F6},    \textcolor{comment}{//Middle right point}
+51     \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa096f0d517df2f8b60264dedaa3bb8adc}{F6},  \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefaeb5ac468dd02d472c35ca71a96819abe}{F8},  \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae5472cbbc494096850a67cd767b7aebb}{F10},
+52     
+53     \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae5472cbbc494096850a67cd767b7aebb}{F10}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefaeb5ac468dd02d472c35ca71a96819abe}{F8},  \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefafaf00a7281e8c2b6ee7c50a6238fffc2}{F9},    \textcolor{comment}{//Top point}
+54     \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefafaf00a7281e8c2b6ee7c50a6238fffc2}{F9},  \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa59bbf4a0df7d231dfe97e19539da411c}{F7},  \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae5472cbbc494096850a67cd767b7aebb}{F10},
+55 
+56     \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae5472cbbc494096850a67cd767b7aebb}{F10}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa59bbf4a0df7d231dfe97e19539da411c}{F7},  \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae19e6287a83ee0c27375c0ed1bdf4c1b}{F5},    \textcolor{comment}{//Middle left point}
+57     \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae19e6287a83ee0c27375c0ed1bdf4c1b}{F5},  \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa0d9d6c5db831f400fb3137b01aaa7f6d}{F3},  \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae5472cbbc494096850a67cd767b7aebb}{F10},
+58 
+59     \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefac5eddbc625aca62237c12e905700abc0}{F11}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa0d9d6c5db831f400fb3137b01aaa7f6d}{F3},  \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefaadcb919baa5887d4a379bdce37833efe}{F0},
+60     \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefaadcb919baa5887d4a379bdce37833efe}{F0},  \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae935994103227f6914fd7479331c156a}{F2},  \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefac5eddbc625aca62237c12e905700abc0}{F11},
+61     
+62     \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefac5eddbc625aca62237c12e905700abc0}{F11}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae935994103227f6914fd7479331c156a}{F2}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa170a4b73924ae45dc9f35aeab6a11ec5}{F1},
+63     \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa170a4b73924ae45dc9f35aeab6a11ec5}{F1},  \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa46e1bdb884b4d250c1f826b7e29192d0}{F4}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefac5eddbc625aca62237c12e905700abc0}{F11},
+64 
+65     \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefac5eddbc625aca62237c12e905700abc0}{F11}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa46e1bdb884b4d250c1f826b7e29192d0}{F4}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa096f0d517df2f8b60264dedaa3bb8adc}{F6},
+66     \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa096f0d517df2f8b60264dedaa3bb8adc}{F6},  \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefaeb5ac468dd02d472c35ca71a96819abe}{F8}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefac5eddbc625aca62237c12e905700abc0}{F11},
+67 
+68     \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefac5eddbc625aca62237c12e905700abc0}{F11}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefaeb5ac468dd02d472c35ca71a96819abe}{F8}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefafaf00a7281e8c2b6ee7c50a6238fffc2}{F9},
+69     \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefafaf00a7281e8c2b6ee7c50a6238fffc2}{F9},  \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa59bbf4a0df7d231dfe97e19539da411c}{F7}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefac5eddbc625aca62237c12e905700abc0}{F11},
+70 
+71     \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefac5eddbc625aca62237c12e905700abc0}{F11}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa59bbf4a0df7d231dfe97e19539da411c}{F7}, \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefae19e6287a83ee0c27375c0ed1bdf4c1b}{F5},
+72     \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa59bbf4a0df7d231dfe97e19539da411c}{F7},  \hyperlink{classStarAsset_a39ac8e905b1e0d2eba0b5c27cd223cefa0d9d6c5db831f400fb3137b01aaa7f6d}{F3}, F11    
+73 
+74 \}; \textcolor{comment}{// three vertices per triangle}
+75 
+76   \hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}.reset();
+77   \hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox} = shared\_ptr<BoundingBox>(\textcolor{keyword}{new} \hyperlink{classBoundingBox}{BoundingBox}(\hyperlink{classVectormath_1_1Aos_1_1Point3}{Point3}(x, y, z), 1.0, 1.0, 1.0));
+78 
+79   \hyperlink{classGameAsset_aa26d85233ece476d599adf90074e9568}{make\_resources}();
+80 \}
+\end{DoxyCode}
+\hypertarget{classStarAsset_a77a07269f87ab84c206d1bc5733e0a10}{\index{Star\-Asset@{Star\-Asset}!$\sim$\-Star\-Asset@{$\sim$\-Star\-Asset}}
+\index{$\sim$\-Star\-Asset@{$\sim$\-Star\-Asset}!StarAsset@{Star\-Asset}}
+\subsubsection[{$\sim$\-Star\-Asset}]{\setlength{\rightskip}{0pt plus 5cm}Star\-Asset\-::$\sim$\-Star\-Asset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classStarAsset_a77a07269f87ab84c206d1bc5733e0a10}
+
+
+Definition at line 82 of file Star\-Asset.\-cpp.
+
+
+\begin{DoxyCode}
+82                       \{
+83   \textcolor{comment}{// TODO: do something nice and fun here.}
+84 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classStarAsset_a0e0f4afbd0edd0d10b7e4a2810222c66}{\index{Star\-Asset@{Star\-Asset}!clean@{clean}}
+\index{clean@{clean}!StarAsset@{Star\-Asset}}
+\subsubsection[{clean}]{\setlength{\rightskip}{0pt plus 5cm}void Star\-Asset\-::clean (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classStarAsset_a0e0f4afbd0edd0d10b7e4a2810222c66}
+
+
+Implements \hyperlink{classGameAsset_abbea962eaa63a813949b834778b7483e}{Game\-Asset}.
+
+
+
+Definition at line 104 of file Star\-Asset.\-cpp.
+
+
+\begin{DoxyCode}
+104 \{ \} 
+\end{DoxyCode}
+\hypertarget{classStarAsset_a359a29db9eaf03058af02bf3bf1d0263}{\index{Star\-Asset@{Star\-Asset}!collides\-With@{collides\-With}}
+\index{collides\-With@{collides\-With}!StarAsset@{Star\-Asset}}
+\subsubsection[{collides\-With}]{\setlength{\rightskip}{0pt plus 5cm}bool Star\-Asset\-::collides\-With (
+\begin{DoxyParamCaption}
+\item[{{\bf Player} \&}]{a}
+\end{DoxyParamCaption}
+)}}\label{classStarAsset_a359a29db9eaf03058af02bf3bf1d0263}
+
+
+Definition at line 96 of file Star\-Asset.\-cpp.
+
+
+\begin{DoxyCode}
+96                                        \{
+97   \textcolor{keywordflow}{return} \hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}->collidesWith((*a.\hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}));
+98 \}
+\end{DoxyCode}
+\hypertarget{classStarAsset_a0ebfee331ac06d5e58ee0226104ac4e2}{\index{Star\-Asset@{Star\-Asset}!draw@{draw}}
+\index{draw@{draw}!StarAsset@{Star\-Asset}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Star\-Asset\-::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classStarAsset_a0ebfee331ac06d5e58ee0226104ac4e2}
+
+
+Reimplemented from \hyperlink{classGameAsset_a2d7e18a8f1dd8ba89ed1bd14f2affeab}{Game\-Asset}.
+
+
+
+Definition at line 100 of file Star\-Asset.\-cpp.
+
+
+\begin{DoxyCode}
+100                      \{
+101   \hyperlink{classGameAsset_a2d7e18a8f1dd8ba89ed1bd14f2affeab}{GameAsset::draw}();
+102 \}
+\end{DoxyCode}
+\hypertarget{classStarAsset_a21f6e7f632408f34209db35d41f41877}{\index{Star\-Asset@{Star\-Asset}!update@{update}}
+\index{update@{update}!StarAsset@{Star\-Asset}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Star\-Asset\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classStarAsset_a21f6e7f632408f34209db35d41f41877}
+
+
+Implements \hyperlink{classGameAsset_a42688ec8f02e201eaaa01e74a112083f}{Game\-Asset}.
+
+
+
+Definition at line 86 of file Star\-Asset.\-cpp.
+
+
+\begin{DoxyCode}
+86                        \{
+87   \textcolor{keywordflow}{if} (\hyperlink{classGameAsset_aebf93ae52dc7fabbb6ec7edaadf915d0}{isAlive}) \{
+88     shared\_ptr<Point3> p = shared\_ptr<Point3>(\textcolor{keyword}{new} \hyperlink{classVectormath_1_1Aos_1_1Point3}{Point3}(this->\hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}->getCentre()->getX(), -0.3, 
+      this->\hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}->getCentre()->getZ()-0.2));
+89 
+90     \hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}.reset();
+91     \hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox} = shared\_ptr<BoundingBox>(\textcolor{keyword}{new} \hyperlink{classBoundingBox}{BoundingBox}(*p, 1.0, 1.0, 1.0));
+92     \textcolor{keywordflow}{if}( this->\hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}->getCentre()->getZ() < -5) \{ this->\hyperlink{classGameAsset_a631982e6d36061c08c7e8981ce0fd308}{dead}(); \}
+93   \}
+94 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/sam/\-Cube\-Racer/src/\hyperlink{StarAsset_8h}{Star\-Asset.\-h}\item 
+/home/sam/\-Cube\-Racer/src/\hyperlink{StarAsset_8cpp}{Star\-Asset.\-cpp}\end{DoxyCompactItemize}

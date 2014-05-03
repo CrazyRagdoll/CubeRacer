@@ -1,0 +1,539 @@
+\hypertarget{classGameAsset}{\section{Game\-Asset Class Reference}
+\label{classGameAsset}\index{Game\-Asset@{Game\-Asset}}
+}
+
+
+{\ttfamily \#include $<$Game\-Asset.\-h$>$}
+
+Inheritance diagram for Game\-Asset\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classGameAsset}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGameAsset_a9c96b0bafa2b6973a2e8c09bf51c52ec}{Game\-Asset} ()
+\item 
+\hyperlink{classGameAsset_ac6d2340f41dd95e71892327dae4e1585}{Game\-Asset} (const string \&v\-\_\-shader, const string \&f\-\_\-shader)
+\item 
+virtual \hyperlink{classGameAsset_ace6e367e781c48c6847812778107fcbf}{$\sim$\-Game\-Asset} ()
+\item 
+bool \hyperlink{classGameAsset_a612793ce2a354d2f8839a779d0ca2227}{collides\-With} (\hyperlink{classGameAsset}{Game\-Asset} \&a)
+\item 
+virtual void \hyperlink{classGameAsset_a2d7e18a8f1dd8ba89ed1bd14f2affeab}{draw} ()
+\item 
+virtual void \hyperlink{classGameAsset_a42688ec8f02e201eaaa01e74a112083f}{update} ()=0
+\item 
+virtual void \hyperlink{classGameAsset_abbea962eaa63a813949b834778b7483e}{clean} ()=0
+\item 
+virtual bool \hyperlink{classGameAsset_a631982e6d36061c08c7e8981ce0fd308}{dead} ()
+\item 
+virtual bool \hyperlink{classGameAsset_a3b5885fc74b95141312d6e6d60d0a9d3}{is\-It\-Alive} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+shared\-\_\-ptr$<$ \hyperlink{classBoundingBox}{Bounding\-Box} $>$ \hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}
+\item 
+bool \hyperlink{classGameAsset_aebf93ae52dc7fabbb6ec7edaadf915d0}{is\-Alive} = true
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classGameAsset_aa26d85233ece476d599adf90074e9568}{make\-\_\-resources} ()
+\item 
+G\-Lchar $\ast$ \hyperlink{classGameAsset_a08c617aafc70dcba441f53260f1bb09f}{shader\-\_\-file\-\_\-contents} (const string \&filename, G\-Lint $\ast$length)
+\item 
+G\-Luint \hyperlink{classGameAsset_adfe27369433f07092b08f24b0feedfc9}{make\-\_\-buffer} (G\-Lenum target, const void $\ast$buffer\-\_\-data, G\-Lsizei buffer\-\_\-size)
+\item 
+G\-Luint \hyperlink{classGameAsset_ac728e885b52c93c3e4976a339de54545}{make\-\_\-shader} (G\-Lenum type, const char $\ast$filename)
+\item 
+G\-Luint \hyperlink{classGameAsset_a9d9574a21cf6b52f7a825879ca50b19d}{make\-\_\-program} (G\-Luint \hyperlink{classGameAsset_aba95de2870f78ac21568bbf9dd7e2b40}{vertex\-\_\-shader}, G\-Luint \hyperlink{classGameAsset_ab62d9e2547537bd89eeae057a402a895}{fragment\-\_\-shader})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G\-Luint \hyperlink{classGameAsset_a1a1d227eba2765b025f9f453700c2359}{vertex\-\_\-buffer}
+\item 
+G\-Luint \hyperlink{classGameAsset_a5e005ff1d4280e73f67446353e78fe43}{element\-\_\-buffer}
+\item 
+G\-Luint \hyperlink{classGameAsset_aba95de2870f78ac21568bbf9dd7e2b40}{vertex\-\_\-shader}
+\item 
+G\-Luint \hyperlink{classGameAsset_ab62d9e2547537bd89eeae057a402a895}{fragment\-\_\-shader}
+\item 
+G\-Luint \hyperlink{classGameAsset_a239f03ead1a34924e76d6f875216404b}{program}
+\item 
+G\-Lint \hyperlink{classGameAsset_ad8c8198dcc470301e8f5eae8dc8506bb}{position\-\_\-attrib}
+\item 
+G\-Lint \hyperlink{classGameAsset_a21126e946d621a0e03d61738404b34d2}{tx\-\_\-uniform}
+\item 
+G\-Lfloat $\ast$ \hyperlink{classGameAsset_ae1d682ecf84d9cd3f91a8c870acf2777}{g\-\_\-vertex\-\_\-buffer\-\_\-data}
+\item 
+G\-Lushort $\ast$ \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\-\_\-element\-\_\-buffer\-\_\-data}
+\item 
+int \hyperlink{classGameAsset_a3e8d7dc58d3d4efafbbce1536b78dbc7}{num\-\_\-vertices}
+\item 
+int \hyperlink{classGameAsset_aae4d864335c2eca685cc86602881cd18}{num\-\_\-triangles}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 25 of file Game\-Asset.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGameAsset_a9c96b0bafa2b6973a2e8c09bf51c52ec}{\index{Game\-Asset@{Game\-Asset}!Game\-Asset@{Game\-Asset}}
+\index{Game\-Asset@{Game\-Asset}!GameAsset@{Game\-Asset}}
+\subsubsection[{Game\-Asset}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Asset\-::\-Game\-Asset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGameAsset_a9c96b0bafa2b6973a2e8c09bf51c52ec}
+
+
+Definition at line 14 of file Game\-Asset.\-cpp.
+
+
+\begin{DoxyCode}
+14                      \{
+15   common\_init();
+16   this->v\_shader = \textcolor{stringliteral}{"CubeRacer/shaders/hello-gl.v.glsl"};
+17   this->f\_shader = \textcolor{stringliteral}{"CubeRacer/shaders/player-gl.f.glsl"};
+18 \}
+\end{DoxyCode}
+\hypertarget{classGameAsset_ac6d2340f41dd95e71892327dae4e1585}{\index{Game\-Asset@{Game\-Asset}!Game\-Asset@{Game\-Asset}}
+\index{Game\-Asset@{Game\-Asset}!GameAsset@{Game\-Asset}}
+\subsubsection[{Game\-Asset}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Asset\-::\-Game\-Asset (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{v\-\_\-shader, }
+\item[{const string \&}]{f\-\_\-shader}
+\end{DoxyParamCaption}
+)}}\label{classGameAsset_ac6d2340f41dd95e71892327dae4e1585}
+
+
+Definition at line 20 of file Game\-Asset.\-cpp.
+
+
+\begin{DoxyCode}
+20                                                                      \{
+21   common\_init();
+22   this->v\_shader = v\_shader;
+23   this->f\_shader = f\_shader;
+24 \}
+\end{DoxyCode}
+\hypertarget{classGameAsset_ace6e367e781c48c6847812778107fcbf}{\index{Game\-Asset@{Game\-Asset}!$\sim$\-Game\-Asset@{$\sim$\-Game\-Asset}}
+\index{$\sim$\-Game\-Asset@{$\sim$\-Game\-Asset}!GameAsset@{Game\-Asset}}
+\subsubsection[{$\sim$\-Game\-Asset}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Asset\-::$\sim$\-Game\-Asset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classGameAsset_ace6e367e781c48c6847812778107fcbf}
+
+
+Definition at line 26 of file Game\-Asset.\-cpp.
+
+
+\begin{DoxyCode}
+26                       \{
+27     \textcolor{comment}{// TODO Auto-generated destructor stub}
+28 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classGameAsset_abbea962eaa63a813949b834778b7483e}{\index{Game\-Asset@{Game\-Asset}!clean@{clean}}
+\index{clean@{clean}!GameAsset@{Game\-Asset}}
+\subsubsection[{clean}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Game\-Asset\-::clean (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classGameAsset_abbea962eaa63a813949b834778b7483e}
+
+
+Implemented in \hyperlink{classPlayer_a883c81df5be3b931ecfa6c8de08acfbd}{Player}, \hyperlink{classEnemy_a12e87c9cb633fed1d846a61cfe7f91c7}{Enemy}, \hyperlink{classHeartAsset_a33b4a41bfc915fc95d23d9b1fbf68dad}{Heart\-Asset}, \hyperlink{classStarAsset_a0e0f4afbd0edd0d10b7e4a2810222c66}{Star\-Asset}, \hyperlink{classBullet_a1a4ffaed3fe46e010bb981ebbbd38ecd}{Bullet}, and \hyperlink{classCubeAsset_af158511433013403bc4fe0c13e8577f3}{Cube\-Asset}.
+
+\hypertarget{classGameAsset_a612793ce2a354d2f8839a779d0ca2227}{\index{Game\-Asset@{Game\-Asset}!collides\-With@{collides\-With}}
+\index{collides\-With@{collides\-With}!GameAsset@{Game\-Asset}}
+\subsubsection[{collides\-With}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\-Asset\-::collides\-With (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\-Asset} \&}]{a}
+\end{DoxyParamCaption}
+)}}\label{classGameAsset_a612793ce2a354d2f8839a779d0ca2227}
+
+
+Definition at line 30 of file Game\-Asset.\-cpp.
+
+
+\begin{DoxyCode}
+30                                           \{
+31   \textcolor{keywordflow}{return} \hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}->collidesWith((*a.\hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}));
+32 \}
+\end{DoxyCode}
+\hypertarget{classGameAsset_a631982e6d36061c08c7e8981ce0fd308}{\index{Game\-Asset@{Game\-Asset}!dead@{dead}}
+\index{dead@{dead}!GameAsset@{Game\-Asset}}
+\subsubsection[{dead}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Game\-Asset\-::dead (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classGameAsset_a631982e6d36061c08c7e8981ce0fd308}
+
+
+Definition at line 36 of file Game\-Asset.\-h.
+
+
+\begin{DoxyCode}
+36 \{ \hyperlink{classGameAsset_aebf93ae52dc7fabbb6ec7edaadf915d0}{isAlive} = \textcolor{keyword}{false}; \};
+\end{DoxyCode}
+\hypertarget{classGameAsset_a2d7e18a8f1dd8ba89ed1bd14f2affeab}{\index{Game\-Asset@{Game\-Asset}!draw@{draw}}
+\index{draw@{draw}!GameAsset@{Game\-Asset}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-Asset\-::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classGameAsset_a2d7e18a8f1dd8ba89ed1bd14f2affeab}
+
+
+Reimplemented in \hyperlink{classPlayer_ac18c9d30d2997765321c62030a4b20b7}{Player}, \hyperlink{classEnemy_a7dcf45915f6288ef9264ec60af621b6c}{Enemy}, \hyperlink{classHeartAsset_a12139c94af340272cfcb726a5665bede}{Heart\-Asset}, \hyperlink{classStarAsset_a0ebfee331ac06d5e58ee0226104ac4e2}{Star\-Asset}, \hyperlink{classBullet_a3912974232447f64002fd657340a7b3b}{Bullet}, and \hyperlink{classCubeAsset_ae986d0b82941b268666f697877530ca5}{Cube\-Asset}.
+
+
+
+Definition at line 34 of file Game\-Asset.\-cpp.
+
+
+\begin{DoxyCode}
+34                      \{
+35   glUseProgram(\hyperlink{classGameAsset_a239f03ead1a34924e76d6f875216404b}{program});
+36   
+37   \hyperlink{classVectormath_1_1Aos_1_1Vector4}{Vector4} tx = \hyperlink{classCamera_aa84baebe5d771ddfd82a5b55bd3fde39}{Camera::getInstance}().\hyperlink{classCamera_a156b6aba4309cde6f0252ff325663e2f}{getCameraM}() * *(
+      \hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}->getCentre());
+38   \textcolor{keywordtype}{float} tx\_unpacked[] = \{tx.\hyperlink{classVectormath_1_1Aos_1_1Vector4_af067fb75d2fdf3a88189229131f36329}{getX}(), tx.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a895b1271a74265bb853772718aca2b24}{getY}(), tx.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a51336902d57b1c54df19fb708e93b4f2}{getZ}(), tx.\hyperlink{classVectormath_1_1Aos_1_1Vector4_a775bd40a8bd926cd510d39e890c0b686}{getW}()\};
+39 
+40   \textcolor{comment}{//  std::cout << "tx.x " << tx.getX() << "\(\backslash\)ttx.y " << tx.getY() << "\(\backslash\)t tx.z " << tx.getZ() << std::endl;}
+41   
+42   glUniform4fv(\hyperlink{classGameAsset_a21126e946d621a0e03d61738404b34d2}{tx\_uniform}, 1, tx\_unpacked);
+43 
+44   glBindBuffer(GL\_ARRAY\_BUFFER, \hyperlink{classGameAsset_a1a1d227eba2765b025f9f453700c2359}{vertex\_buffer});
+45   glVertexAttribPointer(
+46             \hyperlink{classGameAsset_ad8c8198dcc470301e8f5eae8dc8506bb}{position\_attrib},                  \textcolor{comment}{/* attribute */}
+47             3,                                \textcolor{comment}{/* size */}
+48             GL\_FLOAT,                         \textcolor{comment}{/* type */}
+49             GL\_FALSE,                         \textcolor{comment}{/* normalized? */}
+50             0,                                \textcolor{comment}{/* stride */}
+51             (\textcolor{keywordtype}{void}*)0                          \textcolor{comment}{/* array buffer offset */}
+52             );
+53   glEnableVertexAttribArray(\hyperlink{classGameAsset_ad8c8198dcc470301e8f5eae8dc8506bb}{position\_attrib});
+54   
+55   glBindBuffer(GL\_ELEMENT\_ARRAY\_BUFFER, \hyperlink{classGameAsset_a5e005ff1d4280e73f67446353e78fe43}{element\_buffer});
+56   glDrawElements(
+57          GL\_TRIANGLES,
+58          3 * this->\hyperlink{classGameAsset_aae4d864335c2eca685cc86602881cd18}{num\_triangles},
+59          GL\_UNSIGNED\_SHORT,
+60          (GLvoid*) 0
+61          );
+62   
+63   glDisableVertexAttribArray(\hyperlink{classGameAsset_ad8c8198dcc470301e8f5eae8dc8506bb}{position\_attrib});
+64 \}
+\end{DoxyCode}
+\hypertarget{classGameAsset_a3b5885fc74b95141312d6e6d60d0a9d3}{\index{Game\-Asset@{Game\-Asset}!is\-It\-Alive@{is\-It\-Alive}}
+\index{is\-It\-Alive@{is\-It\-Alive}!GameAsset@{Game\-Asset}}
+\subsubsection[{is\-It\-Alive}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Game\-Asset\-::is\-It\-Alive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classGameAsset_a3b5885fc74b95141312d6e6d60d0a9d3}
+
+
+Definition at line 37 of file Game\-Asset.\-h.
+
+
+\begin{DoxyCode}
+37 \{ \textcolor{keywordflow}{return} \hyperlink{classGameAsset_aebf93ae52dc7fabbb6ec7edaadf915d0}{isAlive}; \};
+\end{DoxyCode}
+\hypertarget{classGameAsset_adfe27369433f07092b08f24b0feedfc9}{\index{Game\-Asset@{Game\-Asset}!make\-\_\-buffer@{make\-\_\-buffer}}
+\index{make\-\_\-buffer@{make\-\_\-buffer}!GameAsset@{Game\-Asset}}
+\subsubsection[{make\-\_\-buffer}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint Game\-Asset\-::make\-\_\-buffer (
+\begin{DoxyParamCaption}
+\item[{G\-Lenum}]{target, }
+\item[{const void $\ast$}]{buffer\-\_\-data, }
+\item[{G\-Lsizei}]{buffer\-\_\-size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGameAsset_adfe27369433f07092b08f24b0feedfc9}
+
+
+Definition at line 89 of file Game\-Asset.\-cpp.
+
+
+\begin{DoxyCode}
+93   \{
+94     GLuint buffer;
+95     glGenBuffers(1, &buffer);
+96     glBindBuffer(target, buffer);
+97     glBufferData(target, buffer\_size, buffer\_data, GL\_STATIC\_DRAW);
+98     \textcolor{keywordflow}{return} buffer;
+99 \}
+\end{DoxyCode}
+\hypertarget{classGameAsset_a9d9574a21cf6b52f7a825879ca50b19d}{\index{Game\-Asset@{Game\-Asset}!make\-\_\-program@{make\-\_\-program}}
+\index{make\-\_\-program@{make\-\_\-program}!GameAsset@{Game\-Asset}}
+\subsubsection[{make\-\_\-program}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint Game\-Asset\-::make\-\_\-program (
+\begin{DoxyParamCaption}
+\item[{G\-Luint}]{vertex\-\_\-shader, }
+\item[{G\-Luint}]{fragment\-\_\-shader}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGameAsset_a9d9574a21cf6b52f7a825879ca50b19d}
+
+
+Definition at line 125 of file Game\-Asset.\-cpp.
+
+
+\begin{DoxyCode}
+126 \{
+127     GLint program\_ok;
+128 
+129     GLuint \hyperlink{classGameAsset_a239f03ead1a34924e76d6f875216404b}{program} = glCreateProgram();
+130 
+131     glAttachShader(program, \hyperlink{classGameAsset_aba95de2870f78ac21568bbf9dd7e2b40}{vertex\_shader});
+132     glAttachShader(program, \hyperlink{classGameAsset_ab62d9e2547537bd89eeae057a402a895}{fragment\_shader});
+133     glLinkProgram(program);
+134 
+135     glGetProgramiv(program, GL\_LINK\_STATUS, &program\_ok);
+136     \textcolor{keywordflow}{if} (!program\_ok) \{
+137         cerr<< \textcolor{stringliteral}{"Failed to link shader program:"} << endl;
+138         glDeleteProgram(program);
+139         \textcolor{keywordflow}{return} 0;
+140     \}
+141     \textcolor{keywordflow}{return} \hyperlink{classGameAsset_a239f03ead1a34924e76d6f875216404b}{program};
+142 \}
+\end{DoxyCode}
+\hypertarget{classGameAsset_aa26d85233ece476d599adf90074e9568}{\index{Game\-Asset@{Game\-Asset}!make\-\_\-resources@{make\-\_\-resources}}
+\index{make\-\_\-resources@{make\-\_\-resources}!GameAsset@{Game\-Asset}}
+\subsubsection[{make\-\_\-resources}]{\setlength{\rightskip}{0pt plus 5cm}int Game\-Asset\-::make\-\_\-resources (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGameAsset_aa26d85233ece476d599adf90074e9568}
+
+
+Definition at line 147 of file Game\-Asset.\-cpp.
+
+
+\begin{DoxyCode}
+148 \{
+149     \hyperlink{classGameAsset_a1a1d227eba2765b025f9f453700c2359}{vertex\_buffer} = \hyperlink{classGameAsset_adfe27369433f07092b08f24b0feedfc9}{make\_buffer}(
+150         GL\_ARRAY\_BUFFER,
+151         \hyperlink{classGameAsset_ae1d682ecf84d9cd3f91a8c870acf2777}{g\_vertex\_buffer\_data},
+152         3 * \textcolor{keyword}{sizeof}(GLfloat) * this->\hyperlink{classGameAsset_a3e8d7dc58d3d4efafbbce1536b78dbc7}{num\_vertices}
+153     );
+154     \hyperlink{classGameAsset_a5e005ff1d4280e73f67446353e78fe43}{element\_buffer} = \hyperlink{classGameAsset_adfe27369433f07092b08f24b0feedfc9}{make\_buffer}(
+155         GL\_ELEMENT\_ARRAY\_BUFFER,
+156         \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\_element\_buffer\_data},
+157         3 *  \textcolor{keyword}{sizeof}(GLushort) * this->\hyperlink{classGameAsset_aae4d864335c2eca685cc86602881cd18}{num\_triangles}
+158     );
+159 
+160     \hyperlink{classGameAsset_aba95de2870f78ac21568bbf9dd7e2b40}{vertex\_shader} = \hyperlink{classGameAsset_ac728e885b52c93c3e4976a339de54545}{make\_shader}(
+161         GL\_VERTEX\_SHADER,
+162         this->v\_shader.c\_str()
+163     );
+164     \textcolor{keywordflow}{if} (\hyperlink{classGameAsset_aba95de2870f78ac21568bbf9dd7e2b40}{vertex\_shader} == 0)
+165         \textcolor{keywordflow}{return} 0;
+166 
+167     \hyperlink{classGameAsset_ab62d9e2547537bd89eeae057a402a895}{fragment\_shader} = \hyperlink{classGameAsset_ac728e885b52c93c3e4976a339de54545}{make\_shader}(
+168         GL\_FRAGMENT\_SHADER,
+169         this->f\_shader.c\_str()
+170     );
+171     \textcolor{keywordflow}{if} (\hyperlink{classGameAsset_ab62d9e2547537bd89eeae057a402a895}{fragment\_shader} == 0)
+172         \textcolor{keywordflow}{return} 0;
+173     
+174     \hyperlink{classGameAsset_a239f03ead1a34924e76d6f875216404b}{program} = \hyperlink{classGameAsset_a9d9574a21cf6b52f7a825879ca50b19d}{make\_program}(\hyperlink{classGameAsset_aba95de2870f78ac21568bbf9dd7e2b40}{vertex\_shader}, 
+      \hyperlink{classGameAsset_ab62d9e2547537bd89eeae057a402a895}{fragment\_shader});
+175     \textcolor{keywordflow}{if} (\hyperlink{classGameAsset_a239f03ead1a34924e76d6f875216404b}{program} == 0)
+176         \textcolor{keywordflow}{return} 0;
+177 
+178     \hyperlink{classGameAsset_ad8c8198dcc470301e8f5eae8dc8506bb}{position\_attrib} = glGetAttribLocation(\hyperlink{classGameAsset_a239f03ead1a34924e76d6f875216404b}{program}, \textcolor{stringliteral}{"position"});
+179     \hyperlink{classGameAsset_a21126e946d621a0e03d61738404b34d2}{tx\_uniform} = glGetUniformLocation(\hyperlink{classGameAsset_a239f03ead1a34924e76d6f875216404b}{program}, \textcolor{stringliteral}{"tx"});
+180 
+181     \textcolor{keywordflow}{return} 1;
+182 \}
+\end{DoxyCode}
+\hypertarget{classGameAsset_ac728e885b52c93c3e4976a339de54545}{\index{Game\-Asset@{Game\-Asset}!make\-\_\-shader@{make\-\_\-shader}}
+\index{make\-\_\-shader@{make\-\_\-shader}!GameAsset@{Game\-Asset}}
+\subsubsection[{make\-\_\-shader}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint Game\-Asset\-::make\-\_\-shader (
+\begin{DoxyParamCaption}
+\item[{G\-Lenum}]{type, }
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGameAsset_ac728e885b52c93c3e4976a339de54545}
+
+
+Definition at line 101 of file Game\-Asset.\-cpp.
+
+
+\begin{DoxyCode}
+102 \{
+103     GLint \hyperlink{namespaceVectormath_1_1Aos_aa7db613f8732057fec0b26f26aefaff4}{length};
+104     GLchar *source = \hyperlink{classGameAsset_a08c617aafc70dcba441f53260f1bb09f}{shader\_file\_contents}(filename, &length);
+105     GLuint shader;
+106     GLint shader\_ok;
+107 
+108     \textcolor{keywordflow}{if} (!source)
+109         \textcolor{keywordflow}{return} 0;
+110 
+111     shader = glCreateShader(type);
+112     glShaderSource(shader, 1, (\textcolor{keyword}{const} GLchar**)&source, &length);
+113     \textcolor{keyword}{delete}(source);
+114     glCompileShader(shader);
+115 
+116     glGetShaderiv(shader, GL\_COMPILE\_STATUS, &shader\_ok);
+117     \textcolor{keywordflow}{if} (!shader\_ok) \{
+118         cerr << \textcolor{stringliteral}{"Failed to compile "} << filename << \textcolor{stringliteral}{" with error code "} << shader\_ok << endl;
+119         glDeleteShader(shader);
+120         \textcolor{keywordflow}{return} 0;
+121     \}
+122     \textcolor{keywordflow}{return} shader;
+123 \}
+\end{DoxyCode}
+\hypertarget{classGameAsset_a08c617aafc70dcba441f53260f1bb09f}{\index{Game\-Asset@{Game\-Asset}!shader\-\_\-file\-\_\-contents@{shader\-\_\-file\-\_\-contents}}
+\index{shader\-\_\-file\-\_\-contents@{shader\-\_\-file\-\_\-contents}!GameAsset@{Game\-Asset}}
+\subsubsection[{shader\-\_\-file\-\_\-contents}]{\setlength{\rightskip}{0pt plus 5cm}G\-Lchar $\ast$ Game\-Asset\-::shader\-\_\-file\-\_\-contents (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{filename, }
+\item[{G\-Lint $\ast$}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGameAsset_a08c617aafc70dcba441f53260f1bb09f}
+
+
+Definition at line 69 of file Game\-Asset.\-cpp.
+
+
+\begin{DoxyCode}
+70 \{
+71   ifstream input\_file;
+72   input\_file.open(filename.c\_str(), ios::in);
+73 
+74   input\_file.seekg(0, ios::end);  \textcolor{comment}{// go to the end of the file}
+75   *\hyperlink{namespaceVectormath_1_1Aos_aa7db613f8732057fec0b26f26aefaff4}{length} = input\_file.tellg();  \textcolor{comment}{// get length of the file}
+76   input\_file.seekg(0, ios::beg);  \textcolor{comment}{// go to beginning of the file}
+77 
+78   GLchar * buffer = \textcolor{keyword}{new} GLchar[(*length)+1];
+79   input\_file.read(buffer, *\hyperlink{namespaceVectormath_1_1Aos_aa7db613f8732057fec0b26f26aefaff4}{length});
+80   buffer[(*length)+1]=\textcolor{charliteral}{'\(\backslash\)0'};  \textcolor{comment}{// Ensure null terminated}
+81 
+82   input\_file.close();
+83   \textcolor{keywordflow}{return} buffer;
+84 \}
+\end{DoxyCode}
+\hypertarget{classGameAsset_a42688ec8f02e201eaaa01e74a112083f}{\index{Game\-Asset@{Game\-Asset}!update@{update}}
+\index{update@{update}!GameAsset@{Game\-Asset}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Game\-Asset\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classGameAsset_a42688ec8f02e201eaaa01e74a112083f}
+
+
+Implemented in \hyperlink{classPlayer_a82c3476f3e65a4e2ac6bcd040771bdd4}{Player}, \hyperlink{classEnemy_ad55ee71b5a8c23fbd00b3c368b90cc64}{Enemy}, \hyperlink{classHeartAsset_aa4fb245ae438223980f781cb070e0050}{Heart\-Asset}, \hyperlink{classStarAsset_a21f6e7f632408f34209db35d41f41877}{Star\-Asset}, \hyperlink{classBullet_a32f4a0611fe2dd245fee955d14ca1f68}{Bullet}, and \hyperlink{classCubeAsset_a45f15f556999ddb0789eaf01fb0df45d}{Cube\-Asset}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{\index{Game\-Asset@{Game\-Asset}!bbox@{bbox}}
+\index{bbox@{bbox}!GameAsset@{Game\-Asset}}
+\subsubsection[{bbox}]{\setlength{\rightskip}{0pt plus 5cm}shared\-\_\-ptr$<${\bf Bounding\-Box}$>$ Game\-Asset\-::bbox}}\label{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}
+
+
+Definition at line 37 of file Game\-Asset.\-h.
+
+\hypertarget{classGameAsset_a5e005ff1d4280e73f67446353e78fe43}{\index{Game\-Asset@{Game\-Asset}!element\-\_\-buffer@{element\-\_\-buffer}}
+\index{element\-\_\-buffer@{element\-\_\-buffer}!GameAsset@{Game\-Asset}}
+\subsubsection[{element\-\_\-buffer}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint Game\-Asset\-::element\-\_\-buffer\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGameAsset_a5e005ff1d4280e73f67446353e78fe43}
+
+
+Definition at line 51 of file Game\-Asset.\-h.
+
+\hypertarget{classGameAsset_ab62d9e2547537bd89eeae057a402a895}{\index{Game\-Asset@{Game\-Asset}!fragment\-\_\-shader@{fragment\-\_\-shader}}
+\index{fragment\-\_\-shader@{fragment\-\_\-shader}!GameAsset@{Game\-Asset}}
+\subsubsection[{fragment\-\_\-shader}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint Game\-Asset\-::fragment\-\_\-shader\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGameAsset_ab62d9e2547537bd89eeae057a402a895}
+
+
+Definition at line 52 of file Game\-Asset.\-h.
+
+\hypertarget{classGameAsset_ab859393c9158c8bda39cd100475fee25}{\index{Game\-Asset@{Game\-Asset}!g\-\_\-element\-\_\-buffer\-\_\-data@{g\-\_\-element\-\_\-buffer\-\_\-data}}
+\index{g\-\_\-element\-\_\-buffer\-\_\-data@{g\-\_\-element\-\_\-buffer\-\_\-data}!GameAsset@{Game\-Asset}}
+\subsubsection[{g\-\_\-element\-\_\-buffer\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}G\-Lushort$\ast$ Game\-Asset\-::g\-\_\-element\-\_\-buffer\-\_\-data\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGameAsset_ab859393c9158c8bda39cd100475fee25}
+
+
+Definition at line 57 of file Game\-Asset.\-h.
+
+\hypertarget{classGameAsset_ae1d682ecf84d9cd3f91a8c870acf2777}{\index{Game\-Asset@{Game\-Asset}!g\-\_\-vertex\-\_\-buffer\-\_\-data@{g\-\_\-vertex\-\_\-buffer\-\_\-data}}
+\index{g\-\_\-vertex\-\_\-buffer\-\_\-data@{g\-\_\-vertex\-\_\-buffer\-\_\-data}!GameAsset@{Game\-Asset}}
+\subsubsection[{g\-\_\-vertex\-\_\-buffer\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}G\-Lfloat$\ast$ Game\-Asset\-::g\-\_\-vertex\-\_\-buffer\-\_\-data\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGameAsset_ae1d682ecf84d9cd3f91a8c870acf2777}
+
+
+Definition at line 56 of file Game\-Asset.\-h.
+
+\hypertarget{classGameAsset_aebf93ae52dc7fabbb6ec7edaadf915d0}{\index{Game\-Asset@{Game\-Asset}!is\-Alive@{is\-Alive}}
+\index{is\-Alive@{is\-Alive}!GameAsset@{Game\-Asset}}
+\subsubsection[{is\-Alive}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\-Asset\-::is\-Alive = true}}\label{classGameAsset_aebf93ae52dc7fabbb6ec7edaadf915d0}
+
+
+Definition at line 40 of file Game\-Asset.\-h.
+
+\hypertarget{classGameAsset_aae4d864335c2eca685cc86602881cd18}{\index{Game\-Asset@{Game\-Asset}!num\-\_\-triangles@{num\-\_\-triangles}}
+\index{num\-\_\-triangles@{num\-\_\-triangles}!GameAsset@{Game\-Asset}}
+\subsubsection[{num\-\_\-triangles}]{\setlength{\rightskip}{0pt plus 5cm}int Game\-Asset\-::num\-\_\-triangles\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGameAsset_aae4d864335c2eca685cc86602881cd18}
+
+
+Definition at line 61 of file Game\-Asset.\-h.
+
+\hypertarget{classGameAsset_a3e8d7dc58d3d4efafbbce1536b78dbc7}{\index{Game\-Asset@{Game\-Asset}!num\-\_\-vertices@{num\-\_\-vertices}}
+\index{num\-\_\-vertices@{num\-\_\-vertices}!GameAsset@{Game\-Asset}}
+\subsubsection[{num\-\_\-vertices}]{\setlength{\rightskip}{0pt plus 5cm}int Game\-Asset\-::num\-\_\-vertices\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGameAsset_a3e8d7dc58d3d4efafbbce1536b78dbc7}
+
+
+Definition at line 60 of file Game\-Asset.\-h.
+
+\hypertarget{classGameAsset_ad8c8198dcc470301e8f5eae8dc8506bb}{\index{Game\-Asset@{Game\-Asset}!position\-\_\-attrib@{position\-\_\-attrib}}
+\index{position\-\_\-attrib@{position\-\_\-attrib}!GameAsset@{Game\-Asset}}
+\subsubsection[{position\-\_\-attrib}]{\setlength{\rightskip}{0pt plus 5cm}G\-Lint Game\-Asset\-::position\-\_\-attrib\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGameAsset_ad8c8198dcc470301e8f5eae8dc8506bb}
+
+
+Definition at line 53 of file Game\-Asset.\-h.
+
+\hypertarget{classGameAsset_a239f03ead1a34924e76d6f875216404b}{\index{Game\-Asset@{Game\-Asset}!program@{program}}
+\index{program@{program}!GameAsset@{Game\-Asset}}
+\subsubsection[{program}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint Game\-Asset\-::program\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGameAsset_a239f03ead1a34924e76d6f875216404b}
+
+
+Definition at line 52 of file Game\-Asset.\-h.
+
+\hypertarget{classGameAsset_a21126e946d621a0e03d61738404b34d2}{\index{Game\-Asset@{Game\-Asset}!tx\-\_\-uniform@{tx\-\_\-uniform}}
+\index{tx\-\_\-uniform@{tx\-\_\-uniform}!GameAsset@{Game\-Asset}}
+\subsubsection[{tx\-\_\-uniform}]{\setlength{\rightskip}{0pt plus 5cm}G\-Lint Game\-Asset\-::tx\-\_\-uniform\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGameAsset_a21126e946d621a0e03d61738404b34d2}
+
+
+Definition at line 54 of file Game\-Asset.\-h.
+
+\hypertarget{classGameAsset_a1a1d227eba2765b025f9f453700c2359}{\index{Game\-Asset@{Game\-Asset}!vertex\-\_\-buffer@{vertex\-\_\-buffer}}
+\index{vertex\-\_\-buffer@{vertex\-\_\-buffer}!GameAsset@{Game\-Asset}}
+\subsubsection[{vertex\-\_\-buffer}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint Game\-Asset\-::vertex\-\_\-buffer\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGameAsset_a1a1d227eba2765b025f9f453700c2359}
+
+
+Definition at line 51 of file Game\-Asset.\-h.
+
+\hypertarget{classGameAsset_aba95de2870f78ac21568bbf9dd7e2b40}{\index{Game\-Asset@{Game\-Asset}!vertex\-\_\-shader@{vertex\-\_\-shader}}
+\index{vertex\-\_\-shader@{vertex\-\_\-shader}!GameAsset@{Game\-Asset}}
+\subsubsection[{vertex\-\_\-shader}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint Game\-Asset\-::vertex\-\_\-shader\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGameAsset_aba95de2870f78ac21568bbf9dd7e2b40}
+
+
+Definition at line 52 of file Game\-Asset.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/sam/\-Cube\-Racer/src/\hyperlink{GameAsset_8h}{Game\-Asset.\-h}\item 
+/home/sam/\-Cube\-Racer/src/\hyperlink{GameAsset_8cpp}{Game\-Asset.\-cpp}\end{DoxyCompactItemize}

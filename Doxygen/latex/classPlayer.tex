@@ -1,0 +1,410 @@
+\hypertarget{classPlayer}{\section{Player Class Reference}
+\label{classPlayer}\index{Player@{Player}}
+}
+
+
+{\ttfamily \#include $<$Player.\-h$>$}
+
+Inheritance diagram for Player\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPlayer}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classPlayer_a861f91cf755f14d4d7001edbc1c79980}{vertices} \{ \hyperlink{classPlayer_a861f91cf755f14d4d7001edbc1c79980aa7d37123327782f87ebdfc1603947128}{F0}, 
+\hyperlink{classPlayer_a861f91cf755f14d4d7001edbc1c79980a1fc1b1ec99eda01d44d9db82506f8d38}{F1}, 
+\hyperlink{classPlayer_a861f91cf755f14d4d7001edbc1c79980a4cf8b3b1f9c2d77553f516a958f74298}{F2}, 
+\hyperlink{classPlayer_a861f91cf755f14d4d7001edbc1c79980a369182dcb6e960c07f8d437ef59364df}{F3}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPlayer_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player} ()
+\item 
+\hyperlink{classPlayer_a741be2b6a788863970c210081efb2102}{Player} (float x, float y, float z)
+\item 
+\hyperlink{classPlayer_a749d2c00e1fe0f5c2746f7505a58c062}{$\sim$\-Player} ()
+\item 
+virtual void \hyperlink{classPlayer_aeeb28c46b0ea75a0a85cbc4c71fccde9}{inc\-Score} (double points)
+\item 
+virtual void \hyperlink{classPlayer_a6ec12ce91eed06eaf794c663824a752e}{move} (double moving)
+\item 
+virtual double \hyperlink{classPlayer_aaaa378f4c5cdf0b85dd219cb1fcd4204}{get\-Ammo} ()
+\item 
+virtual double \hyperlink{classPlayer_ac6605cc08fc355909e44048fb52d7313}{get\-Ammo\-Rate} ()
+\item 
+virtual void \hyperlink{classPlayer_a6cbd4745a789166da1eb1b7f726fd2ef}{change\-Ammo} (int ammo\-Val)
+\item 
+virtual void \hyperlink{classPlayer_a640b10aecddb6182bffc7de94b776653}{player\-Invulnerable} ()
+\item 
+virtual void \hyperlink{classPlayer_af43a2209a8501246dbf2829fac976680}{player\-Vulnerable} ()
+\item 
+virtual void \hyperlink{classPlayer_a82c3476f3e65a4e2ac6bcd040771bdd4}{update} ()
+\item 
+virtual void \hyperlink{classPlayer_ac18c9d30d2997765321c62030a4b20b7}{draw} ()
+\item 
+virtual void \hyperlink{classPlayer_a883c81df5be3b931ecfa6c8de08acfbd}{clean} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classPlayer_a689b73da19dd6d6932ffeb5d766709e6}{Ammo}
+\item 
+double \hyperlink{classPlayer_a38b0bf5bc8ff6e571922d4b51d2aa291}{ammo\-Respawn}
+\item 
+bool \hyperlink{classPlayer_a16e6b8b49d2f4433e07db406cea1fea5}{invulnerable}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file Player.\-h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classPlayer_a861f91cf755f14d4d7001edbc1c79980}{\index{Player@{Player}!vertices@{vertices}}
+\index{vertices@{vertices}!Player@{Player}}
+\subsubsection[{vertices}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Player\-::vertices}}}\label{classPlayer_a861f91cf755f14d4d7001edbc1c79980}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{F0@{F0}!Player@{Player}}\index{Player@{Player}!F0@{F0}}\item[{\em 
+\hypertarget{classPlayer_a861f91cf755f14d4d7001edbc1c79980aa7d37123327782f87ebdfc1603947128}{F0}\label{classPlayer_a861f91cf755f14d4d7001edbc1c79980aa7d37123327782f87ebdfc1603947128}
+}]\index{F1@{F1}!Player@{Player}}\index{Player@{Player}!F1@{F1}}\item[{\em 
+\hypertarget{classPlayer_a861f91cf755f14d4d7001edbc1c79980a1fc1b1ec99eda01d44d9db82506f8d38}{F1}\label{classPlayer_a861f91cf755f14d4d7001edbc1c79980a1fc1b1ec99eda01d44d9db82506f8d38}
+}]\index{F2@{F2}!Player@{Player}}\index{Player@{Player}!F2@{F2}}\item[{\em 
+\hypertarget{classPlayer_a861f91cf755f14d4d7001edbc1c79980a4cf8b3b1f9c2d77553f516a958f74298}{F2}\label{classPlayer_a861f91cf755f14d4d7001edbc1c79980a4cf8b3b1f9c2d77553f516a958f74298}
+}]\index{F3@{F3}!Player@{Player}}\index{Player@{Player}!F3@{F3}}\item[{\em 
+\hypertarget{classPlayer_a861f91cf755f14d4d7001edbc1c79980a369182dcb6e960c07f8d437ef59364df}{F3}\label{classPlayer_a861f91cf755f14d4d7001edbc1c79980a369182dcb6e960c07f8d437ef59364df}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 37 of file Player.\-h.
+
+
+\begin{DoxyCode}
+37                 \{
+38     \hyperlink{classPlayer_a861f91cf755f14d4d7001edbc1c79980aa7d37123327782f87ebdfc1603947128}{F0}, \hyperlink{classPlayer_a861f91cf755f14d4d7001edbc1c79980a1fc1b1ec99eda01d44d9db82506f8d38}{F1}, \hyperlink{classPlayer_a861f91cf755f14d4d7001edbc1c79980a4cf8b3b1f9c2d77553f516a958f74298}{F2}, \hyperlink{classPlayer_a861f91cf755f14d4d7001edbc1c79980a369182dcb6e960c07f8d437ef59364df}{F3}, 
+39   \};
+\end{DoxyCode}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPlayer_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection[{Player}]{\setlength{\rightskip}{0pt plus 5cm}Player\-::\-Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPlayer_affe0cc3cb714f6deb4e62f0c0d3f1fd8}
+
+
+Definition at line 3 of file Player.\-cpp.
+
+
+\begin{DoxyCode}
+4   : \hyperlink{classGameAsset_a9c96b0bafa2b6973a2e8c09bf51c52ec}{GameAsset}(
+5           \textcolor{keywordtype}{string}(\textcolor{stringliteral}{"CubeRacer/shaders/hello-gl.v.glsl"})
+6           , \textcolor{keywordtype}{string}(\textcolor{stringliteral}{"CubeRacer/shaders/player-gl.f.glsl"})
+7           )
+8 \{
+9   \hyperlink{classPlayer_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player}(0, 0, 0);
+10 \}
+\end{DoxyCode}
+\hypertarget{classPlayer_a741be2b6a788863970c210081efb2102}{\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection[{Player}]{\setlength{\rightskip}{0pt plus 5cm}Player\-::\-Player (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}}\label{classPlayer_a741be2b6a788863970c210081efb2102}
+
+
+Definition at line 12 of file Player.\-cpp.
+
+
+\begin{DoxyCode}
+12                                        : \hyperlink{classPlayer_a689b73da19dd6d6932ffeb5d766709e6}{Ammo}(3) , \hyperlink{classPlayer_a38b0bf5bc8ff6e571922d4b51d2aa291}{ammoRespawn}(2.0) , score(0) , 
+      \hyperlink{classPlayer_a16e6b8b49d2f4433e07db406cea1fea5}{invulnerable}(\textcolor{keyword}{false}) \{
+13 
+14   \textcolor{comment}{// A default "unit" cube}
+15   \hyperlink{classGameAsset_a3e8d7dc58d3d4efafbbce1536b78dbc7}{num\_vertices} = 4;
+16   \hyperlink{classGameAsset_aae4d864335c2eca685cc86602881cd18}{num\_triangles} = 4;
+17   \hyperlink{classGameAsset_ae1d682ecf84d9cd3f91a8c870acf2777}{g\_vertex\_buffer\_data} = \textcolor{keyword}{new} GLfloat[\hyperlink{classGameAsset_a3e8d7dc58d3d4efafbbce1536b78dbc7}{num\_vertices} * 3]\{
+18 
+19   \textcolor{comment}{//     x      y     z}
+20     -0.5, -0.5, -0.5, \textcolor{comment}{//F - 0  //base of the triangle player}
+21      0.5, -0.5, -0.5, \textcolor{comment}{//F - 1}
+22      0.0, -0.5,  0.5, \textcolor{comment}{//F - 2}
+23      0.0,  0.0,  0.0, \textcolor{comment}{//F - 3  //top point og the triangle player}
+24     
+25 \}; \textcolor{comment}{// three points per vertex}
+26 
+27   \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\_element\_buffer\_data} = \textcolor{keyword}{new} GLushort[\hyperlink{classGameAsset_aae4d864335c2eca685cc86602881cd18}{num\_triangles} * 3]\{
+28 
+29     \hyperlink{classPlayer_a861f91cf755f14d4d7001edbc1c79980aa7d37123327782f87ebdfc1603947128}{F0}, \hyperlink{classPlayer_a861f91cf755f14d4d7001edbc1c79980a1fc1b1ec99eda01d44d9db82506f8d38}{F1}, \hyperlink{classPlayer_a861f91cf755f14d4d7001edbc1c79980a4cf8b3b1f9c2d77553f516a958f74298}{F2},   \textcolor{comment}{//Base}
+30     \hyperlink{classPlayer_a861f91cf755f14d4d7001edbc1c79980aa7d37123327782f87ebdfc1603947128}{F0}, \hyperlink{classPlayer_a861f91cf755f14d4d7001edbc1c79980a1fc1b1ec99eda01d44d9db82506f8d38}{F1}, \hyperlink{classPlayer_a861f91cf755f14d4d7001edbc1c79980a369182dcb6e960c07f8d437ef59364df}{F3},   \textcolor{comment}{//Back}
+31     \hyperlink{classPlayer_a861f91cf755f14d4d7001edbc1c79980a1fc1b1ec99eda01d44d9db82506f8d38}{F1}, \hyperlink{classPlayer_a861f91cf755f14d4d7001edbc1c79980a4cf8b3b1f9c2d77553f516a958f74298}{F2}, \hyperlink{classPlayer_a861f91cf755f14d4d7001edbc1c79980a369182dcb6e960c07f8d437ef59364df}{F3},   \textcolor{comment}{//RightSide}
+32     \hyperlink{classPlayer_a861f91cf755f14d4d7001edbc1c79980a4cf8b3b1f9c2d77553f516a958f74298}{F2}, \hyperlink{classPlayer_a861f91cf755f14d4d7001edbc1c79980aa7d37123327782f87ebdfc1603947128}{F0}, F0    \textcolor{comment}{//LeftSide}
+33     
+34 \}; \textcolor{comment}{// three vertices per triangle}
+35 
+36   \hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}.reset();
+37   \hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox} = shared\_ptr<BoundingBox>(\textcolor{keyword}{new} \hyperlink{classBoundingBox}{BoundingBox}(\hyperlink{classVectormath_1_1Aos_1_1Point3}{Point3}(x, y, z), 1.0, 1.0, 1.0));
+38 
+39   \hyperlink{classGameAsset_aa26d85233ece476d599adf90074e9568}{make\_resources}();
+40 \}
+\end{DoxyCode}
+\hypertarget{classPlayer_a749d2c00e1fe0f5c2746f7505a58c062}{\index{Player@{Player}!$\sim$\-Player@{$\sim$\-Player}}
+\index{$\sim$\-Player@{$\sim$\-Player}!Player@{Player}}
+\subsubsection[{$\sim$\-Player}]{\setlength{\rightskip}{0pt plus 5cm}Player\-::$\sim$\-Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPlayer_a749d2c00e1fe0f5c2746f7505a58c062}
+
+
+Definition at line 42 of file Player.\-cpp.
+
+
+\begin{DoxyCode}
+42                 \{
+43   \textcolor{comment}{// TODO: do something nice and fun here.}
+44 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPlayer_a6cbd4745a789166da1eb1b7f726fd2ef}{\index{Player@{Player}!change\-Ammo@{change\-Ammo}}
+\index{change\-Ammo@{change\-Ammo}!Player@{Player}}
+\subsubsection[{change\-Ammo}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::change\-Ammo (
+\begin{DoxyParamCaption}
+\item[{int}]{ammo\-Val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classPlayer_a6cbd4745a789166da1eb1b7f726fd2ef}
+
+
+Definition at line 69 of file Player.\-cpp.
+
+
+\begin{DoxyCode}
+69                                   \{
+70   \hyperlink{classPlayer_a689b73da19dd6d6932ffeb5d766709e6}{Ammo} = \hyperlink{classPlayer_a689b73da19dd6d6932ffeb5d766709e6}{Ammo} + ammoVal;
+71 \}
+\end{DoxyCode}
+\hypertarget{classPlayer_a883c81df5be3b931ecfa6c8de08acfbd}{\index{Player@{Player}!clean@{clean}}
+\index{clean@{clean}!Player@{Player}}
+\subsubsection[{clean}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::clean (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classPlayer_a883c81df5be3b931ecfa6c8de08acfbd}
+
+
+Implements \hyperlink{classGameAsset_abbea962eaa63a813949b834778b7483e}{Game\-Asset}.
+
+
+
+Definition at line 95 of file Player.\-cpp.
+
+
+\begin{DoxyCode}
+95 \{ \}
+\end{DoxyCode}
+\hypertarget{classPlayer_ac18c9d30d2997765321c62030a4b20b7}{\index{Player@{Player}!draw@{draw}}
+\index{draw@{draw}!Player@{Player}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classPlayer_ac18c9d30d2997765321c62030a4b20b7}
+
+
+Reimplemented from \hyperlink{classGameAsset_a2d7e18a8f1dd8ba89ed1bd14f2affeab}{Game\-Asset}.
+
+
+
+Definition at line 91 of file Player.\-cpp.
+
+
+\begin{DoxyCode}
+91                   \{
+92   \hyperlink{classGameAsset_a2d7e18a8f1dd8ba89ed1bd14f2affeab}{GameAsset::draw}();
+93 \}
+\end{DoxyCode}
+\hypertarget{classPlayer_aaaa378f4c5cdf0b85dd219cb1fcd4204}{\index{Player@{Player}!get\-Ammo@{get\-Ammo}}
+\index{get\-Ammo@{get\-Ammo}!Player@{Player}}
+\subsubsection[{get\-Ammo}]{\setlength{\rightskip}{0pt plus 5cm}double Player\-::get\-Ammo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classPlayer_aaaa378f4c5cdf0b85dd219cb1fcd4204}
+
+
+Definition at line 61 of file Player.\-cpp.
+
+
+\begin{DoxyCode}
+61                       \{
+62   \textcolor{keywordflow}{return} \hyperlink{classPlayer_a689b73da19dd6d6932ffeb5d766709e6}{Ammo};
+63 \}
+\end{DoxyCode}
+\hypertarget{classPlayer_ac6605cc08fc355909e44048fb52d7313}{\index{Player@{Player}!get\-Ammo\-Rate@{get\-Ammo\-Rate}}
+\index{get\-Ammo\-Rate@{get\-Ammo\-Rate}!Player@{Player}}
+\subsubsection[{get\-Ammo\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}double Player\-::get\-Ammo\-Rate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classPlayer_ac6605cc08fc355909e44048fb52d7313}
+
+
+Definition at line 65 of file Player.\-cpp.
+
+
+\begin{DoxyCode}
+65                           \{
+66   \textcolor{keywordflow}{return} \hyperlink{classPlayer_a38b0bf5bc8ff6e571922d4b51d2aa291}{ammoRespawn};
+67 \}
+\end{DoxyCode}
+\hypertarget{classPlayer_aeeb28c46b0ea75a0a85cbc4c71fccde9}{\index{Player@{Player}!inc\-Score@{inc\-Score}}
+\index{inc\-Score@{inc\-Score}!Player@{Player}}
+\subsubsection[{inc\-Score}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::inc\-Score (
+\begin{DoxyParamCaption}
+\item[{double}]{points}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classPlayer_aeeb28c46b0ea75a0a85cbc4c71fccde9}
+
+
+Definition at line 87 of file Player.\-cpp.
+
+
+\begin{DoxyCode}
+87                                    \{
+88   score = score + points;
+89 \}
+\end{DoxyCode}
+\hypertarget{classPlayer_a6ec12ce91eed06eaf794c663824a752e}{\index{Player@{Player}!move@{move}}
+\index{move@{move}!Player@{Player}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::move (
+\begin{DoxyParamCaption}
+\item[{double}]{moving}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classPlayer_a6ec12ce91eed06eaf794c663824a752e}
+
+
+Definition at line 81 of file Player.\-cpp.
+
+
+\begin{DoxyCode}
+81                               \{
+82   shared\_ptr<Point3> \hyperlink{classPlayer_a6ec12ce91eed06eaf794c663824a752e}{move} = this->\hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}->getCentre();
+83   *move = \hyperlink{classVectormath_1_1Aos_1_1Point3}{Point3}(move->getX() + moving, 0.0, 0.0);
+84   move.reset();
+85 \}
+\end{DoxyCode}
+\hypertarget{classPlayer_a640b10aecddb6182bffc7de94b776653}{\index{Player@{Player}!player\-Invulnerable@{player\-Invulnerable}}
+\index{player\-Invulnerable@{player\-Invulnerable}!Player@{Player}}
+\subsubsection[{player\-Invulnerable}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::player\-Invulnerable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classPlayer_a640b10aecddb6182bffc7de94b776653}
+
+
+Definition at line 73 of file Player.\-cpp.
+
+
+\begin{DoxyCode}
+73                                \{
+74   \hyperlink{classPlayer_a16e6b8b49d2f4433e07db406cea1fea5}{invulnerable} = \textcolor{keyword}{true};
+75 \}
+\end{DoxyCode}
+\hypertarget{classPlayer_af43a2209a8501246dbf2829fac976680}{\index{Player@{Player}!player\-Vulnerable@{player\-Vulnerable}}
+\index{player\-Vulnerable@{player\-Vulnerable}!Player@{Player}}
+\subsubsection[{player\-Vulnerable}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::player\-Vulnerable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classPlayer_af43a2209a8501246dbf2829fac976680}
+
+
+Definition at line 77 of file Player.\-cpp.
+
+
+\begin{DoxyCode}
+77                              \{
+78   \hyperlink{classPlayer_a16e6b8b49d2f4433e07db406cea1fea5}{invulnerable} = \textcolor{keyword}{false};
+79 \}
+\end{DoxyCode}
+\hypertarget{classPlayer_a82c3476f3e65a4e2ac6bcd040771bdd4}{\index{Player@{Player}!update@{update}}
+\index{update@{update}!Player@{Player}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classPlayer_a82c3476f3e65a4e2ac6bcd040771bdd4}
+
+
+Implements \hyperlink{classGameAsset_a42688ec8f02e201eaaa01e74a112083f}{Game\-Asset}.
+
+
+
+Definition at line 46 of file Player.\-cpp.
+
+
+\begin{DoxyCode}
+46                     \{
+47   \textcolor{keywordflow}{if} (\hyperlink{classGameAsset_aebf93ae52dc7fabbb6ec7edaadf915d0}{isAlive}) 
+48   \{
+49     score += 0.1;
+50     \textcolor{comment}{//cout << score << endl;}
+51   \}
+52   \textcolor{keywordflow}{else}
+53   \{ 
+54     cout << \textcolor{stringliteral}{"You have died."} << endl;
+55     cout << \textcolor{stringliteral}{"Your Score: "} << score << endl;
+56     this->\hyperlink{classPlayer_a883c81df5be3b931ecfa6c8de08acfbd}{clean}();
+57     SDL\_Quit();
+58   \}
+59 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classPlayer_a689b73da19dd6d6932ffeb5d766709e6}{\index{Player@{Player}!Ammo@{Ammo}}
+\index{Ammo@{Ammo}!Player@{Player}}
+\subsubsection[{Ammo}]{\setlength{\rightskip}{0pt plus 5cm}int Player\-::\-Ammo}}\label{classPlayer_a689b73da19dd6d6932ffeb5d766709e6}
+
+
+Definition at line 33 of file Player.\-h.
+
+\hypertarget{classPlayer_a38b0bf5bc8ff6e571922d4b51d2aa291}{\index{Player@{Player}!ammo\-Respawn@{ammo\-Respawn}}
+\index{ammo\-Respawn@{ammo\-Respawn}!Player@{Player}}
+\subsubsection[{ammo\-Respawn}]{\setlength{\rightskip}{0pt plus 5cm}double Player\-::ammo\-Respawn}}\label{classPlayer_a38b0bf5bc8ff6e571922d4b51d2aa291}
+
+
+Definition at line 34 of file Player.\-h.
+
+\hypertarget{classPlayer_a16e6b8b49d2f4433e07db406cea1fea5}{\index{Player@{Player}!invulnerable@{invulnerable}}
+\index{invulnerable@{invulnerable}!Player@{Player}}
+\subsubsection[{invulnerable}]{\setlength{\rightskip}{0pt plus 5cm}bool Player\-::invulnerable}}\label{classPlayer_a16e6b8b49d2f4433e07db406cea1fea5}
+
+
+Definition at line 35 of file Player.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/sam/\-Cube\-Racer/src/\hyperlink{Player_8h}{Player.\-h}\item 
+/home/sam/\-Cube\-Racer/src/\hyperlink{Player_8cpp}{Player.\-cpp}\end{DoxyCompactItemize}

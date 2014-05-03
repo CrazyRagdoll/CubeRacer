@@ -1,0 +1,231 @@
+\hypertarget{classBullet}{\section{Bullet Class Reference}
+\label{classBullet}\index{Bullet@{Bullet}}
+}
+
+
+{\ttfamily \#include $<$Bullet.\-h$>$}
+
+Inheritance diagram for Bullet\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBullet}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBullet_acd7befc0bc18907cc1d871d37bbdddeb}{Bullet} ()
+\item 
+\hyperlink{classBullet_aead3bc218cbfec02093a0546bef197d6}{Bullet} (float x, float y, float z)
+\item 
+\hyperlink{classBullet_aaeb5cb41d7db89f49007b08b41f1bfcf}{$\sim$\-Bullet} ()
+\item 
+virtual void \hyperlink{classBullet_a32f4a0611fe2dd245fee955d14ca1f68}{update} ()
+\item 
+virtual void \hyperlink{classBullet_a3912974232447f64002fd657340a7b3b}{draw} ()
+\item 
+virtual void \hyperlink{classBullet_a1a4ffaed3fe46e010bb981ebbbd38ecd}{clean} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 6 of file Bullet.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBullet_acd7befc0bc18907cc1d871d37bbdddeb}{\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\subsubsection[{Bullet}]{\setlength{\rightskip}{0pt plus 5cm}Bullet\-::\-Bullet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBullet_acd7befc0bc18907cc1d871d37bbdddeb}
+
+
+Definition at line 3 of file Bullet.\-cpp.
+
+
+\begin{DoxyCode}
+4   : \hyperlink{classGameAsset_a9c96b0bafa2b6973a2e8c09bf51c52ec}{GameAsset}(
+5           \textcolor{keywordtype}{string}(\textcolor{stringliteral}{"CubeRacer/shaders/hello-gl.v.glsl"})
+6           , \textcolor{keywordtype}{string}(\textcolor{stringliteral}{"CubeRacer/shaders/hello-gl.f.glsl"})
+7           )
+8 \{
+9   \hyperlink{classBullet_acd7befc0bc18907cc1d871d37bbdddeb}{Bullet}(0, 0, 0);
+10 \}
+\end{DoxyCode}
+\hypertarget{classBullet_aead3bc218cbfec02093a0546bef197d6}{\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\subsubsection[{Bullet}]{\setlength{\rightskip}{0pt plus 5cm}Bullet\-::\-Bullet (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}}\label{classBullet_aead3bc218cbfec02093a0546bef197d6}
+
+
+Definition at line 12 of file Bullet.\-cpp.
+
+
+\begin{DoxyCode}
+12                                         \{
+13 
+14   \textcolor{comment}{// A default "unit" triangular pyramid}
+15   \hyperlink{classGameAsset_a3e8d7dc58d3d4efafbbce1536b78dbc7}{num\_vertices} = 5;
+16   \hyperlink{classGameAsset_aae4d864335c2eca685cc86602881cd18}{num\_triangles} = 6;
+17   \hyperlink{classGameAsset_ae1d682ecf84d9cd3f91a8c870acf2777}{g\_vertex\_buffer\_data} = \textcolor{keyword}{new} GLfloat[\hyperlink{classGameAsset_a3e8d7dc58d3d4efafbbce1536b78dbc7}{num\_vertices} * 3]; \textcolor{comment}{// three points per
+       vertex}
+18   \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\_element\_buffer\_data} = \textcolor{keyword}{new} GLushort[\hyperlink{classGameAsset_aae4d864335c2eca685cc86602881cd18}{num\_triangles} * 3]; \textcolor{comment}{// three
+       vertices per triangle}
+19 
+20   \hyperlink{classGameAsset_ae1d682ecf84d9cd3f91a8c870acf2777}{g\_vertex\_buffer\_data}[0]  = -0.125; \textcolor{comment}{//Bottom Left Point 0}
+21   \hyperlink{classGameAsset_ae1d682ecf84d9cd3f91a8c870acf2777}{g\_vertex\_buffer\_data}[1]  = -0.125;
+22   \hyperlink{classGameAsset_ae1d682ecf84d9cd3f91a8c870acf2777}{g\_vertex\_buffer\_data}[2]  = -0.25;
+23 
+24   \hyperlink{classGameAsset_ae1d682ecf84d9cd3f91a8c870acf2777}{g\_vertex\_buffer\_data}[3]  =  0.125;  \textcolor{comment}{//Bottom Right Point 1}
+25   \hyperlink{classGameAsset_ae1d682ecf84d9cd3f91a8c870acf2777}{g\_vertex\_buffer\_data}[4]  = -0.125;
+26   \hyperlink{classGameAsset_ae1d682ecf84d9cd3f91a8c870acf2777}{g\_vertex\_buffer\_data}[5]  = -0.25;
+27 
+28   \hyperlink{classGameAsset_ae1d682ecf84d9cd3f91a8c870acf2777}{g\_vertex\_buffer\_data}[6]  = -0.125;  \textcolor{comment}{//Top Left Point 2}
+29   \hyperlink{classGameAsset_ae1d682ecf84d9cd3f91a8c870acf2777}{g\_vertex\_buffer\_data}[7]  =  0.125;
+30   \hyperlink{classGameAsset_ae1d682ecf84d9cd3f91a8c870acf2777}{g\_vertex\_buffer\_data}[8]  = -0.25;
+31 
+32   \hyperlink{classGameAsset_ae1d682ecf84d9cd3f91a8c870acf2777}{g\_vertex\_buffer\_data}[9]  =  0.125;  \textcolor{comment}{//Top Right Point 3}
+33   \hyperlink{classGameAsset_ae1d682ecf84d9cd3f91a8c870acf2777}{g\_vertex\_buffer\_data}[10] =  0.125;
+34   \hyperlink{classGameAsset_ae1d682ecf84d9cd3f91a8c870acf2777}{g\_vertex\_buffer\_data}[11] = -0.25;
+35  
+36   \hyperlink{classGameAsset_ae1d682ecf84d9cd3f91a8c870acf2777}{g\_vertex\_buffer\_data}[12] =  0.0;  \textcolor{comment}{//Front point 4}
+37   \hyperlink{classGameAsset_ae1d682ecf84d9cd3f91a8c870acf2777}{g\_vertex\_buffer\_data}[13] =  0.0;
+38   \hyperlink{classGameAsset_ae1d682ecf84d9cd3f91a8c870acf2777}{g\_vertex\_buffer\_data}[14] =  0.5;
+39 
+40   \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\_element\_buffer\_data}[0]  = 0;
+41   \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\_element\_buffer\_data}[1]  = 1;
+42   \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\_element\_buffer\_data}[2]  = 2;
+43 
+44   \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\_element\_buffer\_data}[3]  = 1;
+45   \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\_element\_buffer\_data}[4]  = 3;
+46   \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\_element\_buffer\_data}[5]  = 2;
+47 
+48   \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\_element\_buffer\_data}[6]  = 2;
+49   \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\_element\_buffer\_data}[7]  = 3;
+50   \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\_element\_buffer\_data}[8]  = 4;
+51 
+52   \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\_element\_buffer\_data}[9]  = 3;
+53   \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\_element\_buffer\_data}[10] = 1;
+54   \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\_element\_buffer\_data}[11] = 4;
+55 
+56   \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\_element\_buffer\_data}[12] = 1;
+57   \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\_element\_buffer\_data}[13] = 0;
+58   \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\_element\_buffer\_data}[14] = 4;
+59 
+60   \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\_element\_buffer\_data}[15] = 0;
+61   \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\_element\_buffer\_data}[16] = 2;
+62   \hyperlink{classGameAsset_ab859393c9158c8bda39cd100475fee25}{g\_element\_buffer\_data}[17] = 4;
+63 
+64   \hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}.reset();
+65   \hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox} = shared\_ptr<BoundingBox>(\textcolor{keyword}{new} \hyperlink{classBoundingBox}{BoundingBox}(\hyperlink{classVectormath_1_1Aos_1_1Point3}{Point3}(x, y, z), 0.5, 0.5, 0.5));
+66 
+67   \hyperlink{classGameAsset_aa26d85233ece476d599adf90074e9568}{make\_resources}();
+68 \}
+\end{DoxyCode}
+\hypertarget{classBullet_aaeb5cb41d7db89f49007b08b41f1bfcf}{\index{Bullet@{Bullet}!$\sim$\-Bullet@{$\sim$\-Bullet}}
+\index{$\sim$\-Bullet@{$\sim$\-Bullet}!Bullet@{Bullet}}
+\subsubsection[{$\sim$\-Bullet}]{\setlength{\rightskip}{0pt plus 5cm}Bullet\-::$\sim$\-Bullet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBullet_aaeb5cb41d7db89f49007b08b41f1bfcf}
+
+
+Definition at line 70 of file Bullet.\-cpp.
+
+
+\begin{DoxyCode}
+70                 \{
+71   \textcolor{comment}{// TODO: do something nice here.}
+72 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBullet_a1a4ffaed3fe46e010bb981ebbbd38ecd}{\index{Bullet@{Bullet}!clean@{clean}}
+\index{clean@{clean}!Bullet@{Bullet}}
+\subsubsection[{clean}]{\setlength{\rightskip}{0pt plus 5cm}void Bullet\-::clean (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classBullet_a1a4ffaed3fe46e010bb981ebbbd38ecd}
+
+
+Implements \hyperlink{classGameAsset_abbea962eaa63a813949b834778b7483e}{Game\-Asset}.
+
+
+
+Definition at line 89 of file Bullet.\-cpp.
+
+
+\begin{DoxyCode}
+89 \{ \}
+\end{DoxyCode}
+\hypertarget{classBullet_a3912974232447f64002fd657340a7b3b}{\index{Bullet@{Bullet}!draw@{draw}}
+\index{draw@{draw}!Bullet@{Bullet}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Bullet\-::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classBullet_a3912974232447f64002fd657340a7b3b}
+
+
+Reimplemented from \hyperlink{classGameAsset_a2d7e18a8f1dd8ba89ed1bd14f2affeab}{Game\-Asset}.
+
+
+
+Definition at line 84 of file Bullet.\-cpp.
+
+
+\begin{DoxyCode}
+84                   \{
+85 \textcolor{comment}{//  std::cout << "x: " << bbox->getCentre()->getX() << "\(\backslash\)ty: " << bbox->getCentre()->getY() << "\(\backslash\)tz:" <<
+       bbox->getCentre()->getZ() << std::endl;}
+86   \hyperlink{classGameAsset_a2d7e18a8f1dd8ba89ed1bd14f2affeab}{GameAsset::draw}();
+87 \}
+\end{DoxyCode}
+\hypertarget{classBullet_a32f4a0611fe2dd245fee955d14ca1f68}{\index{Bullet@{Bullet}!update@{update}}
+\index{update@{update}!Bullet@{Bullet}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Bullet\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classBullet_a32f4a0611fe2dd245fee955d14ca1f68}
+
+
+Implements \hyperlink{classGameAsset_a42688ec8f02e201eaaa01e74a112083f}{Game\-Asset}.
+
+
+
+Definition at line 74 of file Bullet.\-cpp.
+
+
+\begin{DoxyCode}
+74                     \{
+75 
+76   \textcolor{keywordflow}{if} (\hyperlink{classGameAsset_aebf93ae52dc7fabbb6ec7edaadf915d0}{isAlive}) \{
+77     shared\_ptr<Point3> p = shared\_ptr<Point3>(\textcolor{keyword}{new} \hyperlink{classVectormath_1_1Aos_1_1Point3}{Point3}(this->\hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}->getCentre()->getX(), 0, 
+      this->\hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}->getCentre()->getZ() + 0.1));
+78     this->\hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}.reset();
+79     this->\hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox} = shared\_ptr<BoundingBox>(\textcolor{keyword}{new} \hyperlink{classBoundingBox}{BoundingBox}(*p, 0.5, 0.5, 0.5));
+80     \textcolor{keywordflow}{if}( this->\hyperlink{classGameAsset_a3444a096fed505b1740bedc95e2cfa6c}{bbox}->getCentre()->getZ() > 25) \{ this->\hyperlink{classGameAsset_a631982e6d36061c08c7e8981ce0fd308}{dead}(); \}
+81   \}
+82 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/sam/\-Cube\-Racer/src/\hyperlink{Bullet_8h}{Bullet.\-h}\item 
+/home/sam/\-Cube\-Racer/src/\hyperlink{Bullet_8cpp}{Bullet.\-cpp}\end{DoxyCompactItemize}

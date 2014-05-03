@@ -1,0 +1,54 @@
+\hypertarget{quat__aos_8h}{\section{/home/sam/\-Cube\-Racer/src/vectormath/quat\-\_\-aos.h File Reference}
+\label{quat__aos_8h}\index{/home/sam/\-Cube\-Racer/src/vectormath/quat\-\_\-aos.\-h@{/home/sam/\-Cube\-Racer/src/vectormath/quat\-\_\-aos.\-h}}
+}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceVectormath}{Vectormath}
+\item 
+\hyperlink{namespaceVectormath_1_1Aos}{Vectormath\-::\-Aos}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{quat__aos_8h_a829e2c1123d7b5ef512cc0671066eb85}{\-\_\-\-V\-E\-C\-T\-O\-R\-M\-A\-T\-H\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-S}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const Quat \hyperlink{namespaceVectormath_1_1Aos_a27e2a00cdc67b5389725ae07500d6067}{Vectormath\-::\-Aos\-::lerp} (float \hyperlink{Main_8cpp_a0c8806dd40fb0525e1a3a2a5f78ef88d}{t}, const Quat \&quat0, const Quat \&quat1)
+\item 
+const Quat \hyperlink{namespaceVectormath_1_1Aos_a105986a914ab37184130f777939af95c}{Vectormath\-::\-Aos\-::slerp} (float \hyperlink{Main_8cpp_a0c8806dd40fb0525e1a3a2a5f78ef88d}{t}, const Quat \&unit\-Quat0, const Quat \&unit\-Quat1)
+\item 
+const Quat \hyperlink{namespaceVectormath_1_1Aos_afb5791ca4ac3d8d195859adfee5899cb}{Vectormath\-::\-Aos\-::squad} (float \hyperlink{Main_8cpp_a0c8806dd40fb0525e1a3a2a5f78ef88d}{t}, const Quat \&unit\-Quat0, const Quat \&unit\-Quat1, const Quat \&unit\-Quat2, const Quat \&unit\-Quat3)
+\item 
+void \hyperlink{namespaceVectormath_1_1Aos_a3a65ffa569e8543f573a80ba1a4b6dd3}{Vectormath\-::\-Aos\-::load\-X\-Y\-Z\-W} (Quat \&quat, const float $\ast$fptr)
+\item 
+void \hyperlink{namespaceVectormath_1_1Aos_af15a22ee1eb0d7aa4e62efa747e03ea4}{Vectormath\-::\-Aos\-::store\-X\-Y\-Z\-W} (const Quat \&quat, float $\ast$fptr)
+\item 
+const Quat \hyperlink{namespaceVectormath_1_1Aos_ab174ecf17d9bb0a8fa3f87e7389d1158}{Vectormath\-::\-Aos\-::operator$\ast$} (float scalar, const Quat \&quat)
+\item 
+float \hyperlink{namespaceVectormath_1_1Aos_ab29ffde5ae29fc1c6ef2022900656def}{Vectormath\-::\-Aos\-::dot} (const Quat \&quat0, const Quat \&quat1)
+\item 
+float \hyperlink{namespaceVectormath_1_1Aos_aabbbe84be2d8f739dd6009eda065b634}{Vectormath\-::\-Aos\-::norm} (const Quat \&quat)
+\item 
+float \hyperlink{namespaceVectormath_1_1Aos_aa7db613f8732057fec0b26f26aefaff4}{Vectormath\-::\-Aos\-::length} (const Quat \&quat)
+\item 
+const Quat \hyperlink{namespaceVectormath_1_1Aos_aac46a6b9ec5fef7c62916fbb4a1b242f}{Vectormath\-::\-Aos\-::normalize} (const Quat \&quat)
+\item 
+const Vector3 \hyperlink{namespaceVectormath_1_1Aos_aec31ad770f5b950f6b518ee095dda7fa}{Vectormath\-::\-Aos\-::rotate} (const Quat \&quat, const Vector3 \&vec)
+\item 
+const Quat \hyperlink{namespaceVectormath_1_1Aos_a6a104e48329108ed89d2e4278d6b27a8}{Vectormath\-::\-Aos\-::conj} (const Quat \&quat)
+\item 
+const Quat \hyperlink{namespaceVectormath_1_1Aos_afdb03c6b51541d403754ad1e68942e43}{Vectormath\-::\-Aos\-::select} (const Quat \&quat0, const Quat \&quat1, bool select1)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{quat__aos_8h_a829e2c1123d7b5ef512cc0671066eb85}{\index{quat\-\_\-aos.\-h@{quat\-\_\-aos.\-h}!\-\_\-\-V\-E\-C\-T\-O\-R\-M\-A\-T\-H\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-S@{\-\_\-\-V\-E\-C\-T\-O\-R\-M\-A\-T\-H\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-S}}
+\index{\-\_\-\-V\-E\-C\-T\-O\-R\-M\-A\-T\-H\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-S@{\-\_\-\-V\-E\-C\-T\-O\-R\-M\-A\-T\-H\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-S}!quat_aos.h@{quat\-\_\-aos.\-h}}
+\subsubsection[{\-\_\-\-V\-E\-C\-T\-O\-R\-M\-A\-T\-H\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-\-V\-E\-C\-T\-O\-R\-M\-A\-T\-H\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-S}}\label{quat__aos_8h_a829e2c1123d7b5ef512cc0671066eb85}
+
+
+Definition at line 37 of file quat\-\_\-aos.\-h.
+
